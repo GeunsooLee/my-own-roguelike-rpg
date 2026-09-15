@@ -694,7 +694,13 @@
       activate("privacy");
       var target = document.getElementById(hash);
       if (target && hash !== "privacy") {
-        target.scrollIntoView();
+        // 웹폰트가 늦게 로드되면 글줄이 바뀌어 위치가 밀리므로, 폰트 로드·페이지 로드 뒤에 한 번 더 맞춘다
+        var jump = function () { target.scrollIntoView(); };
+        jump();
+        if (document.fonts && document.fonts.ready) {
+          document.fonts.ready.then(jump);
+        }
+        window.addEventListener("load", jump);
       }
     }
 
