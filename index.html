@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>My Own Roguelike RPG — Terms of Service &amp; Privacy Policy</title>
+<meta name="robots" content="noindex" />
+<script>
+  (function () {
+    var supported = ["ko", "en", "ja", "zh_cn", "zh_tw", "de", "fr", "es", "pt_br", "ru"];
+    function pick() {
+      var q = new URLSearchParams(location.search).get("lang");
+      if (q && supported.indexOf(q) >= 0) return q;
+      var langs = navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language || "en"];
+      for (var i = 0; i < langs.length; i++) {
+        var l = String(langs[i]).toLowerCase();
+        if (l.indexOf("ko") === 0) return "ko";
+        if (l.indexOf("ja") === 0) return "ja";
+        if (l === "zh-tw" || l === "zh-hk" || l === "zh-mo" || l.indexOf("zh-hant") === 0) return "zh_tw";
+        if (l.indexOf("zh") === 0) return "zh_cn";
+        if (l.indexOf("pt") === 0) return "pt_br";
+        var two = l.slice(0, 2);
+        if (["en", "de", "fr", "es", "ru"].indexOf(two) >= 0) return two;
+      }
+      return "en";
+    }
+    location.replace(pick() + "/" + location.hash);
+  })();
+</script>
+</head>
+<body style="font-family:-apple-system,BlinkMacSystemFont,sans-serif;background:#101019;color:#e9e7f0;padding:40px;">
+<p>My Own Roguelike RPG — Terms of Service &amp; Privacy Policy</p>
+<p><a style="color:#e8b84a" href="ko/">한국어</a> · <a style="color:#e8b84a" href="en/">English</a> · <a style="color:#e8b84a" href="ja/">日本語</a> · <a style="color:#e8b84a" href="zh_cn/">简体中文</a> · <a style="color:#e8b84a" href="zh_tw/">繁體中文</a> · <a style="color:#e8b84a" href="de/">Deutsch</a> · <a style="color:#e8b84a" href="fr/">Français</a> · <a style="color:#e8b84a" href="es/">Español</a> · <a style="color:#e8b84a" href="pt_br/">Português (Brasil)</a> · <a style="color:#e8b84a" href="ru/">Русский</a></p>
+</body>
+</html>

@@ -1,0 +1,593 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>My Own Roguelike RPG: Términos de servicio y Política de privacidad</title>
+<meta name="description" content="Términos de servicio y Política de privacidad de My Own Roguelike RPG" />
+<link rel="alternate" hreflang="ko" href="https://geunsoolee.github.io/my-own-roguelike-rpg/ko/" />
+<link rel="alternate" hreflang="en" href="https://geunsoolee.github.io/my-own-roguelike-rpg/en/" />
+<link rel="alternate" hreflang="ja" href="https://geunsoolee.github.io/my-own-roguelike-rpg/ja/" />
+<link rel="alternate" hreflang="zh-CN" href="https://geunsoolee.github.io/my-own-roguelike-rpg/zh_cn/" />
+<link rel="alternate" hreflang="zh-TW" href="https://geunsoolee.github.io/my-own-roguelike-rpg/zh_tw/" />
+<link rel="alternate" hreflang="de" href="https://geunsoolee.github.io/my-own-roguelike-rpg/de/" />
+<link rel="alternate" hreflang="fr" href="https://geunsoolee.github.io/my-own-roguelike-rpg/fr/" />
+<link rel="alternate" hreflang="es" href="https://geunsoolee.github.io/my-own-roguelike-rpg/es/" />
+<link rel="alternate" hreflang="pt-BR" href="https://geunsoolee.github.io/my-own-roguelike-rpg/pt_br/" />
+<link rel="alternate" hreflang="ru" href="https://geunsoolee.github.io/my-own-roguelike-rpg/ru/" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@500;700&family=Noto+Sans:wght@400;500;700&display=swap" />
+<style>
+  :root {
+    --bg: #101019;
+    --panel: #191927;
+    --panel-2: #1f1f30;
+    --border: #2c2c40;
+    --text: #e9e7f0;
+    --text-dim: #a3a1b8;
+    --text-faint: #6f6d85;
+    --accent: #e8b84a;
+    --accent-dim: #c99a3a;
+    --accent-ink: #2a1f08;
+    --serif: "Noto Serif", Georgia, serif;
+    --sans: "Noto Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    color-scheme: dark;
+  }
+
+  @media (prefers-color-scheme: light) {
+    :root:not([data-theme="dark"]) {
+      --bg: #f7f5f0;
+      --panel: #ffffff;
+      --panel-2: #f0eee6;
+      --border: #e2ded2;
+      --text: #201d14;
+      --text-dim: #5c5744;
+      --text-faint: #8b856e;
+      --accent: #a8791f;
+      --accent-dim: #8c6519;
+      --accent-ink: #fff6e0;
+    }
+  }
+  :root[data-theme="light"] {
+    --bg: #f7f5f0;
+    --panel: #ffffff;
+    --panel-2: #f0eee6;
+    --border: #e2ded2;
+    --text: #201d14;
+    --text-dim: #5c5744;
+    --text-faint: #8b856e;
+    --accent: #a8791f;
+    --accent-dim: #8c6519;
+    --accent-ink: #fff6e0;
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--sans);
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+  }
+  ::selection { background: var(--accent); color: var(--accent-ink); }
+
+  .page {
+    max-width: 880px;
+    margin: 0 auto;
+    padding: 56px 24px 120px;
+  }
+
+  header.top {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 36px;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 28px;
+  }
+  .eyebrow {
+    font-size: 12.5px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    font-weight: 700;
+  }
+  h1.title {
+    font-family: var(--serif);
+    font-weight: 700;
+    font-size: clamp(28px, 4.5vw, 38px);
+    margin: 0;
+    text-wrap: balance;
+    letter-spacing: -0.01em;
+  }
+  .meta-line {
+    color: var(--text-dim);
+    font-size: 14px;
+  }
+
+  nav.tabs {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    display: flex;
+    gap: 6px;
+    padding: 10px 0;
+    margin: 0 0 32px;
+    background: linear-gradient(var(--bg) 82%, transparent);
+  }
+  nav.tabs button {
+    font-family: var(--sans);
+    font-weight: 700;
+    font-size: 14.5px;
+    padding: 10px 18px;
+    border-radius: 999px;
+    border: 1px solid var(--border);
+    background: var(--panel);
+    color: var(--text-dim);
+    cursor: pointer;
+    transition: color 0.15s ease, border-color 0.15s ease, background 0.15s ease;
+  }
+  nav.tabs button:hover { color: var(--text); }
+  nav.tabs button[aria-selected="true"] {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: var(--accent-ink);
+  }
+  nav.tabs button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+  .toc {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 6px 18px;
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 18px 20px;
+    margin-bottom: 40px;
+  }
+  .toc a {
+    color: var(--text-dim);
+    text-decoration: none;
+    font-size: 13.5px;
+    padding: 5px 0;
+    border-bottom: 1px dotted transparent;
+  }
+  .toc a:hover { color: var(--accent); border-bottom-color: var(--accent); }
+
+  section.doc { display: none; }
+  section.doc[aria-current="true"] { display: block; }
+
+  article.clause {
+    margin-bottom: 34px;
+    scroll-margin-top: 76px;
+  }
+  article.clause h2 {
+    font-family: var(--serif);
+    font-size: 19px;
+    font-weight: 700;
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    margin: 0 0 12px;
+    color: var(--text);
+  }
+  article.clause h2 .num {
+    color: var(--accent);
+    font-variant-numeric: tabular-nums;
+    font-size: 15px;
+    font-weight: 700;
+    min-width: 44px;
+  }
+  article.clause p, article.clause li {
+    color: var(--text-dim);
+    font-size: 15px;
+    max-width: 66ch;
+  }
+  article.clause ol, article.clause ul {
+    padding-left: 22px;
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  article.clause strong { color: var(--text); font-weight: 700; }
+
+  .callout {
+    border-left: 3px solid var(--accent);
+    background: var(--panel);
+    padding: 14px 18px;
+    border-radius: 0 10px 10px 0;
+    font-size: 14px;
+    color: var(--text-dim);
+    margin: 14px 0;
+  }
+  .callout strong { color: var(--accent-dim); }
+
+  table.data {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 14px 0 4px;
+    font-size: 13.5px;
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  table.data th, table.data td {
+    text-align: left;
+    padding: 10px 14px;
+    border-bottom: 1px solid var(--border);
+    color: var(--text-dim);
+    vertical-align: top;
+  }
+  table.data th {
+    background: var(--panel-2);
+    color: var(--text);
+    font-weight: 700;
+    width: 26%;
+    white-space: nowrap;
+  }
+  table.data tr:last-child td, table.data tr:last-child th { border-bottom: none; }
+  .table-wrap { overflow-x: auto; }
+
+  .biz-card {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 22px 24px;
+    margin-top: 44px;
+  }
+  .biz-card h3 {
+    font-family: var(--serif);
+    font-size: 15.5px;
+    margin: 0 0 12px;
+    color: var(--accent);
+  }
+  .biz-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 10px 20px;
+    font-size: 13.5px;
+  }
+  .biz-grid dt { color: var(--text-faint); margin: 0; }
+  .biz-grid dd { color: var(--text); margin: 2px 0 0; font-variant-numeric: tabular-nums; }
+  .placeholder { color: var(--accent-dim); font-style: normal; }
+
+  footer.page-foot {
+    margin-top: 56px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
+    color: var(--text-faint);
+    font-size: 12.5px;
+  }
+
+  @media (max-width: 560px) {
+    .page { padding: 36px 16px 90px; }
+    nav.tabs button { flex: 1; text-align: center; padding: 10px 8px; }
+    /* 다국어: 독일어 "Datenschutzerklärung"처럼 긴 탭 이름이 폰 폭을 넘지 않게 버튼 안에서 줄바꿈 */
+    nav.tabs button { min-width: 0; hyphens: auto; overflow-wrap: anywhere; line-height: 1.25; }
+  }
+
+  /* 다국어: 한 줄에 안 들어가는 긴 낱말(독일어 합성어 등)만 끊는다 — 들어가는 글에는 영향 없음 */
+  .page { overflow-wrap: break-word; }
+  h1.title, article.clause h2, .biz-grid dt, .toc a { hyphens: auto; }
+
+  /* 2026-09-15 다국어: 언어 전환 줄 + 번역본 안내 */
+  nav.langs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 8px;
+    margin-top: 6px;
+  }
+  nav.langs a {
+    color: var(--text-dim);
+    text-decoration: none;
+    font-size: 12.5px;
+    padding: 3px 10px;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+  }
+  nav.langs a:hover { color: var(--text); border-color: var(--accent-dim); }
+  nav.langs a[aria-current="page"] {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: var(--accent-ink);
+    font-weight: 700;
+  }
+  .notice {
+    border-left: 3px solid var(--accent);
+    background: var(--panel);
+    padding: 12px 16px;
+    border-radius: 0 10px 10px 0;
+    font-size: 13.5px;
+    color: var(--text-dim);
+    margin: 0 0 28px;
+  }
+  .notice a { color: var(--accent); }
+
+</style>
+</head>
+<body>
+<div class="page">
+  <header class="top">
+    <span class="eyebrow">My Own Roguelike RPG · Slot Roguelike</span>
+    <h1 class="title">Términos de servicio &amp; Política de privacidad</h1>
+    <span class="meta-line">En vigor desde el 14 de septiembre de 2026 (v1.0) · Contacto <a href="mailto:myownroguelikerpg@gmail.com" style="color:var(--accent)">myownroguelikerpg@gmail.com</a></span>
+    <nav class="langs" aria-label="Idioma">
+      <a href="../ko/" hreflang="ko" lang="ko">한국어</a>
+      <a href="../en/" hreflang="en" lang="en">English</a>
+      <a href="../ja/" hreflang="ja" lang="ja">日本語</a>
+      <a href="../zh_cn/" hreflang="zh-CN" lang="zh-CN">简体中文</a>
+      <a href="../zh_tw/" hreflang="zh-TW" lang="zh-TW">繁體中文</a>
+      <a href="../de/" hreflang="de" lang="de">Deutsch</a>
+      <a href="../fr/" hreflang="fr" lang="fr">Français</a>
+      <a href="../es/" hreflang="es" lang="es" aria-current="page">Español</a>
+      <a href="../pt_br/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a>
+      <a href="../ru/" hreflang="ru" lang="ru">Русский</a>
+    </nav>
+  </header>
+
+  <p class="notice">Esta versión en español es una traducción proporcionada únicamente para su comodidad. En caso de discrepancia entre esta traducción y el <a href="../ko/" hreflang="ko">original en coreano</a>, prevalecerá el original en coreano.</p>
+
+  <nav class="tabs" role="tablist" aria-label="Seleccionar documento">
+    <button type="button" role="tab" id="tab-terms" aria-selected="true" aria-controls="doc-terms">Términos de servicio</button>
+    <button type="button" role="tab" id="tab-privacy" aria-selected="false" aria-controls="doc-privacy">Política de privacidad</button>
+  </nav>
+
+  <section class="doc" id="doc-terms" aria-current="true" role="tabpanel" aria-labelledby="tab-terms">
+    <div class="toc" aria-label="Índice de los Términos de servicio">
+      <a href="#t1">Art. 1 Objeto</a>
+      <a href="#t2">Art. 2 Definiciones</a>
+      <a href="#t3">Art. 3 Vigencia y modificación</a>
+      <a href="#t4">Art. 4 Prestación del Servicio</a>
+      <a href="#t5">Art. 5 Contrato de uso</a>
+      <a href="#t6">Art. 6 Servicios de pago</a>
+      <a href="#t7">Art. 7 Objetos aleatorios</a>
+      <a href="#t8">Art. 8 Desistimiento y reembolsos</a>
+      <a href="#t9">Art. 9 Obligaciones del usuario</a>
+      <a href="#t10">Art. 10 Restricciones de uso</a>
+      <a href="#t11">Art. 11 Propiedad intelectual</a>
+      <a href="#t12">Art. 12 Exención de responsabilidad</a>
+      <a href="#t13">Art. 13 Resolución de conflictos</a>
+    </div>
+
+    <article class="clause" id="t1">
+      <h2><span class="num">Art. 1</span>Objeto</h2>
+      <p>Los presentes Términos tienen por objeto establecer los derechos, obligaciones y responsabilidades del Operador y de los usuarios en relación con el uso del juego para móviles «My Own Roguelike RPG» (en adelante, el «Servicio») ofrecido por Geunsoo Lee (이근수; en adelante, el «Operador»).</p>
+    </article>
+
+    <article class="clause" id="t2">
+      <h2><span class="num">Art. 2</span>Definiciones</h2>
+      <ol>
+        <li><strong>Servicio</strong>: el juego «My Own Roguelike RPG» ofrecido por el Operador y todos los contenidos y funciones relacionados (gacha, mejoras, clasificaciones, guardado en la nube, compras dentro de la aplicación, etc.).</li>
+        <li><strong>Usuario</strong>: toda persona que utiliza el Servicio de conformidad con los presentes Términos.</li>
+        <li><strong>Moneda de pago</strong>: la moneda del juego que el usuario adquiere a título oneroso, como las Monedas de diamante, el Oro del juego y la Esencia de trascendencia.</li>
+        <li><strong>Objetos aleatorios</strong>: objetos de pago (gacha) cuyo tipo o efecto se determina por azar.</li>
+      </ol>
+    </article>
+
+    <article class="clause" id="t3">
+      <h2><span class="num">Art. 3</span>Vigencia y modificación de los Términos</h2>
+      <p>Los presentes Términos entran en vigor mediante su anuncio o publicación dentro del Servicio. El Operador podrá modificar los Términos en la medida permitida por la legislación aplicable y, en tal caso, indicará la fecha de aplicación y los motivos de la modificación y los anunciará con al menos 7 días de antelación (30 días para cambios desfavorables para los usuarios). Los usuarios que no acepten los Términos modificados podrán dejar de utilizar el Servicio y darse de baja.</p>
+    </article>
+
+    <article class="clause" id="t4">
+      <h2><span class="num">Art. 4</span>Prestación y modificación del Servicio</h2>
+      <p>El Operador se esfuerza por prestar el Servicio de forma estable, pero podrá modificar o interrumpir la totalidad o parte del Servicio por motivos como el mantenimiento del sistema, fallos del servidor, reformas de la legislación aplicable o cambios en la política empresarial. En tal caso, lo anunciará con antelación (o con posterioridad en caso de urgencia).</p>
+    </article>
+
+    <article class="clause" id="t5">
+      <h2><span class="num">Art. 5</span>Formalización del contrato de uso</h2>
+      <p>El contrato de uso se formaliza cuando el usuario instala y ejecuta el Servicio y acepta los presentes Términos y la Política de privacidad. El usuario puede acceder al Servicio mediante una cuenta de una tienda de aplicaciones, como Google Play o App Store, o mediante el inicio de sesión con Google; en ese caso, también se aplicarán las condiciones de la tienda de aplicaciones o del operador de la plataforma correspondiente.</p>
+    </article>
+
+    <article class="clause" id="t6">
+      <h2><span class="num">Art. 6</span>Uso de los servicios de pago</h2>
+      <p>El usuario puede adquirir moneda de pago mediante los métodos de pago que ofrece cada plataforma, como la facturación integrada de Google Play. Los pagos son procesados por el operador de la plataforma correspondiente (Google, Apple, Valve, etc.), y el registro de los medios de pago y la liquidación se rigen por las políticas de dicha plataforma. La moneda de pago solo puede utilizarse dentro del juego y no puede canjearse por dinero ni por otras monedas.</p>
+    </article>
+
+    <article class="clause" id="t7">
+      <h2><span class="num">Art. 7</span>Divulgación de información sobre objetos aleatorios</h2>
+      <p>De conformidad con la Ley de Promoción de la Industria de los Videojuegos de la República de Corea, el Operador pone a disposición en todo momento, en la pantalla de gacha del juego, las probabilidades de obtención de cada tipo de objeto aleatorio. Las probabilidades mostradas son idénticas a la lógica real del sorteo y nunca se aumentan ni se reducen de forma arbitraria.</p>
+    </article>
+
+    <article class="clause" id="t8">
+      <h2><span class="num">Art. 8</span>Desistimiento y reembolsos</h2>
+      <ol>
+        <li>El usuario puede solicitar el desistimiento de la compra dentro de los 7 días siguientes al pago, siempre que no haya utilizado la moneda de pago. No obstante, si ha utilizado la totalidad o parte de la moneda tras el pago, el desistimiento podrá estar limitado conforme a la Ley de Protección del Consumidor en el Comercio Electrónico de la República de Corea.</li>
+        <li>Las solicitudes de desistimiento o reembolso se reciben a través de la plataforma en la que se realizó el pago (Google Play, etc.) o en <a href="mailto:myownroguelikerpg@gmail.com" style="color:var(--accent)">myownroguelikerpg@gmail.com</a>, y se tramitan dentro del plazo establecido por la legislación aplicable.</li>
+        <li>Si el uso del Servicio se ha restringido por causas imputables al usuario (por ejemplo, restricciones por incumplimiento de los presentes Términos), el reembolso podrá estar limitado.</li>
+      </ol>
+    </article>
+
+    <article class="clause" id="t9">
+      <h2><span class="num">Art. 9</span>Obligaciones de los usuarios</h2>
+      <p>Los usuarios deben cumplir la legislación aplicable, los presentes Términos y las instrucciones de uso del Servicio, y no deben realizar las siguientes conductas: usar la cuenta de otra persona, hacer un uso fraudulento aprovechando vulnerabilidades del Servicio, utilizar programas automatizados (macros, etc.), obstaculizar el funcionamiento del Servicio o cualquier otra conducta contraria a la legislación aplicable.</p>
+    </article>
+
+    <article class="clause" id="t10">
+      <h2><span class="num">Art. 10</span>Restricción del uso del Servicio</h2>
+      <p>Si un usuario incumple el artículo 9, el Operador podrá restringir su uso del Servicio o suspender su cuenta previa notificación (o con notificación posterior en caso de urgencia).</p>
+    </article>
+
+    <article class="clause" id="t11">
+      <h2><span class="num">Art. 11</span>Derechos de propiedad intelectual</h2>
+      <p>Todos los derechos de autor y de propiedad intelectual sobre los contenidos del Servicio (gráficos, sonidos, código de programa, etc.) pertenecen al Operador, y los usuarios no pueden reproducirlos, distribuirlos ni explotarlos comercialmente sin el consentimiento previo del Operador.</p>
+    </article>
+
+    <article class="clause" id="t12">
+      <h2><span class="num">Art. 12</span>Exención de responsabilidad</h2>
+      <p>El Operador no se hace responsable de las interrupciones en el uso del Servicio causadas por desastres naturales, fuerza mayor o causas imputables al usuario. El Operador no garantiza ningún valor patrimonial de los resultados obtenidos en el juego (gacha, mejoras, etc.).</p>
+    </article>
+
+    <article class="clause" id="t13">
+      <h2><span class="num">Art. 13</span>Resolución de conflictos y jurisdicción</h2>
+      <p>Cualquier conflicto relacionado con los presentes Términos se regirá por la legislación de la República de Corea, y el tribunal competente será el que corresponda conforme a la Ley de Procedimiento Civil de Corea.</p>
+    </article>
+  </section>
+
+  <section class="doc" id="doc-privacy" role="tabpanel" aria-labelledby="tab-privacy">
+    <div class="toc" aria-label="Índice de la Política de privacidad">
+      <a href="#p1">1. Datos recopilados</a>
+      <a href="#p2">2. Métodos de recopilación</a>
+      <a href="#p3">3. Finalidades</a>
+      <a href="#p4">4. Plazo de conservación</a>
+      <a href="#p5">5. Terceros y encargados</a>
+      <a href="#p6">6. Derechos del usuario</a>
+      <a href="#p7">7. Destrucción</a>
+      <a href="#p8">8. Medidas de seguridad</a>
+      <a href="#p9">9. Menores</a>
+      <a href="#p10">10. Responsable</a>
+    </div>
+
+    <p style="color:var(--text-dim); font-size:14.5px; max-width:66ch;">
+      El Operador trata con cuidado la información personal de los usuarios y cumple la legislación aplicable, incluida la Ley de Protección de la Información Personal de la República de Corea. La presente Política se aplica al servicio My Own Roguelike RPG.
+    </p>
+
+    <article class="clause" id="p1">
+      <h2><span class="num">1.</span>Información personal que recopilamos</h2>
+      <div class="table-wrap">
+        <table class="data">
+          <tr><th>Categoría</th><td>Datos recopilados</td></tr>
+          <tr><th>Cuenta (opcional)</th><td>Correo electrónico de la cuenta de Google, apodo, identificador de perfil — al usar el guardado en la nube o el inicio de sesión</td></tr>
+          <tr><th>Pagos</th><td>ID del producto comprado, fecha y hora del pago, número de transacción de la plataforma (la información de los medios de pago, como los números de tarjeta, la procesa directamente cada plataforma y el Operador no la conserva)</td></tr>
+          <tr><th>Recopilación automática</th><td>Identificadores del dispositivo (incluidos los identificadores publicitarios), versión del sistema operativo y de la aplicación, registros de acceso, registros de errores, datos de progreso en el juego</td></tr>
+        </table>
+      </div>
+    </article>
+
+    <article class="clause" id="p2">
+      <h2><span class="num">2.</span>Métodos de recopilación</h2>
+      <p>Introducción directa por parte del usuario, por ejemplo al iniciar sesión con Google; generación y recopilación automáticas durante el uso del Servicio (Firebase, SDK de AdMob, etc.); y recepción de los resultados de pago de los operadores de plataforma en el momento del pago.</p>
+    </article>
+
+    <article class="clause" id="p3">
+      <h2><span class="num">3.</span>Finalidades del uso de la información personal</h2>
+      <ul>
+        <li>Guardado en la nube del progreso del juego y sincronización entre dispositivos</li>
+        <li>Prevención del uso fraudulento y abusivo, y seguridad de la cuenta</li>
+        <li>Procesamiento de pagos de moneda de pago y atención de reembolsos y consultas</li>
+        <li>Publicidad personalizada y medición del rendimiento publicitario (basada en identificadores publicitarios; la personalización puede rechazarse en Ajustes)</li>
+        <li>Análisis estadístico para mejorar la calidad del Servicio</li>
+      </ul>
+    </article>
+
+    <article class="clause" id="p4">
+      <h2><span class="num">4.</span>Plazo de conservación y uso</h2>
+      <p>En principio, la información personal se destruye sin demora cuando el usuario se da de baja o se cumple la finalidad de la recopilación. No obstante, cuando la legislación aplicable, como la Ley de Protección del Consumidor en el Comercio Electrónico de la República de Corea, exija su conservación, se conservará durante los siguientes plazos.</p>
+      <div class="table-wrap">
+        <table class="data">
+          <tr><th>Registros de pagos y suministro de bienes</th><td>5 años</td></tr>
+          <tr><th>Registros de reclamaciones de consumidores y resolución de conflictos</th><td>3 años</td></tr>
+          <tr><th>Registros de acceso</th><td>3 meses (Ley de Protección del Secreto de las Comunicaciones)</td></tr>
+        </table>
+      </div>
+    </article>
+
+    <article class="clause" id="p5">
+      <h2><span class="num">5.</span>Cesión a terceros y encargo del tratamiento</h2>
+      <p>En principio, el Operador no cede la información personal de los usuarios a terceros y, para la prestación del Servicio, encarga su tratamiento a las siguientes empresas.</p>
+      <div class="table-wrap">
+        <table class="data">
+          <tr><th>Encargado del tratamiento</th><th>Tareas encomendadas</th></tr>
+          <tr><td>Google LLC (Firebase)</td><td>Autenticación de inicio de sesión, almacenamiento de datos en la nube, estadísticas de uso del Servicio</td></tr>
+          <tr><td>Google LLC (AdMob)</td><td>Publicación de anuncios y medición del rendimiento publicitario</td></tr>
+          <tr><td>Google LLC / Apple Inc. / Valve Corporation</td><td>Procesamiento y liquidación de compras dentro de la aplicación (al usar la plataforma correspondiente)</td></tr>
+        </table>
+      </div>
+      <div class="callout"><strong>Nota</strong> — Las empresas mencionadas tratan los datos por separado conforme a sus propias políticas de privacidad, y los datos pueden transferirse y almacenarse en servidores situados fuera de la República de Corea.</div>
+    </article>
+
+    <article class="clause" id="p6">
+      <h2><span class="num">6.</span>Derechos de los usuarios y cómo ejercerlos</h2>
+      <p>Los usuarios pueden solicitar en cualquier momento el acceso, la rectificación o la supresión de su información personal, o la suspensión de su tratamiento. Si solicita la eliminación de su cuenta desde el menú de Ajustes del juego o por correo electrónico a <a href="mailto:myownroguelikerpg@gmail.com" style="color:var(--accent)">myownroguelikerpg@gmail.com</a>, actuaremos sin demora.</p>
+    </article>
+
+    <article class="clause" id="p7">
+      <h2><span class="num">7.</span>Procedimiento y método de destrucción de la información personal</h2>
+      <p>La información en formato de archivo electrónico se elimina de forma permanente mediante métodos que impiden su recuperación. La información que deba conservarse por ley se almacena por separado y se destruye una vez vencido el plazo de conservación.</p>
+    </article>
+
+    <article class="clause" id="p8">
+      <h2><span class="num">8.</span>Medidas para garantizar la seguridad de la información personal</h2>
+      <p>Aplicamos medidas técnicas y organizativas como la gestión de permisos de acceso, el cifrado de las transmisiones (HTTPS) y el principio de minimización del tratamiento de la información personal.</p>
+    </article>
+
+    <article class="clause" id="p9">
+      <h2><span class="num">9.</span>Información personal de menores</h2>
+      <p>El Servicio no está dirigido principalmente a menores de 14 años, y no recopilamos información personal de menores de 14 años sin el consentimiento de su representante legal.</p>
+    </article>
+
+    <article class="clause" id="p10">
+      <h2><span class="num">10.</span>Responsable de la protección de la información personal</h2>
+      <p>Hemos designado al siguiente responsable de la protección de la información personal para atender consultas, reclamaciones y solicitudes de reparación relacionadas con el tratamiento de la información personal.</p>
+      <div class="table-wrap">
+        <table class="data">
+          <tr><th>Nombre</th><td>Geunsoo Lee (이근수)</td></tr>
+          <tr><th>Correo electrónico</th><td>myownroguelikerpg@gmail.com</td></tr>
+        </table>
+      </div>
+    </article>
+  </section>
+
+  <div class="biz-card">
+    <h3>Información de la empresa</h3>
+    <dl class="biz-grid">
+      <div><dt>Nombre comercial</dt><dd>디쥐스튜디오 (이근수)</dd></div>
+      <div><dt>Representante</dt><dd>Geunsoo Lee (이근수)</dd></div>
+      <div><dt>Número de registro empresarial</dt><dd>390-31-01963</dd></div>
+      <div><dt>Número de declaración de venta a distancia</dt><dd class="placeholder">[Se indicará tras la declaración]</dd></div>
+      <div><dt>Correo electrónico</dt><dd>myownroguelikerpg@gmail.com</dd></div>
+      <div><dt>Domicilio comercial</dt><dd>경기도 수원시 팔달구 효원로308번길 58-17, 101동 703호(인계동)<br>101-dong 703-ho, 58-17 Hyowon-ro 308beon-gil, Paldal-gu, Suwon-si, Gyeonggi-do, Republic of Korea</dd></div>
+    </dl>
+  </div>
+
+  <footer class="page-foot">
+    <div>Publicado el 14 de septiembre de 2026 · En vigor desde el 14 de septiembre de 2026</div>
+    <div style="margin-top:4px;">Este documento puede modificarse, previo aviso, de acuerdo con los cambios en las políticas de operación del Servicio y en la legislación aplicable.</div>
+  </footer>
+</div>
+
+<script>
+  (function () {
+    var tabTerms = document.getElementById("tab-terms");
+    var tabPrivacy = document.getElementById("tab-privacy");
+    var docTerms = document.getElementById("doc-terms");
+    var docPrivacy = document.getElementById("doc-privacy");
+
+    function activate(which) {
+      var toTerms = which === "terms";
+      tabTerms.setAttribute("aria-selected", String(toTerms));
+      tabPrivacy.setAttribute("aria-selected", String(!toTerms));
+      docTerms.setAttribute("aria-current", String(toTerms));
+      docPrivacy.setAttribute("aria-current", String(!toTerms));
+    }
+
+    tabTerms.addEventListener("click", function () {
+      activate("terms");
+      history.replaceState(null, "", "#terms");
+    });
+    tabPrivacy.addEventListener("click", function () {
+      activate("privacy");
+      history.replaceState(null, "", "#privacy");
+    });
+
+    if (location.hash.replace("#", "") === "privacy") {
+      activate("privacy");
+    }
+
+    // 언어를 바꿔도 보고 있던 문서(이용약관/개인정보처리방침) 탭을 유지
+    var links = document.querySelectorAll("nav.langs a");
+    for (var i = 0; i < links.length; i++) {
+      links[i].addEventListener("click", function (e) {
+        if (location.hash) {
+          e.preventDefault();
+          location.href = this.getAttribute("href") + location.hash;
+        }
+      });
+    }
+  })();
+</script>
+</body>
+</html>

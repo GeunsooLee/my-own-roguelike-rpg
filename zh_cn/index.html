@@ -1,0 +1,593 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>My Own Roguelike RPG 服务条款与隐私政策</title>
+<meta name="description" content="My Own Roguelike RPG 服务条款及隐私政策" />
+<link rel="alternate" hreflang="ko" href="https://geunsoolee.github.io/my-own-roguelike-rpg/ko/" />
+<link rel="alternate" hreflang="en" href="https://geunsoolee.github.io/my-own-roguelike-rpg/en/" />
+<link rel="alternate" hreflang="ja" href="https://geunsoolee.github.io/my-own-roguelike-rpg/ja/" />
+<link rel="alternate" hreflang="zh-CN" href="https://geunsoolee.github.io/my-own-roguelike-rpg/zh_cn/" />
+<link rel="alternate" hreflang="zh-TW" href="https://geunsoolee.github.io/my-own-roguelike-rpg/zh_tw/" />
+<link rel="alternate" hreflang="de" href="https://geunsoolee.github.io/my-own-roguelike-rpg/de/" />
+<link rel="alternate" hreflang="fr" href="https://geunsoolee.github.io/my-own-roguelike-rpg/fr/" />
+<link rel="alternate" hreflang="es" href="https://geunsoolee.github.io/my-own-roguelike-rpg/es/" />
+<link rel="alternate" hreflang="pt-BR" href="https://geunsoolee.github.io/my-own-roguelike-rpg/pt_br/" />
+<link rel="alternate" hreflang="ru" href="https://geunsoolee.github.io/my-own-roguelike-rpg/ru/" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@500;700&family=Noto+Sans+SC:wght@400;500;700&display=swap" />
+<style>
+  :root {
+    --bg: #101019;
+    --panel: #191927;
+    --panel-2: #1f1f30;
+    --border: #2c2c40;
+    --text: #e9e7f0;
+    --text-dim: #a3a1b8;
+    --text-faint: #6f6d85;
+    --accent: #e8b84a;
+    --accent-dim: #c99a3a;
+    --accent-ink: #2a1f08;
+    --serif: "Noto Serif SC", "Songti SC", serif;
+    --sans: "Noto Sans SC", "PingFang SC", "Microsoft YaHei", -apple-system, sans-serif;
+    color-scheme: dark;
+  }
+
+  @media (prefers-color-scheme: light) {
+    :root:not([data-theme="dark"]) {
+      --bg: #f7f5f0;
+      --panel: #ffffff;
+      --panel-2: #f0eee6;
+      --border: #e2ded2;
+      --text: #201d14;
+      --text-dim: #5c5744;
+      --text-faint: #8b856e;
+      --accent: #a8791f;
+      --accent-dim: #8c6519;
+      --accent-ink: #fff6e0;
+    }
+  }
+  :root[data-theme="light"] {
+    --bg: #f7f5f0;
+    --panel: #ffffff;
+    --panel-2: #f0eee6;
+    --border: #e2ded2;
+    --text: #201d14;
+    --text-dim: #5c5744;
+    --text-faint: #8b856e;
+    --accent: #a8791f;
+    --accent-dim: #8c6519;
+    --accent-ink: #fff6e0;
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--sans);
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+  }
+  ::selection { background: var(--accent); color: var(--accent-ink); }
+
+  .page {
+    max-width: 880px;
+    margin: 0 auto;
+    padding: 56px 24px 120px;
+  }
+
+  header.top {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 36px;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 28px;
+  }
+  .eyebrow {
+    font-size: 12.5px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    font-weight: 700;
+  }
+  h1.title {
+    font-family: var(--serif);
+    font-weight: 700;
+    font-size: clamp(28px, 4.5vw, 38px);
+    margin: 0;
+    text-wrap: balance;
+    letter-spacing: -0.01em;
+  }
+  .meta-line {
+    color: var(--text-dim);
+    font-size: 14px;
+  }
+
+  nav.tabs {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    display: flex;
+    gap: 6px;
+    padding: 10px 0;
+    margin: 0 0 32px;
+    background: linear-gradient(var(--bg) 82%, transparent);
+  }
+  nav.tabs button {
+    font-family: var(--sans);
+    font-weight: 700;
+    font-size: 14.5px;
+    padding: 10px 18px;
+    border-radius: 999px;
+    border: 1px solid var(--border);
+    background: var(--panel);
+    color: var(--text-dim);
+    cursor: pointer;
+    transition: color 0.15s ease, border-color 0.15s ease, background 0.15s ease;
+  }
+  nav.tabs button:hover { color: var(--text); }
+  nav.tabs button[aria-selected="true"] {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: var(--accent-ink);
+  }
+  nav.tabs button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+  .toc {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 6px 18px;
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 18px 20px;
+    margin-bottom: 40px;
+  }
+  .toc a {
+    color: var(--text-dim);
+    text-decoration: none;
+    font-size: 13.5px;
+    padding: 5px 0;
+    border-bottom: 1px dotted transparent;
+  }
+  .toc a:hover { color: var(--accent); border-bottom-color: var(--accent); }
+
+  section.doc { display: none; }
+  section.doc[aria-current="true"] { display: block; }
+
+  article.clause {
+    margin-bottom: 34px;
+    scroll-margin-top: 76px;
+  }
+  article.clause h2 {
+    font-family: var(--serif);
+    font-size: 19px;
+    font-weight: 700;
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    margin: 0 0 12px;
+    color: var(--text);
+  }
+  article.clause h2 .num {
+    color: var(--accent);
+    font-variant-numeric: tabular-nums;
+    font-size: 15px;
+    font-weight: 700;
+    min-width: 44px;
+  }
+  article.clause p, article.clause li {
+    color: var(--text-dim);
+    font-size: 15px;
+    max-width: 66ch;
+  }
+  article.clause ol, article.clause ul {
+    padding-left: 22px;
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  article.clause strong { color: var(--text); font-weight: 700; }
+
+  .callout {
+    border-left: 3px solid var(--accent);
+    background: var(--panel);
+    padding: 14px 18px;
+    border-radius: 0 10px 10px 0;
+    font-size: 14px;
+    color: var(--text-dim);
+    margin: 14px 0;
+  }
+  .callout strong { color: var(--accent-dim); }
+
+  table.data {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 14px 0 4px;
+    font-size: 13.5px;
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  table.data th, table.data td {
+    text-align: left;
+    padding: 10px 14px;
+    border-bottom: 1px solid var(--border);
+    color: var(--text-dim);
+    vertical-align: top;
+  }
+  table.data th {
+    background: var(--panel-2);
+    color: var(--text);
+    font-weight: 700;
+    width: 26%;
+    white-space: nowrap;
+  }
+  table.data tr:last-child td, table.data tr:last-child th { border-bottom: none; }
+  .table-wrap { overflow-x: auto; }
+
+  .biz-card {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 22px 24px;
+    margin-top: 44px;
+  }
+  .biz-card h3 {
+    font-family: var(--serif);
+    font-size: 15.5px;
+    margin: 0 0 12px;
+    color: var(--accent);
+  }
+  .biz-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 10px 20px;
+    font-size: 13.5px;
+  }
+  .biz-grid dt { color: var(--text-faint); margin: 0; }
+  .biz-grid dd { color: var(--text); margin: 2px 0 0; font-variant-numeric: tabular-nums; }
+  .placeholder { color: var(--accent-dim); font-style: normal; }
+
+  footer.page-foot {
+    margin-top: 56px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
+    color: var(--text-faint);
+    font-size: 12.5px;
+  }
+
+  @media (max-width: 560px) {
+    .page { padding: 36px 16px 90px; }
+    nav.tabs button { flex: 1; text-align: center; padding: 10px 8px; }
+    /* 다국어: 독일어 "Datenschutzerklärung"처럼 긴 탭 이름이 폰 폭을 넘지 않게 버튼 안에서 줄바꿈 */
+    nav.tabs button { min-width: 0; hyphens: auto; overflow-wrap: anywhere; line-height: 1.25; }
+  }
+
+  /* 다국어: 한 줄에 안 들어가는 긴 낱말(독일어 합성어 등)만 끊는다 — 들어가는 글에는 영향 없음 */
+  .page { overflow-wrap: break-word; }
+  h1.title, article.clause h2, .biz-grid dt, .toc a { hyphens: auto; }
+
+  /* 2026-09-15 다국어: 언어 전환 줄 + 번역본 안내 */
+  nav.langs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 8px;
+    margin-top: 6px;
+  }
+  nav.langs a {
+    color: var(--text-dim);
+    text-decoration: none;
+    font-size: 12.5px;
+    padding: 3px 10px;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+  }
+  nav.langs a:hover { color: var(--text); border-color: var(--accent-dim); }
+  nav.langs a[aria-current="page"] {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: var(--accent-ink);
+    font-weight: 700;
+  }
+  .notice {
+    border-left: 3px solid var(--accent);
+    background: var(--panel);
+    padding: 12px 16px;
+    border-radius: 0 10px 10px 0;
+    font-size: 13.5px;
+    color: var(--text-dim);
+    margin: 0 0 28px;
+  }
+  .notice a { color: var(--accent); }
+
+</style>
+</head>
+<body>
+<div class="page">
+  <header class="top">
+    <span class="eyebrow">My Own Roguelike RPG · 老虎机肉鸽</span>
+    <h1 class="title">服务条款 &amp; 隐私政策</h1>
+    <span class="meta-line">生效日期 2026年9月14日（v1.0）· 联系邮箱 <a href="mailto:myownroguelikerpg@gmail.com" style="color:var(--accent)">myownroguelikerpg@gmail.com</a></span>
+    <nav class="langs" aria-label="语言">
+      <a href="../ko/" hreflang="ko" lang="ko">한국어</a>
+      <a href="../en/" hreflang="en" lang="en">English</a>
+      <a href="../ja/" hreflang="ja" lang="ja">日本語</a>
+      <a href="../zh_cn/" hreflang="zh-CN" lang="zh-CN" aria-current="page">简体中文</a>
+      <a href="../zh_tw/" hreflang="zh-TW" lang="zh-TW">繁體中文</a>
+      <a href="../de/" hreflang="de" lang="de">Deutsch</a>
+      <a href="../fr/" hreflang="fr" lang="fr">Français</a>
+      <a href="../es/" hreflang="es" lang="es">Español</a>
+      <a href="../pt_br/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a>
+      <a href="../ru/" hreflang="ru" lang="ru">Русский</a>
+    </nav>
+  </header>
+
+  <p class="notice">本简体中文版本是为方便阅读而提供的译文。如本译文与<a href="../ko/" hreflang="ko">韩文原文</a>存在任何不一致，以韩文原文为准。</p>
+
+  <nav class="tabs" role="tablist" aria-label="选择文档">
+    <button type="button" role="tab" id="tab-terms" aria-selected="true" aria-controls="doc-terms">服务条款</button>
+    <button type="button" role="tab" id="tab-privacy" aria-selected="false" aria-controls="doc-privacy">隐私政策</button>
+  </nav>
+
+  <section class="doc" id="doc-terms" aria-current="true" role="tabpanel" aria-labelledby="tab-terms">
+    <div class="toc" aria-label="服务条款目录">
+      <a href="#t1">第1条 目的</a>
+      <a href="#t2">第2条 定义</a>
+      <a href="#t3">第3条 效力与变更</a>
+      <a href="#t4">第4条 服务的提供</a>
+      <a href="#t5">第5条 使用协议</a>
+      <a href="#t6">第6条 付费服务</a>
+      <a href="#t7">第7条 概率型道具</a>
+      <a href="#t8">第8条 撤回购买与退款</a>
+      <a href="#t9">第9条 用户义务</a>
+      <a href="#t10">第10条 使用限制</a>
+      <a href="#t11">第11条 知识产权</a>
+      <a href="#t12">第12条 免责</a>
+      <a href="#t13">第13条 争议解决</a>
+    </div>
+
+    <article class="clause" id="t1">
+      <h2><span class="num">第1条</span>目的</h2>
+      <p>本条款旨在规定Geunsoo Lee（이근수，以下简称“运营者”）提供的手机游戏“My Own Roguelike RPG”（以下简称“本服务”）在使用过程中运营者与用户之间的权利、义务及责任事项。</p>
+    </article>
+
+    <article class="clause" id="t2">
+      <h2><span class="num">第2条</span>定义</h2>
+      <ol>
+        <li><strong>本服务</strong>：指运营者提供的“My Own Roguelike RPG”游戏及其附带的全部内容与功能（抽奖、强化、排行榜、云存档、应用内购买等）。</li>
+        <li><strong>用户</strong>：指依照本条款使用本服务的人。</li>
+        <li><strong>付费货币</strong>：指钻石抽奖币、金币、超越精华等用户付费购买的游戏内货币。</li>
+        <li><strong>概率型道具</strong>：指所获物品的种类或效果由随机因素决定的付费道具（抽奖）。</li>
+      </ol>
+    </article>
+
+    <article class="clause" id="t3">
+      <h2><span class="num">第3条</span>条款的效力及变更</h2>
+      <p>本条款自在本服务内公告或发布时起生效。运营者可在不违反相关法律法规的范围内修订本条款，修订时将注明适用日期及修订理由，并至少提前7日（对用户不利的变更提前30日）进行公告。用户不同意修订后条款的，可停止使用本服务并注销账号。</p>
+    </article>
+
+    <article class="clause" id="t4">
+      <h2><span class="num">第4条</span>服务的提供及变更</h2>
+      <p>运营者努力稳定地提供本服务，但可能因系统维护、服务器故障、相关法律法规修订、经营政策变更等原因修改或中止本服务的全部或部分内容，届时将事先公告（紧急情况下可事后公告）。</p>
+    </article>
+
+    <article class="clause" id="t5">
+      <h2><span class="num">第5条</span>使用协议的成立</h2>
+      <p>用户安装并运行本服务，并同意本条款及隐私政策时，使用协议即告成立。用户可通过 Google Play、App Store 等应用商店账号或 Google 登录访问本服务，此时各应用商店及平台运营商的条款同时适用。</p>
+    </article>
+
+    <article class="clause" id="t6">
+      <h2><span class="num">第6条</span>付费服务的使用</h2>
+      <p>用户可通过 Google Play 应用内购买等各平台提供的支付方式购买付费货币。支付由各平台运营商（Google、Apple、Valve 等）处理，支付方式的绑定及结算遵循该平台的政策。付费货币仅可在游戏内使用，不可兑换为现金或其他货币。</p>
+    </article>
+
+    <article class="clause" id="t7">
+      <h2><span class="num">第7条</span>概率型道具信息公开</h2>
+      <p>运营者依据大韩民国《游戏产业振兴法》，在游戏内抽奖界面随时公开各类概率型道具的供给概率信息。所显示的概率与实际抽取逻辑完全一致，不会被擅自上调或下调。</p>
+    </article>
+
+    <article class="clause" id="t8">
+      <h2><span class="num">第8条</span>撤回购买及退款</h2>
+      <ol>
+        <li>用户在支付付费货币后7日内且尚未使用的，可申请撤回购买。但支付后已使用全部或部分货币的，依据大韩民国《电子商务等消费者保护法》，撤回购买可能受到限制。</li>
+        <li>撤回购买及退款申请可通过支付时所用的平台（Google Play 等）或 <a href="mailto:myownroguelikerpg@gmail.com" style="color:var(--accent)">myownroguelikerpg@gmail.com</a> 提交，受理后将在相关法律法规规定的期限内处理。</li>
+        <li>因可归责于用户的原因（如因违反本条款而被限制使用等）导致服务使用受限的，退款可能受到限制。</li>
+      </ol>
+    </article>
+
+    <article class="clause" id="t9">
+      <h2><span class="num">第9条</span>用户的义务</h2>
+      <p>用户应遵守相关法律法规、本条款及本服务使用指南，不得实施下列行为：盗用他人账号、利用本服务漏洞进行不正当使用、使用自动化程序（宏等）、妨碍本服务运营的行为，以及其他违反相关法律法规的行为。</p>
+    </article>
+
+    <article class="clause" id="t10">
+      <h2><span class="num">第10条</span>服务使用限制</h2>
+      <p>用户违反第9条规定的，运营者可在事先通知后（紧急情况下事后通知）限制其使用本服务或冻结其账号。</p>
+    </article>
+
+    <article class="clause" id="t11">
+      <h2><span class="num">第11条</span>知识产权</h2>
+      <p>本服务内全部内容（图像、音效、程序代码等）的著作权及知识产权归运营者所有，未经运营者事先同意，用户不得复制、传播或将其用于商业用途。</p>
+    </article>
+
+    <article class="clause" id="t12">
+      <h2><span class="num">第12条</span>免责条款</h2>
+      <p>对于因自然灾害、不可抗力或可归责于用户的原因导致的服务使用障碍，运营者不承担责任。运营者不保证游戏内结果（抽奖、强化等）具有任何财产价值。</p>
+    </article>
+
+    <article class="clause" id="t13">
+      <h2><span class="num">第13条</span>争议解决及管辖</h2>
+      <p>与本条款相关的争议以大韩民国法律为准据法，管辖法院为依据大韩民国《民事诉讼法》确定的有管辖权的法院。</p>
+    </article>
+  </section>
+
+  <section class="doc" id="doc-privacy" role="tabpanel" aria-labelledby="tab-privacy">
+    <div class="toc" aria-label="隐私政策目录">
+      <a href="#p1">1. 收集项目</a>
+      <a href="#p2">2. 收集方式</a>
+      <a href="#p3">3. 使用目的</a>
+      <a href="#p4">4. 保存期限</a>
+      <a href="#p5">5. 向第三方提供及委托</a>
+      <a href="#p6">6. 用户权利</a>
+      <a href="#p7">7. 销毁程序</a>
+      <a href="#p8">8. 安全保障措施</a>
+      <a href="#p9">9. 儿童个人信息</a>
+      <a href="#p10">10. 保护负责人</a>
+    </div>
+
+    <p style="color:var(--text-dim); font-size:14.5px; max-width:66ch;">
+      运营者重视用户的个人信息，遵守大韩民国《个人信息保护法》等相关法律法规。本政策适用于 My Own Roguelike RPG 服务。
+    </p>
+
+    <article class="clause" id="p1">
+      <h2><span class="num">1.</span>收集的个人信息项目</h2>
+      <div class="table-wrap">
+        <table class="data">
+          <tr><th>类别</th><td>收集项目</td></tr>
+          <tr><th>账号（可选）</th><td>Google 账号邮箱、昵称、个人资料标识符——使用云存档或登录功能时</td></tr>
+          <tr><th>支付</th><td>所购商品 ID、支付时间、支付平台交易编号（银行卡号等支付方式信息由各平台直接处理，运营者不予保存）</td></tr>
+          <tr><th>自动收集</th><td>设备标识符（含广告标识符）、操作系统及应用版本、访问记录、错误日志、游戏内进度数据</td></tr>
+        </table>
+      </div>
+    </article>
+
+    <article class="clause" id="p2">
+      <h2><span class="num">2.</span>收集方式</h2>
+      <p>用户通过 Google 登录等方式直接输入；在使用本服务过程中自动生成及收集（Firebase、AdMob SDK 等）；支付时从平台运营商处接收支付结果。</p>
+    </article>
+
+    <article class="clause" id="p3">
+      <h2><span class="num">3.</span>个人信息的使用目的</h2>
+      <ul>
+        <li>游戏进度云存档及多设备间同步</li>
+        <li>防止不正当使用与滥用，保障账号安全</li>
+        <li>处理付费货币的支付，以及应对退款与咨询</li>
+        <li>提供个性化广告及衡量广告效果（基于广告标识符，可在设置中拒绝个性化）</li>
+        <li>为提升服务质量进行统计分析</li>
+      </ul>
+    </article>
+
+    <article class="clause" id="p4">
+      <h2><span class="num">4.</span>保存及使用期限</h2>
+      <p>原则上，在用户注销账号或收集目的达成后，将立即销毁个人信息。但依据大韩民国《电子商务等消费者保护法》等相关法律法规需要保存的，将在下列期限内保存。</p>
+      <div class="table-wrap">
+        <table class="data">
+          <tr><th>货款支付及商品供应记录</th><td>5年</td></tr>
+          <tr><th>消费者投诉及纠纷处理记录</th><td>3年</td></tr>
+          <tr><th>访问日志</th><td>3个月（《通信秘密保护法》）</td></tr>
+        </table>
+      </div>
+    </article>
+
+    <article class="clause" id="p5">
+      <h2><span class="num">5.</span>向第三方提供及委托处理</h2>
+      <p>运营者原则上不向外部提供用户的个人信息，为运营本服务，委托下列公司处理个人信息。</p>
+      <div class="table-wrap">
+        <table class="data">
+          <tr><th>受托方</th><th>委托业务</th></tr>
+          <tr><td>Google LLC (Firebase)</td><td>登录认证、云端数据存储、服务使用统计</td></tr>
+          <tr><td>Google LLC (AdMob)</td><td>广告投放及广告效果衡量</td></tr>
+          <tr><td>Google LLC / Apple Inc. / Valve Corporation</td><td>应用内购买的处理及结算（使用相应平台时）</td></tr>
+        </table>
+      </div>
+      <div class="callout"><strong>说明</strong> — 上述公司依据各自的隐私政策另行处理数据，数据可能被转移至大韩民国境外的服务器并在该处保存。</div>
+    </article>
+
+    <article class="clause" id="p6">
+      <h2><span class="num">6.</span>用户的权利及行使方式</h2>
+      <p>用户可随时要求查阅、更正、删除其个人信息或停止处理。用户可在游戏内设置菜单中申请删除账号，或发送邮件至 <a href="mailto:myownroguelikerpg@gmail.com" style="color:var(--accent)">myownroguelikerpg@gmail.com</a> 提出申请，我们将及时处理。</p>
+    </article>
+
+    <article class="clause" id="p7">
+      <h2><span class="num">7.</span>个人信息的销毁程序及方法</h2>
+      <p>电子文件形式的信息将以无法恢复的方式永久删除；依法需要保存的信息将另行单独保存，并在保存期限届满后销毁。</p>
+    </article>
+
+    <article class="clause" id="p8">
+      <h2><span class="num">8.</span>个人信息的安全保障措施</h2>
+      <p>我们采取访问权限管理、传输加密（HTTPS）、个人信息处理最小化原则等技术及管理措施。</p>
+    </article>
+
+    <article class="clause" id="p9">
+      <h2><span class="num">9.</span>儿童的个人信息</h2>
+      <p>本服务不以未满14周岁的儿童为主要用户对象，未经法定代理人同意，不收集未满14周岁儿童的个人信息。</p>
+    </article>
+
+    <article class="clause" id="p10">
+      <h2><span class="num">10.</span>个人信息保护负责人</h2>
+      <p>为处理与个人信息相关的咨询、投诉及损害救济等事宜，我们指定了如下个人信息保护负责人。</p>
+      <div class="table-wrap">
+        <table class="data">
+          <tr><th>姓名</th><td>Geunsoo Lee（이근수）</td></tr>
+          <tr><th>电子邮箱</th><td>myownroguelikerpg@gmail.com</td></tr>
+        </table>
+      </div>
+    </article>
+  </section>
+
+  <div class="biz-card">
+    <h3>经营者信息</h3>
+    <dl class="biz-grid">
+      <div><dt>商号</dt><dd>디쥐스튜디오 (이근수)</dd></div>
+      <div><dt>代表人</dt><dd>Geunsoo Lee（이근수）</dd></div>
+      <div><dt>营业登记号码</dt><dd>390-31-01963</dd></div>
+      <div><dt>通信销售业申报号码</dt><dd class="placeholder">[申报后填写]</dd></div>
+      <div><dt>电子邮箱</dt><dd>myownroguelikerpg@gmail.com</dd></div>
+      <div><dt>营业地址</dt><dd>경기도 수원시 팔달구 효원로308번길 58-17, 101동 703호(인계동)<br>101-dong 703-ho, 58-17 Hyowon-ro 308beon-gil, Paldal-gu, Suwon-si, Gyeonggi-do, Republic of Korea</dd></div>
+    </dl>
+  </div>
+
+  <footer class="page-foot">
+    <div>公告日期 2026年9月14日 · 生效日期 2026年9月14日</div>
+    <div style="margin-top:4px;">本文件可能根据服务运营政策及相关法律法规的变化，经事先公告后进行变更。</div>
+  </footer>
+</div>
+
+<script>
+  (function () {
+    var tabTerms = document.getElementById("tab-terms");
+    var tabPrivacy = document.getElementById("tab-privacy");
+    var docTerms = document.getElementById("doc-terms");
+    var docPrivacy = document.getElementById("doc-privacy");
+
+    function activate(which) {
+      var toTerms = which === "terms";
+      tabTerms.setAttribute("aria-selected", String(toTerms));
+      tabPrivacy.setAttribute("aria-selected", String(!toTerms));
+      docTerms.setAttribute("aria-current", String(toTerms));
+      docPrivacy.setAttribute("aria-current", String(!toTerms));
+    }
+
+    tabTerms.addEventListener("click", function () {
+      activate("terms");
+      history.replaceState(null, "", "#terms");
+    });
+    tabPrivacy.addEventListener("click", function () {
+      activate("privacy");
+      history.replaceState(null, "", "#privacy");
+    });
+
+    if (location.hash.replace("#", "") === "privacy") {
+      activate("privacy");
+    }
+
+    // 언어를 바꿔도 보고 있던 문서(이용약관/개인정보처리방침) 탭을 유지
+    var links = document.querySelectorAll("nav.langs a");
+    for (var i = 0; i < links.length; i++) {
+      links[i].addEventListener("click", function (e) {
+        if (location.hash) {
+          e.preventDefault();
+          location.href = this.getAttribute("href") + location.hash;
+        }
+      });
+    }
+  })();
+</script>
+</body>
+</html>
