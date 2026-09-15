@@ -1,6 +1,6 @@
 # My Own Roguelike RPG
 
-슬롯 로그라이크 게임 **My Own Roguelike RPG**의 이용약관·개인정보처리방침 페이지입니다. GitHub Pages로 공개됩니다.
+게임 **My Own Roguelike RPG**(나의 로그라이크)의 이용약관·개인정보처리방침 페이지입니다. GitHub Pages로 공개됩니다.
 
 - 언어 자동 선택: https://geunsoolee.github.io/my-own-roguelike-rpg/
 - 한국어(원문): https://geunsoolee.github.io/my-own-roguelike-rpg/ko/
