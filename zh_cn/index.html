@@ -313,7 +313,7 @@
   <header class="top">
     <span class="eyebrow">My Own Roguelike RPG</span>
     <h1 class="title">服务条款 &amp; 隐私政策</h1>
-    <span class="meta-line">生效日期 2026年9月20日（v1.1）· 联系邮箱 <a href="mailto:myownroguelikerpg@gmail.com" style="color:var(--accent)">myownroguelikerpg@gmail.com</a></span>
+    <span class="meta-line">生效日期 2026年9月20日（v1.2）· 联系邮箱 <a href="mailto:myownroguelikerpg@gmail.com" style="color:var(--accent)">myownroguelikerpg@gmail.com</a></span>
     <nav class="langs" aria-label="语言">
       <a href="../ko/" hreflang="ko" lang="ko">한국어</a>
       <a href="../en/" hreflang="en" lang="en">English</a>
@@ -469,7 +469,7 @@
           <tr><td>聊天（发送消息需登录）</td><td>消息内容、发送者的公开名称及 UID、发送时间</td></tr>
           <tr><td>Discord 绑定（可选）</td><td>Discord 用户 ID 及用户名、绑定码、在已关联的 Discord 频道中发送的消息被转发至游戏聊天时的名称、用户 ID 及内容</td></tr>
           <tr><td>兑换码</td><td>已使用的兑换码（各账号的使用记录）</td></tr>
-          <tr><td>广告（Android）</td><td>Google AdMob SDK 自动收集的广告标识符、IP 地址（可能被用于推断大致位置）、设备及应用信息、广告浏览及点击等互动信息</td></tr>
+          <tr><td>广告（Android、iOS）</td><td>Google AdMob SDK 自动收集的广告标识符、IP 地址（可能被用于推断大致位置）、设备及应用信息、广告浏览及点击等互动信息（在 iOS 上，仅在用户允许跟踪时才收集广告标识符（IDFA））</td></tr>
           <tr><td>自动处理</td><td>通信过程中的 IP 地址（运营者服务器不另行记录）、强化、抽奖及超越结果的统计（登录时，以无法识别个人的方式汇总）</td></tr>
         </table>
       </div>
@@ -517,7 +517,7 @@
         <li><strong>排行榜</strong>：公开名称和记录将在游戏排行榜界面及运营者的 Discord 服务器上公开。VIP排行榜仅在用户于“设置”中开启参与时才会公开排名和名称，金额不予公开。</li>
         <li><strong>聊天</strong>：消息及发送者的公开名称将向游戏用户以及与游戏关联的 Discord 频道（Discord Inc. 的服务）公开。</li>
         <li><strong>Discord 绑定</strong>：绑定后，游戏公开名称将与 Discord 用户名一同显示在 Discord 频道中，并可能被授予排行榜第1名身份组。</li>
-        <li><strong>广告</strong>：Android 应用中的 Google AdMob 依据 Google LLC 的隐私政策，为提供、衡量及改进广告而处理广告 SDK 收集的信息。</li>
+        <li><strong>广告</strong>：Android、iOS 应用中的 Google AdMob 依据 Google LLC 的隐私政策，为提供、衡量及改进广告而处理广告 SDK 收集的信息。</li>
       </ul>
     </article>
 
@@ -551,11 +551,10 @@
 
     <article class="clause" id="p8">
       <h2><span class="num">8.</span>广告标识符与个性化广告</h2>
-      <p>本服务不使用 Cookie。Android 应用内置的 Google AdMob 可能会利用广告标识符以及应用内的广告浏览、点击信息展示个性化广告。在欧洲经济区、英国等需要征得同意的地区，首次运行时将通过 Google 的同意提示征求用户的选择。</p>
+      <p>本服务不使用 Cookie。Android、iOS 应用内置的 Google AdMob 可能会利用广告标识符以及应用内的广告浏览、点击信息展示个性化广告。在 iOS 上，首次运行时会通过 Apple 的应用跟踪透明度（ATT）提示询问是否允许跟踪，仅在允许时才使用广告标识符（IDFA）。在欧洲经济区、英国等需要征得同意的地区，首次运行时将通过 Google 的同意提示征求用户的选择。</p>
       <ul>
-        <li>可在设备设置中重置或删除广告 ID，或关闭个性化广告（Android：设置 > Google > 广告 等，可能因设备而异）。</li>
+        <li>可在设备设置中重置或删除广告 ID，或关闭个性化广告（Android：设置 > Google > 广告 等，可能因设备而异 · iOS：设置 > 隐私与安全性 > 跟踪）。</li>
         <li>在欧洲经济区、英国等需要征得同意的地区，可随时在 设置 > 广告同意 中更改同意选择。</li>
-        <li>购买“移除广告”商品后，将不再显示插页广告（由用户自行选择观看的激励广告仍会保留）。</li>
       </ul>
     </article>
 

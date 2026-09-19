@@ -313,7 +313,7 @@
   <header class="top">
     <span class="eyebrow">My Own Roguelike RPG</span>
     <h1 class="title">Termos de Serviço &amp; Política de Privacidade</h1>
-    <span class="meta-line">Em vigor a partir de 20 de setembro de 2026 (v1.1) · Contato <a href="mailto:myownroguelikerpg@gmail.com" style="color:var(--accent)">myownroguelikerpg@gmail.com</a></span>
+    <span class="meta-line">Em vigor a partir de 20 de setembro de 2026 (v1.2) · Contato <a href="mailto:myownroguelikerpg@gmail.com" style="color:var(--accent)">myownroguelikerpg@gmail.com</a></span>
     <nav class="langs" aria-label="Idioma">
       <a href="../ko/" hreflang="ko" lang="ko">한국어</a>
       <a href="../en/" hreflang="en" lang="en">English</a>
@@ -469,7 +469,7 @@
           <tr><td>Chat (envio somente com login)</td><td>Conteúdo das mensagens, nome público e UID do remetente, data e hora do envio</td></tr>
           <tr><td>Vinculação ao Discord (opcional)</td><td>ID e nome de usuário do Discord, código de vinculação e, quando mensagens enviadas no canal do Discord vinculado são retransmitidas ao chat do jogo, o nome, o ID de usuário e o conteúdo dessas mensagens</td></tr>
           <tr><td>Cupons</td><td>Códigos de cupom utilizados (registro de uso por conta)</td></tr>
-          <tr><td>Anúncios (Android)</td><td>Identificador de publicidade coletado automaticamente pelo SDK do Google AdMob, endereço IP (pode ser usado para estimar a localização aproximada), informações do dispositivo e do aplicativo, informações de interação, como visualizações e cliques em anúncios</td></tr>
+          <tr><td>Anúncios (Android, iOS)</td><td>Identificador de publicidade coletado automaticamente pelo SDK do Google AdMob, endereço IP (pode ser usado para estimar a localização aproximada), informações do dispositivo e do aplicativo, informações de interação, como visualizações e cliques em anúncios (no iOS, o identificador de publicidade (IDFA) só é coletado se você permitir o rastreamento)</td></tr>
           <tr><td>Tratamento automático</td><td>Endereço IP no processo de comunicação (o servidor do Operador não o registra separadamente), estatísticas dos resultados de aprimoramento, gacha e transcendência (com login, agregadas de forma que não seja possível identificar pessoas)</td></tr>
         </table>
       </div>
@@ -517,7 +517,7 @@
         <li><strong>Rankings</strong>: o nome público e os recordes são divulgados na tela de rankings do jogo e no servidor do Discord do Operador. No ranking VIP, a posição e o nome só são divulgados se a participação tiver sido ativada nas Configurações, e o valor não é divulgado.</li>
         <li><strong>Chat</strong>: as mensagens e o nome público do remetente são divulgados aos usuários do jogo e no canal do Discord vinculado ao jogo (serviço da Discord Inc.).</li>
         <li><strong>Vinculação ao Discord</strong>: com a vinculação, o nome público no jogo e o nome de usuário do Discord são exibidos juntos no canal do Discord, e pode ser atribuído o cargo de 1º lugar no ranking.</li>
-        <li><strong>Anúncios</strong>: o Google AdMob do aplicativo para Android trata as informações coletadas pelo SDK de anúncios para fins de exibição, medição e melhoria de anúncios, de acordo com a Política de Privacidade da Google LLC.</li>
+        <li><strong>Anúncios</strong>: o Google AdMob dos aplicativos para Android e iOS trata as informações coletadas pelo SDK de anúncios para fins de exibição, medição e melhoria de anúncios, de acordo com a Política de Privacidade da Google LLC.</li>
       </ul>
     </article>
 
@@ -551,11 +551,10 @@
 
     <article class="clause" id="p8">
       <h2><span class="num">8.</span>Identificadores de publicidade e anúncios personalizados</h2>
-      <p>O Serviço não usa cookies. O Google AdMob, incluído no aplicativo para Android, pode exibir anúncios personalizados com base no identificador de publicidade e nas informações de visualizações e cliques em anúncios dentro do aplicativo. Em regiões onde o consentimento é necessário, como o Espaço Econômico Europeu e o Reino Unido, a escolha do usuário é solicitada na primeira execução por meio da mensagem de consentimento do Google.</p>
+      <p>O Serviço não usa cookies. O Google AdMob, incluído nos aplicativos para Android e iOS, pode exibir anúncios personalizados com base no identificador de publicidade e nas informações de visualizações e cliques em anúncios dentro do aplicativo. No iOS, na primeira execução o aplicativo pergunta, pela janela de Transparência no Rastreamento de Apps (ATT) da Apple, se você permite o rastreamento, e só usa o identificador de publicidade (IDFA) se você permitir. Em regiões onde o consentimento é necessário, como o Espaço Econômico Europeu e o Reino Unido, a escolha do usuário é solicitada na primeira execução por meio da mensagem de consentimento do Google.</p>
       <ul>
-        <li>Você pode redefinir ou excluir o ID de publicidade, ou desativar a personalização de anúncios, nas configurações do dispositivo (Android: Configurações > Google > Anúncios etc.; o caminho pode variar conforme o dispositivo).</li>
+        <li>Você pode redefinir ou excluir o ID de publicidade, ou desativar a personalização de anúncios, nas configurações do dispositivo (Android: Configurações > Google > Anúncios etc.; o caminho pode variar conforme o dispositivo · iOS: Ajustes > Privacidade e Segurança > Rastreamento).</li>
         <li>Nas regiões em que o consentimento é exigido, como o Espaço Econômico Europeu e o Reino Unido, você pode alterar a qualquer momento sua escolha de consentimento em Configurações > Consentimento de anúncios.</li>
-        <li>Ao comprar o produto “Remover anúncios”, os anúncios intersticiais deixam de ser exibidos (os anúncios premiados, que o próprio usuário escolhe assistir, continuam disponíveis).</li>
       </ul>
     </article>
 

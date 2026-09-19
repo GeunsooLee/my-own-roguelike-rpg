@@ -313,7 +313,7 @@
   <header class="top">
     <span class="eyebrow">My Own Roguelike RPG</span>
     <h1 class="title">Nutzungsbedingungen &amp; Datenschutzerklärung</h1>
-    <span class="meta-line">Gültig ab 20. September 2026 (v1.1) · Kontakt <a href="mailto:myownroguelikerpg@gmail.com" style="color:var(--accent)">myownroguelikerpg@gmail.com</a></span>
+    <span class="meta-line">Gültig ab 20. September 2026 (v1.2) · Kontakt <a href="mailto:myownroguelikerpg@gmail.com" style="color:var(--accent)">myownroguelikerpg@gmail.com</a></span>
     <nav class="langs" aria-label="Sprache">
       <a href="../ko/" hreflang="ko" lang="ko">한국어</a>
       <a href="../en/" hreflang="en" lang="en">English</a>
@@ -469,7 +469,7 @@
           <tr><td>Chat (Senden mit Anmeldung)</td><td>Nachrichteninhalt, öffentlicher Name und UID des Absenders, Sendezeitpunkt</td></tr>
           <tr><td>Discord-Verknüpfung (optional)</td><td>Discord-Nutzer-ID und Discord-Nutzername, Verknüpfungscode sowie Name, Nutzer-ID und Inhalt von Nachrichten, die im verbundenen Discord-Kanal gesendet und in den Spielchat weitergeleitet werden</td></tr>
           <tr><td>Coupons</td><td>Eingelöste Coupon-Codes (Einlöseverlauf je Konto)</td></tr>
-          <tr><td>Werbung (Android)</td><td>Vom Google AdMob SDK automatisch erhobene Werbe-ID, IP-Adresse (kann zur Bestimmung des ungefähren Standorts verwendet werden), Geräte- und App-Informationen, Interaktionsdaten wie Anzeigenaufrufe und Klicks</td></tr>
+          <tr><td>Werbung (Android, iOS)</td><td>Vom Google AdMob SDK automatisch erhobene Werbe-ID, IP-Adresse (kann zur Bestimmung des ungefähren Standorts verwendet werden), Geräte- und App-Informationen, Interaktionsdaten wie Anzeigenaufrufe und Klicks (unter iOS wird die Werbe-ID (IDFA) nur erhoben, wenn Sie das Tracking erlauben)</td></tr>
           <tr><td>Automatische Verarbeitung</td><td>IP-Adresse im Rahmen der Kommunikation (wird von den Servern des Betreibers nicht gesondert gespeichert), Statistiken zu Ergebnissen von Verstärken, Gacha und Transzendenz (mit Anmeldung; so zusammengefasst, dass keine einzelnen Personen erkennbar sind)</td></tr>
         </table>
       </div>
@@ -517,7 +517,7 @@
         <li><strong>Ranglisten</strong>: Der öffentliche Name und die Rekorde werden auf dem Ranglistenbildschirm im Spiel und auf dem Discord-Server des Betreibers veröffentlicht. In der VIP-Rangliste werden Platzierung und Name nur veröffentlicht, wenn die Teilnahme in den Einstellungen aktiviert ist; Beträge werden nicht veröffentlicht.</li>
         <li><strong>Chat</strong>: Nachrichten und der öffentliche Name des Absenders sind für die Nutzer des Spiels sowie in dem mit dem Spiel verbundenen Discord-Kanal (einem Dienst der Discord Inc.) sichtbar.</li>
         <li><strong>Discord-Verknüpfung</strong>: Nach der Verknüpfung werden im Discord-Kanal der öffentliche Name im Spiel und der Discord-Nutzername gemeinsam angezeigt, und es kann eine Rolle für Platz 1 der Rangliste vergeben werden.</li>
-        <li><strong>Werbung</strong>: Google AdMob in der Android-App verarbeitet die vom Werbe-SDK erhobenen Daten gemäß der Datenschutzerklärung der Google LLC zur Bereitstellung, Messung und Verbesserung von Werbung.</li>
+        <li><strong>Werbung</strong>: Google AdMob in der Android- und iOS-App verarbeitet die vom Werbe-SDK erhobenen Daten gemäß der Datenschutzerklärung der Google LLC zur Bereitstellung, Messung und Verbesserung von Werbung.</li>
       </ul>
     </article>
 
@@ -551,11 +551,10 @@
 
     <article class="clause" id="p8">
       <h2><span class="num">8.</span>Werbe-IDs und personalisierte Werbung</h2>
-      <p>Der Dienst verwendet keine Cookies. Das in der Android-App enthaltene Google AdMob kann anhand der Werbe-ID sowie der Informationen über Anzeigenaufrufe und Klicks in der App personalisierte Werbung anzeigen. In Regionen, in denen eine Einwilligung erforderlich ist, etwa im Europäischen Wirtschaftsraum und im Vereinigten Königreich, wird beim ersten Start über die Einwilligungsmeldung von Google Ihre Auswahl eingeholt.</p>
+      <p>Der Dienst verwendet keine Cookies. Das in der Android- und iOS-App enthaltene Google AdMob kann anhand der Werbe-ID sowie der Informationen über Anzeigenaufrufe und Klicks in der App personalisierte Werbung anzeigen. Unter iOS fragt die App beim ersten Start über Apples App-Tracking-Transparenz (ATT), ob Sie das Tracking erlauben, und verwendet die Werbe-ID (IDFA) nur mit Ihrer Erlaubnis. In Regionen, in denen eine Einwilligung erforderlich ist, etwa im Europäischen Wirtschaftsraum und im Vereinigten Königreich, wird beim ersten Start über die Einwilligungsmeldung von Google Ihre Auswahl eingeholt.</p>
       <ul>
-        <li>Sie können die Werbe-ID in den Geräteeinstellungen zurücksetzen oder löschen oder personalisierte Werbung deaktivieren (Android: z. B. Einstellungen > Google > Anzeigen; kann je nach Gerät abweichen).</li>
+        <li>Sie können die Werbe-ID in den Geräteeinstellungen zurücksetzen oder löschen oder personalisierte Werbung deaktivieren (Android: z. B. Einstellungen > Google > Anzeigen; kann je nach Gerät abweichen · iOS: Einstellungen > Datenschutz &amp; Sicherheit > Tracking).</li>
         <li>In Regionen, in denen eine Einwilligung erforderlich ist, etwa im EWR und im Vereinigten Königreich, können Sie Ihre Einwilligungsentscheidung jederzeit unter Einstellungen > Werbe-Einwilligung ändern.</li>
-        <li>Nach dem Kauf des Produkts „Werbung entfernen“ wird keine Vollbildwerbung mehr angezeigt (Werbung mit Belohnung, die Nutzer selbst auswählen, bleibt bestehen).</li>
       </ul>
     </article>
 

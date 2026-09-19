@@ -313,7 +313,7 @@
   <header class="top">
     <span class="eyebrow">My Own Roguelike RPG</span>
     <h1 class="title">服務條款 &amp; 隱私權政策</h1>
-    <span class="meta-line">施行日期 2026年9月20日（v1.1）· 聯絡信箱 <a href="mailto:myownroguelikerpg@gmail.com" style="color:var(--accent)">myownroguelikerpg@gmail.com</a></span>
+    <span class="meta-line">施行日期 2026年9月20日（v1.2）· 聯絡信箱 <a href="mailto:myownroguelikerpg@gmail.com" style="color:var(--accent)">myownroguelikerpg@gmail.com</a></span>
     <nav class="langs" aria-label="語言">
       <a href="../ko/" hreflang="ko" lang="ko">한국어</a>
       <a href="../en/" hreflang="en" lang="en">English</a>
@@ -469,7 +469,7 @@
           <tr><td>聊天（傳送訊息時須登入）</td><td>訊息內容、傳送者之公開名稱及 UID、傳送時間</td></tr>
           <tr><td>Discord 連動（選擇性）</td><td>Discord 使用者 ID 及使用者名稱、連動代碼，以及於已連結之 Discord 頻道中傳送之訊息轉發至遊戲聊天時之名稱、使用者 ID 及內容</td></tr>
           <tr><td>優惠券</td><td>已使用之優惠券代碼（各帳號之使用紀錄）</td></tr>
-          <tr><td>廣告（Android）</td><td>Google AdMob SDK 自動蒐集之廣告識別碼、IP 位址（可能用於推估大略位置）、裝置及應用程式資訊、廣告瀏覽及點擊等互動資訊</td></tr>
+          <tr><td>廣告（Android、iOS）</td><td>Google AdMob SDK 自動蒐集之廣告識別碼、IP 位址（可能用於推估大略位置）、裝置及應用程式資訊、廣告瀏覽及點擊等互動資訊（於 iOS 上，僅於使用者允許追蹤時才蒐集廣告識別碼（IDFA））</td></tr>
           <tr><td>自動處理</td><td>通訊過程中之 IP 位址（營運者伺服器不另行記錄）、強化、抽獎及超越結果之統計（登入時；以無法識別個人之方式彙總）</td></tr>
         </table>
       </div>
@@ -517,7 +517,7 @@
         <li><strong>排行榜</strong>：公開名稱及紀錄將公開於遊戲排行榜畫面及營運者之 Discord 伺服器。VIP排行榜僅於使用者在設定中開啟「參與VIP排行榜」時，始公開其排名及名稱，且不公開金額。</li>
         <li><strong>聊天</strong>：訊息及傳送者之公開名稱將公開予遊戲使用者，並公開於與遊戲連結之 Discord 頻道（Discord Inc. 之服務）。</li>
         <li><strong>Discord 連動</strong>：完成連動後，Discord 頻道中將同時顯示遊戲公開名稱及 Discord 使用者名稱，並可能獲授予排行榜第1名之身分組。</li>
-        <li><strong>廣告</strong>：Android 應用程式中之 Google AdMob，依 Google LLC 之隱私權政策，為提供、衡量及改善廣告之目的，處理廣告 SDK 所蒐集之資訊。</li>
+        <li><strong>廣告</strong>：Android、iOS 應用程式中之 Google AdMob，依 Google LLC 之隱私權政策，為提供、衡量及改善廣告之目的，處理廣告 SDK 所蒐集之資訊。</li>
       </ul>
     </article>
 
@@ -551,11 +551,10 @@
 
     <article class="clause" id="p8">
       <h2><span class="num">8.</span>廣告識別碼與個人化廣告</h2>
-      <p>本服務不使用 Cookie。Android 應用程式所內含之 Google AdMob，可能依據廣告識別碼及應用程式內之廣告瀏覽、點擊資訊顯示個人化廣告。於歐洲經濟區、英國等須取得同意之地區，將於首次執行時透過 Google 之同意訊息，由使用者進行選擇。</p>
+      <p>本服務不使用 Cookie。Android、iOS 應用程式所內含之 Google AdMob，可能依據廣告識別碼及應用程式內之廣告瀏覽、點擊資訊顯示個人化廣告。於 iOS 上，將於首次執行時透過 Apple 之 App 追蹤透明度（ATT）視窗詢問是否允許追蹤，僅於允許時使用廣告識別碼（IDFA）。於歐洲經濟區、英國等須取得同意之地區，將於首次執行時透過 Google 之同意訊息，由使用者進行選擇。</p>
       <ul>
-        <li>使用者得於裝置設定中重設或刪除廣告 ID，或關閉個人化廣告（Android：設定 > Google > 廣告等，可能因裝置而異）。</li>
+        <li>使用者得於裝置設定中重設或刪除廣告 ID，或關閉個人化廣告（Android：設定 > Google > 廣告等，可能因裝置而異 · iOS：設定 > 隱私權與安全性 > 追蹤）。</li>
         <li>於歐洲經濟區、英國等需取得同意之地區，得隨時於 設定 > 廣告同意 變更同意選擇。</li>
-        <li>購買「移除廣告」商品後，將不再顯示插頁式廣告（使用者自行選擇觀看之獎勵廣告仍會保留）。</li>
       </ul>
     </article>
 

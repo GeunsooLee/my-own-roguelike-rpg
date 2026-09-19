@@ -313,7 +313,7 @@
   <header class="top">
     <span class="eyebrow">My Own Roguelike RPG</span>
     <h1 class="title">利用規約 &amp; プライバシーポリシー</h1>
-    <span class="meta-line">施行日 2026年9月20日（v1.1）· お問い合わせ <a href="mailto:myownroguelikerpg@gmail.com" style="color:var(--accent)">myownroguelikerpg@gmail.com</a></span>
+    <span class="meta-line">施行日 2026年9月20日（v1.2）· お問い合わせ <a href="mailto:myownroguelikerpg@gmail.com" style="color:var(--accent)">myownroguelikerpg@gmail.com</a></span>
     <nav class="langs" aria-label="言語">
       <a href="../ko/" hreflang="ko" lang="ko">한국어</a>
       <a href="../en/" hreflang="en" lang="en">English</a>
@@ -469,7 +469,7 @@
           <tr><td>チャット（送信はログイン時）</td><td>メッセージの内容、送信者の公開名・UID、送信日時</td></tr>
           <tr><td>Discord 連携（任意）</td><td>Discord のユーザー ID・ユーザー名、連携コード、ゲームと接続された Discord チャンネルで送信されたメッセージがゲームのチャットに中継される際の名前・ユーザー ID・内容</td></tr>
           <tr><td>クーポン</td><td>使用したクーポンコード（アカウントごとの使用記録）</td></tr>
-          <tr><td>広告（Android）</td><td>Google AdMob SDK が自動的に収集する広告識別子、IP アドレス（おおよその位置の推定に使われることがあります）、端末・アプリの情報、広告の表示・クリックなどのインタラクション情報</td></tr>
+          <tr><td>広告（Android・iOS）</td><td>Google AdMob SDK が自動的に収集する広告識別子、IP アドレス（おおよその位置の推定に使われることがあります）、端末・アプリの情報、広告の表示・クリックなどのインタラクション情報（iOS では、トラッキングを許可した場合のみ広告識別子（IDFA）を収集）</td></tr>
           <tr><td>自動処理</td><td>通信の過程における IP アドレス（運営者のサーバーでは別途記録しません）、強化・ガチャ・超越の結果の統計（ログイン時。個人を識別できない形で集計）</td></tr>
         </table>
       </div>
@@ -517,7 +517,7 @@
         <li><strong>ランキング</strong>：公開名と記録が、ゲームのランキング画面および運営者の Discord サーバーに公開されます。VIPランキングでは、設定で参加をオンにした場合にのみ順位と名前が公開され、金額は公開しません。</li>
         <li><strong>チャット</strong>：メッセージと送信者の公開名が、ゲームの利用者、およびゲームと接続された Discord チャンネル（Discord Inc. のサービス）に公開されます。</li>
         <li><strong>Discord 連携</strong>：連携すると、Discord チャンネルにゲームの公開名と Discord のユーザー名が併せて表示され、ランキング1位のロールが付与されることがあります。</li>
-        <li><strong>広告</strong>：Android アプリの Google AdMob は、広告 SDK が収集した情報を、Google LLC のプライバシーポリシーに従い、広告の配信・測定・改善の目的で処理します。</li>
+        <li><strong>広告</strong>：Android・iOS アプリの Google AdMob は、広告 SDK が収集した情報を、Google LLC のプライバシーポリシーに従い、広告の配信・測定・改善の目的で処理します。</li>
       </ul>
     </article>
 
@@ -551,11 +551,10 @@
 
     <article class="clause" id="p8">
       <h2><span class="num">8.</span>広告識別子とパーソナライズド広告</h2>
-      <p>本サービスは Cookie を使用しません。Android アプリに組み込まれた Google AdMob は、広告識別子とアプリ内での広告の表示・クリック情報を用いて、パーソナライズド広告を表示することがあります。欧州経済領域・英国など同意が必要な地域では、初回起動時に Google の同意メッセージを通じて利用者の選択を受け付けます。</p>
+      <p>本サービスは Cookie を使用しません。Android・iOS アプリに組み込まれた Google AdMob は、広告識別子とアプリ内での広告の表示・クリック情報を用いて、パーソナライズド広告を表示することがあります。iOS では、初回起動時に Apple の App Tracking Transparency（ATT）の画面でトラッキングを許可するかを確認し、許可した場合のみ広告識別子（IDFA）を使用します。欧州経済領域・英国など同意が必要な地域では、初回起動時に Google の同意メッセージを通じて利用者の選択を受け付けます。</p>
       <ul>
-        <li>端末の設定で、広告 ID をリセット・削除したり、パーソナライズド広告をオフにしたりすることができます（Android：設定 > Google > 広告 など。端末によって異なる場合があります）。</li>
+        <li>端末の設定で、広告 ID をリセット・削除したり、パーソナライズド広告をオフにしたりすることができます（Android：設定 > Google > 広告 など。端末によって異なる場合があります · iOS：設定 > プライバシーとセキュリティ > トラッキング）。</li>
         <li>欧州経済領域・英国など同意が必要な地域では、設定 > 広告の同意 からいつでも同意の選択を変更できます。</li>
-        <li>「広告削除」商品を購入すると、全画面広告は表示されません（利用者が自ら選択するリワード広告は引き続き利用できます）。</li>
       </ul>
     </article>
 
