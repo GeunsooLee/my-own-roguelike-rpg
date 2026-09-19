@@ -313,7 +313,7 @@
   <header class="top">
     <span class="eyebrow">My Own Roguelike RPG</span>
     <h1 class="title">Terms of Service &amp; Privacy Policy</h1>
-    <span class="meta-line">Effective September 15, 2026 (v1.0) · Contact <a href="mailto:myownroguelikerpg@gmail.com" style="color:var(--accent)">myownroguelikerpg@gmail.com</a></span>
+    <span class="meta-line">Effective September 20, 2026 (v1.1) · Contact <a href="mailto:myownroguelikerpg@gmail.com" style="color:var(--accent)">myownroguelikerpg@gmail.com</a></span>
     <nav class="langs" aria-label="Language">
       <a href="../ko/" hreflang="ko" lang="ko">한국어</a>
       <a href="../en/" hreflang="en" lang="en" aria-current="page">English</a>
@@ -380,7 +380,7 @@
 
     <article class="clause" id="t5">
       <h2><span class="num">Art. 5</span>Formation of the User Agreement</h2>
-      <p>The user agreement is formed when a user installs and runs the Service and agrees to these Terms and the Privacy Policy. Users may install and use the Service through platforms such as Google Play, the App Store, and Steam, in which case the terms of the respective platform operator also apply. Some features, such as cloud save, rankings, and sending chat messages, require Google Sign-In.</p>
+      <p>The user agreement is formed when a user installs and runs the Service and agrees to these Terms and the Privacy Policy. Users may install and use the Service through platforms such as Google Play, the App Store, and Steam, in which case the terms of the respective platform operator also apply. Some features, such as cloud save, rankings, and sending chat messages, require Google or Apple sign-in.</p>
     </article>
 
     <article class="clause" id="t6">
@@ -463,7 +463,7 @@
       <div class="table-wrap">
         <table class="data">
           <tr><th>Category</th><th>Items</th></tr>
-          <tr><td>Google Sign-In (optional)</td><td>Firebase user identifier (UID); email address and display name of the Google account (stored in Firebase Authentication during Google authentication); sign-in token; session information used to check for simultaneous connections; installation identifier (a random value generated in this installation — used to prevent the same progress from being registered to multiple accounts)</td></tr>
+          <tr><td>Google / Apple Sign-In (optional)</td><td>Firebase user identifier (UID); email address of the account used to sign in (if you chose Hide My Email with Apple, the relay address created by Apple), display name (Google accounts only), and user identifier from the sign-in provider (Google or Apple), all stored in Firebase Authentication during authentication; sign-in token; session information used to check for simultaneous connections; installation identifier (a random value generated in this installation — used to prevent the same progress from being registered to multiple accounts)</td></tr>
           <tr><td>Cloud save (when signed in)</td><td>Game progress data (equipment, currencies, skills, achievements, number of ads watched, whether purchased products are owned, and cumulative payment amount based on product prices), time of saving, device operating system type</td></tr>
           <tr><td>Rankings (when signed in)</td><td>Public name (nickname; if none, the Google display name or an automatically generated name that includes part of the identifier); records of highest tower floor, survival time, transcendence level, and damage; equipped weapon information; cumulative payment amount (used to determine rank only if Join VIP Ranking is turned on; the amount is not made public)</td></tr>
           <tr><td>Chat (sending requires sign-in)</td><td>Message content, the sender’s public name and UID, time sent</td></tr>
@@ -478,7 +478,7 @@
 
     <article class="clause" id="p2">
       <h2><span class="num">2.</span>How We Collect Information</h2>
-      <p>Direct input by users (nickname, chat, coupon codes, Discord linking commands); receipt from Google and Firebase during Google Sign-In; automatic generation while the game is used (progress data, installation identifier); automatic collection by the advertising SDK; and receipt of messages from the connected Discord channel by the Discord bot.</p>
+      <p>Direct input by users (nickname, chat, coupon codes, Discord linking commands); receipt from Google, Apple, and Firebase during Google or Apple sign-in; automatic generation while the game is used (progress data, installation identifier); automatic collection by the advertising SDK; and receipt of messages from the connected Discord channel by the Discord bot.</p>
     </article>
 
     <article class="clause" id="p3">
@@ -545,7 +545,7 @@
           <tr><td>Valve Corporation (https://help.steampowered.com)</td><td>United States</td><td>Achievement unlock information (Steam version)</td><td>Recording and displaying achievements / Subject to Steam’s policies</td></tr>
         </table>
       </div>
-      <p>Timing and method of transfer: the information is transmitted over the network whenever the relevant feature is used. How to refuse: if you do not sign in with Google, the information needed for sign-in, cloud save, rankings, and sending chat messages is not transferred, but these features will be unavailable. If you do not send chat messages or link Discord, the relevant information is not transferred to Discord Inc., and achievement information is transferred only when you use the Steam version. The processing of advertising information can be limited using the methods described in Section 8.</p>
+      <p>Timing and method of transfer: the information is transmitted over the network whenever the relevant feature is used. How to refuse: if you do not sign in with Google or Apple, the information needed for sign-in, cloud save, rankings, and sending chat messages is not transferred, but these features will be unavailable. If you do not send chat messages or link Discord, the relevant information is not transferred to Discord Inc., and achievement information is transferred only when you use the Steam version. The processing of advertising information can be limited using the methods described in Section 8.</p>
       <p>Personal information of users in the European Economic Area (EEA) and the United Kingdom is transferred on the basis of the adequacy decisions for the Republic of Korea and safeguards recognized under applicable law, such as the Standard Contractual Clauses (SCCs) adopted by processors and recipients.</p>
     </article>
 
@@ -573,8 +573,8 @@
     <article class="clause" id="p10">
       <h2><span class="num">10.</span>Deletion of Account and Data</h2>
       <ol>
-        <li><strong>In the game</strong>: if you select Settings > Delete Account while signed in with Google, your data on the server is deleted immediately and your progress on this device is also erased.</li>
-        <li><strong>Without the game</strong>: if you have uninstalled the game or cannot run it, please email <a href="mailto:myownroguelikerpg@gmail.com" style="color:var(--accent)">myownroguelikerpg@gmail.com</a> with the subject “Account Deletion Request” and include the Google account email address you used to sign in or your in-game nickname. After verifying your identity, we will delete your account within 7 days and notify you.</li>
+        <li><strong>In the game</strong>: if you select Settings > Delete Account while signed in, your data on the server is deleted immediately and your progress on this device is also erased.</li>
+        <li><strong>Without the game</strong>: if you have uninstalled the game or cannot run it, please email <a href="mailto:myownroguelikerpg@gmail.com" style="color:var(--accent)">myownroguelikerpg@gmail.com</a> with the subject “Account Deletion Request” and include the email address of the Google or Apple account you used to sign in or your in-game nickname. After verifying your identity, we will delete your account within 7 days and notify you.</li>
       </ol>
       <div class="table-wrap">
         <table class="data">
@@ -594,7 +594,7 @@
       <h2><span class="num">12.</span>Measures to Keep Personal Information Secure</h2>
       <ul>
         <li>Administrative measures: access to personal information is limited to the Operator, and administrative tools can be accessed only after authentication.</li>
-        <li>Technical measures: sign-in token verification, server-side validation of saved values, restriction of write permissions through database security rules, and encryption in transit (HTTPS/WSS) for all communications, including those with Google authentication, the cloud database, the Operator’s servers, and chat.</li>
+        <li>Technical measures: sign-in token verification, server-side validation of saved values, restriction of write permissions through database security rules, and encryption in transit (HTTPS/WSS) for all communications, including those with Google and Apple authentication, the cloud database, the Operator’s servers, and chat.</li>
         <li>Physical measures: data is stored in Google’s cloud data centers.</li>
       </ul>
     </article>
@@ -661,7 +661,7 @@
   </div>
 
   <footer class="page-foot">
-    <div>Announced September 15, 2026 · Effective September 15, 2026</div>
+    <div>Announced September 19, 2026 · Effective September 20, 2026</div>
     <div style="margin-top:4px;">This document may be amended with prior notice in accordance with changes in the Service’s operating policies and applicable laws.</div>
   </footer>
 </div>

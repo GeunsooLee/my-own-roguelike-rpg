@@ -313,7 +313,7 @@
   <header class="top">
     <span class="eyebrow">My Own Roguelike RPG</span>
     <h1 class="title">Términos de servicio &amp; Política de privacidad</h1>
-    <span class="meta-line">En vigor desde el 15 de septiembre de 2026 (v1.0) · Contacto <a href="mailto:myownroguelikerpg@gmail.com" style="color:var(--accent)">myownroguelikerpg@gmail.com</a></span>
+    <span class="meta-line">En vigor desde el 20 de septiembre de 2026 (v1.1) · Contacto <a href="mailto:myownroguelikerpg@gmail.com" style="color:var(--accent)">myownroguelikerpg@gmail.com</a></span>
     <nav class="langs" aria-label="Idioma">
       <a href="../ko/" hreflang="ko" lang="ko">한국어</a>
       <a href="../en/" hreflang="en" lang="en">English</a>
@@ -380,7 +380,7 @@
 
     <article class="clause" id="t5">
       <h2><span class="num">Art. 5</span>Formalización del contrato de uso</h2>
-      <p>El contrato de uso se formaliza cuando el usuario instala y ejecuta el Servicio y acepta los presentes Términos y la Política de privacidad. El usuario puede instalar y utilizar el Servicio a través de plataformas como Google Play, App Store o Steam; en ese caso, también se aplicarán las condiciones del operador de la plataforma correspondiente. Algunas funciones, como el guardado en la nube, las clasificaciones o el envío de mensajes de chat, requieren iniciar sesión con Google.</p>
+      <p>El contrato de uso se formaliza cuando el usuario instala y ejecuta el Servicio y acepta los presentes Términos y la Política de privacidad. El usuario puede instalar y utilizar el Servicio a través de plataformas como Google Play, App Store o Steam; en ese caso, también se aplicarán las condiciones del operador de la plataforma correspondiente. Algunas funciones, como el guardado en la nube, las clasificaciones o el envío de mensajes de chat, requieren iniciar sesión con Google o Apple.</p>
     </article>
 
     <article class="clause" id="t6">
@@ -463,7 +463,7 @@
       <div class="table-wrap">
         <table class="data">
           <tr><th>Categoría</th><th>Datos</th></tr>
-          <tr><td>Inicio de sesión con Google (opcional)</td><td>Identificador de usuario de Firebase (UID), dirección de correo electrónico y nombre visible de la cuenta de Google (almacenados en Firebase Authentication durante la autenticación con Google), token de inicio de sesión, información de sesión para comprobar accesos simultáneos e identificador de instalación (valor aleatorio generado en esta instalación — sirve para impedir que un mismo progreso de juego se registre en varias cuentas)</td></tr>
+          <tr><td>Inicio de sesión con Google o Apple (opcional)</td><td>Identificador de usuario de Firebase (UID), dirección de correo electrónico de la cuenta utilizada para iniciar sesión (si eligió «Ocultar mi correo electrónico» en Apple, la dirección de reenvío creada por Apple), nombre visible (solo cuentas de Google) y el identificador de usuario asignado por Google o Apple (almacenados en Firebase Authentication durante la autenticación), token de inicio de sesión, información de sesión para comprobar accesos simultáneos e identificador de instalación (valor aleatorio generado en esta instalación — sirve para impedir que un mismo progreso de juego se registre en varias cuentas)</td></tr>
           <tr><td>Guardado en la nube (con sesión iniciada)</td><td>Datos de progreso del juego (equipo, moneda del juego, habilidades, logros, número de anuncios vistos, posesión de productos comprados e importe acumulado de los pagos [según el precio de los productos]), fecha y hora del guardado y tipo de sistema operativo del dispositivo</td></tr>
           <tr><td>Clasificaciones (con sesión iniciada)</td><td>Nombre público (el apodo o, si no lo hay, el nombre visible de Google o un nombre generado automáticamente con parte del identificador), registros del piso más alto de la torre, del tiempo de supervivencia, del nivel de trascendencia y del daño, información del arma equipada e importe acumulado de los pagos (solo se utiliza para calcular la posición si se ha activado «Participar en la clasificación VIP», y el importe no se hace público)</td></tr>
           <tr><td>Chat (envío con sesión iniciada)</td><td>Contenido de los mensajes, nombre público y UID del remitente, y fecha y hora de envío</td></tr>
@@ -478,7 +478,7 @@
 
     <article class="clause" id="p2">
       <h2><span class="num">2.</span>Métodos de recopilación</h2>
-      <p>Introducción directa por parte del usuario (apodo, chat, códigos de cupón, comandos de vinculación con Discord); recepción desde Google y Firebase durante el inicio de sesión con Google; generación automática durante el uso del juego (datos de progreso, identificador de instalación); recopilación automática por el SDK publicitario; y recepción, por parte del bot de Discord, de los mensajes del canal de Discord conectado.</p>
+      <p>Introducción directa por parte del usuario (apodo, chat, códigos de cupón, comandos de vinculación con Discord); recepción desde Google, Apple y Firebase durante el inicio de sesión con Google o Apple; generación automática durante el uso del juego (datos de progreso, identificador de instalación); recopilación automática por el SDK publicitario; y recepción, por parte del bot de Discord, de los mensajes del canal de Discord conectado.</p>
     </article>
 
     <article class="clause" id="p3">
@@ -545,7 +545,7 @@
           <tr><td>Valve Corporation (https://help.steampowered.com)</td><td>Estados Unidos</td><td>Información sobre logros obtenidos (versión de Steam)</td><td>Registro y visualización de logros / según las políticas de Steam</td></tr>
         </table>
       </div>
-      <p>Momento y método de la transferencia: los datos se transmiten a través de la red cada vez que se utiliza la función correspondiente. Cómo negarse: si no inicia sesión con Google, no se transfiere la información necesaria para el inicio de sesión, el guardado en la nube, las clasificaciones y el envío de mensajes de chat, pero no podrá utilizar estas funciones. Si no envía mensajes de chat ni vincula Discord, la información correspondiente no se transfiere a Discord Inc., y la información sobre los logros obtenidos solo se transfiere si utiliza la versión de Steam. El tratamiento de la información publicitaria puede limitarse mediante los métodos indicados en el apartado 8.</p>
+      <p>Momento y método de la transferencia: los datos se transmiten a través de la red cada vez que se utiliza la función correspondiente. Cómo negarse: si no inicia sesión con Google o Apple, no se transfiere la información necesaria para el inicio de sesión, el guardado en la nube, las clasificaciones y el envío de mensajes de chat, pero no podrá utilizar estas funciones. Si no envía mensajes de chat ni vincula Discord, la información correspondiente no se transfiere a Discord Inc., y la información sobre los logros obtenidos solo se transfiere si utiliza la versión de Steam. El tratamiento de la información publicitaria puede limitarse mediante los métodos indicados en el apartado 8.</p>
       <p>La información personal de los usuarios del Espacio Económico Europeo (EEE) y del Reino Unido se transfiere con arreglo a la decisión de adecuación relativa a la República de Corea y a las garantías reconocidas por la legislación aplicable, como las cláusulas contractuales tipo (SCC) adoptadas por los encargados del tratamiento y los destinatarios.</p>
     </article>
 
@@ -573,8 +573,8 @@
     <article class="clause" id="p10">
       <h2><span class="num">10.</span>Eliminación de la cuenta y de los datos</h2>
       <ol>
-        <li><strong>Desde el juego</strong>: si pulsa Ajustes > Eliminar cuenta con la sesión de Google iniciada, los datos del servidor se eliminan de inmediato y también se borra el progreso de este dispositivo.</li>
-        <li><strong>Sin el juego</strong>: si ha desinstalado el juego o no puede ejecutarlo, envíe un mensaje a <a href="mailto:myownroguelikerpg@gmail.com" style="color:var(--accent)">myownroguelikerpg@gmail.com</a> con el asunto «Solicitud de eliminación de cuenta» e indique la dirección de correo electrónico de la cuenta de Google con la que inició sesión o su apodo en el juego. Tras verificar su identidad, eliminaremos la cuenta en un plazo de 7 días y se lo notificaremos.</li>
+        <li><strong>Desde el juego</strong>: si pulsa Ajustes > Eliminar cuenta con la sesión iniciada, los datos del servidor se eliminan de inmediato y también se borra el progreso de este dispositivo.</li>
+        <li><strong>Sin el juego</strong>: si ha desinstalado el juego o no puede ejecutarlo, envíe un mensaje a <a href="mailto:myownroguelikerpg@gmail.com" style="color:var(--accent)">myownroguelikerpg@gmail.com</a> con el asunto «Solicitud de eliminación de cuenta» e indique la dirección de correo electrónico de la cuenta (de Google o Apple) con la que inició sesión o su apodo en el juego. Tras verificar su identidad, eliminaremos la cuenta en un plazo de 7 días y se lo notificaremos.</li>
       </ol>
       <div class="table-wrap">
         <table class="data">
@@ -594,7 +594,7 @@
       <h2><span class="num">12.</span>Medidas para garantizar la seguridad de la información personal</h2>
       <ul>
         <li>Medidas administrativas: el acceso a la información personal se limita al Operador, y solo se puede acceder a las herramientas de administración previa autenticación.</li>
-        <li>Medidas técnicas: se aplican la verificación de los tokens de inicio de sesión, la verificación en el servidor de los datos guardados, la restricción de los permisos de escritura mediante reglas de seguridad de la base de datos y el cifrado en tránsito (HTTPS/WSS) de todas las comunicaciones, incluidas las realizadas con la autenticación de Google, la base de datos en la nube, los servidores del Operador y el chat.</li>
+        <li>Medidas técnicas: se aplican la verificación de los tokens de inicio de sesión, la verificación en el servidor de los datos guardados, la restricción de los permisos de escritura mediante reglas de seguridad de la base de datos y el cifrado en tránsito (HTTPS/WSS) de todas las comunicaciones, incluidas las realizadas con la autenticación de Google y de Apple, la base de datos en la nube, los servidores del Operador y el chat.</li>
         <li>Medidas físicas: los datos se almacenan en los centros de datos en la nube de Google.</li>
       </ul>
     </article>
@@ -661,7 +661,7 @@
   </div>
 
   <footer class="page-foot">
-    <div>Publicado el 15 de septiembre de 2026 · En vigor desde el 15 de septiembre de 2026</div>
+    <div>Publicado el 19 de septiembre de 2026 · En vigor desde el 20 de septiembre de 2026</div>
     <div style="margin-top:4px;">Este documento puede modificarse, previo aviso, de acuerdo con los cambios en las políticas de operación del Servicio y en la legislación aplicable.</div>
   </footer>
 </div>

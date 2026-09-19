@@ -313,7 +313,7 @@
   <header class="top">
     <span class="eyebrow">My Own Roguelike RPG</span>
     <h1 class="title">利用規約 &amp; プライバシーポリシー</h1>
-    <span class="meta-line">施行日 2026年9月15日（v1.0）· お問い合わせ <a href="mailto:myownroguelikerpg@gmail.com" style="color:var(--accent)">myownroguelikerpg@gmail.com</a></span>
+    <span class="meta-line">施行日 2026年9月20日（v1.1）· お問い合わせ <a href="mailto:myownroguelikerpg@gmail.com" style="color:var(--accent)">myownroguelikerpg@gmail.com</a></span>
     <nav class="langs" aria-label="言語">
       <a href="../ko/" hreflang="ko" lang="ko">한국어</a>
       <a href="../en/" hreflang="en" lang="en">English</a>
@@ -380,7 +380,7 @@
 
     <article class="clause" id="t5">
       <h2><span class="num">第5条</span>利用契約の成立</h2>
-      <p>利用契約は、利用者が本サービスをインストール・起動し、本規約およびプライバシーポリシーに同意することによって成立します。利用者は、Google Play、App Store、Steam などのプラットフォームを通じて本サービスをインストール・利用することができ、この場合は各プラットフォーム事業者の規約もあわせて適用されます。クラウド保存、ランキング、チャットの送信など一部の機能には、Google ログインが必要です。</p>
+      <p>利用契約は、利用者が本サービスをインストール・起動し、本規約およびプライバシーポリシーに同意することによって成立します。利用者は、Google Play、App Store、Steam などのプラットフォームを通じて本サービスをインストール・利用することができ、この場合は各プラットフォーム事業者の規約もあわせて適用されます。クラウド保存、ランキング、チャットの送信など一部の機能には、Google または Apple でのログインが必要です。</p>
     </article>
 
     <article class="clause" id="t6">
@@ -463,7 +463,7 @@
       <div class="table-wrap">
         <table class="data">
           <tr><th>区分</th><th>項目</th></tr>
-          <tr><td>Google ログイン（任意）</td><td>Firebase のユーザー識別子（UID）、Google アカウントのメールアドレス・表示名（Google 認証の過程で Firebase Authentication に保存）、ログイントークン、同時接続の確認用のセッション情報、インストール識別子（このインストールで無作為に生成した値 — 同一の進行状況を複数のアカウントに重複登録することを防ぐためのもの）</td></tr>
+          <tr><td>Google・Apple ログイン（任意）</td><td>Firebase のユーザー識別子（UID）、ログインしたアカウントのメールアドレス（Apple で「メールを非公開」を選んだ場合は Apple が作成した転送用アドレス）・表示名（Google アカウントのみ）およびログインサービス（Google・Apple）のユーザー識別子（認証の過程で Firebase Authentication に保存）、ログイントークン、同時接続の確認用のセッション情報、インストール識別子（このインストールで無作為に生成した値 — 同一の進行状況を複数のアカウントに重複登録することを防ぐためのもの）</td></tr>
           <tr><td>クラウド保存（ログイン時）</td><td>ゲームの進行データ（装備・通貨・スキル・実績・広告視聴回数・購入商品の保有の有無・累計課金額（商品価格基準））、保存日時、端末の OS の種類</td></tr>
           <tr><td>ランキング（ログイン時）</td><td>公開名（ニックネーム。未設定の場合は Google の表示名、または識別子の一部から自動生成した名前）、塔の最高到達階・生存時間・超越レベル・ダメージの記録、装備中の武器の情報、累計課金額（「VIPランキングに参加」をオンにした場合にのみ順位の算出に使用し、金額は公開しません）</td></tr>
           <tr><td>チャット（送信はログイン時）</td><td>メッセージの内容、送信者の公開名・UID、送信日時</td></tr>
@@ -478,7 +478,7 @@
 
     <article class="clause" id="p2">
       <h2><span class="num">2.</span>収集方法</h2>
-      <p>利用者による直接入力（ニックネーム、チャット、クーポンコード、Discord 連携コマンド）、Google ログインの過程における Google・Firebase からの受信、ゲーム利用中の自動生成（進行データ、インストール識別子）、広告 SDK による自動収集、Discord ボットによる、ゲームと接続された Discord チャンネルのメッセージの受信。</p>
+      <p>利用者による直接入力（ニックネーム、チャット、クーポンコード、Discord 連携コマンド）、Google・Apple ログインの過程における Google・Apple・Firebase からの受信、ゲーム利用中の自動生成（進行データ、インストール識別子）、広告 SDK による自動収集、Discord ボットによる、ゲームと接続された Discord チャンネルのメッセージの受信。</p>
     </article>
 
     <article class="clause" id="p3">
@@ -545,7 +545,7 @@
           <tr><td>Valve Corporation (https://help.steampowered.com)</td><td>米国</td><td>実績の達成情報（Steam 版）</td><td>実績の記録・表示 / Steam のポリシーに従います</td></tr>
         </table>
       </div>
-      <p>移転の時期・方法：該当する機能を利用する際に、ネットワークを通じて随時送信します。拒否の方法：Google ログインをしなければ、ログイン・クラウド保存・ランキング・チャットの送信に必要な情報は移転されませんが、これらの機能は利用できません。チャットを送信しない、または Discord 連携をしない場合、当該情報は Discord Inc. に移転されず、実績の情報は Steam 版を利用する場合にのみ移転されます。広告の情報の処理は、第8項の方法で制限することができます。</p>
+      <p>移転の時期・方法：該当する機能を利用する際に、ネットワークを通じて随時送信します。拒否の方法：Google・Apple ログインをしなければ、ログイン・クラウド保存・ランキング・チャットの送信に必要な情報は移転されませんが、これらの機能は利用できません。チャットを送信しない、または Discord 連携をしない場合、当該情報は Discord Inc. に移転されず、実績の情報は Steam 版を利用する場合にのみ移転されます。広告の情報の処理は、第8項の方法で制限することができます。</p>
       <p>欧州経済領域（EEA）・英国の利用者の個人情報は、大韓民国に対する十分性認定、および受託事業者・受領者が採用している標準契約条項（SCC）など、関連法令が認める保護措置に基づいて移転されます。</p>
     </article>
 
@@ -573,8 +573,8 @@
     <article class="clause" id="p10">
       <h2><span class="num">10.</span>アカウントおよびデータの削除</h2>
       <ol>
-        <li><strong>ゲーム内で</strong>：Google にログインしている状態で「設定 > アカウント削除」を押すと、サーバーのデータが直ちに削除され、この端末の進行状況も消去されます。</li>
-        <li><strong>ゲーム外で</strong>：ゲームを削除した場合や起動できない場合は、件名を「アカウント削除依頼」とし、ログインに使用した Google アカウントのメールアドレスまたはゲームのニックネームを記載して、<a href="mailto:myownroguelikerpg@gmail.com" style="color:var(--accent)">myownroguelikerpg@gmail.com</a> までお送りください。ご本人確認のうえ、7日以内に削除し、その旨をお知らせします。</li>
+        <li><strong>ゲーム内で</strong>：ログインしている状態で「設定 > アカウント削除」を押すと、サーバーのデータが直ちに削除され、この端末の進行状況も消去されます。</li>
+        <li><strong>ゲーム外で</strong>：ゲームを削除した場合や起動できない場合は、件名を「アカウント削除依頼」とし、ログインに使用したアカウント（Google・Apple）のメールアドレスまたはゲームのニックネームを記載して、<a href="mailto:myownroguelikerpg@gmail.com" style="color:var(--accent)">myownroguelikerpg@gmail.com</a> までお送りください。ご本人確認のうえ、7日以内に削除し、その旨をお知らせします。</li>
       </ol>
       <div class="table-wrap">
         <table class="data">
@@ -594,7 +594,7 @@
       <h2><span class="num">12.</span>個人情報の安全性確保措置</h2>
       <ul>
         <li>管理的措置：個人情報へのアクセス権限を運営者に限定し、管理ツールには認証を経なければアクセスできないようにしています。</li>
-        <li>技術的措置：ログイントークンの検証、サーバーでの保存データの検証、データベースのセキュリティルールによる書き込み権限の制限、Google 認証・クラウドデータベース・運営者のサーバー・チャットを含むすべての通信における通信経路の暗号化（HTTPS・WSS）を適用しています。</li>
+        <li>技術的措置：ログイントークンの検証、サーバーでの保存データの検証、データベースのセキュリティルールによる書き込み権限の制限、Google・Apple 認証・クラウドデータベース・運営者のサーバー・チャットを含むすべての通信における通信経路の暗号化（HTTPS・WSS）を適用しています。</li>
         <li>物理的措置：データは Google のクラウドデータセンターに保管しています。</li>
       </ul>
     </article>
@@ -661,7 +661,7 @@
   </div>
 
   <footer class="page-foot">
-    <div>公告日 2026年9月15日 · 施行日 2026年9月15日</div>
+    <div>公告日 2026年9月19日 · 施行日 2026年9月20日</div>
     <div style="margin-top:4px;">本文書は、本サービスの運営方針および関連法令の改正に応じて、事前告知のうえ変更されることがあります。</div>
   </footer>
 </div>

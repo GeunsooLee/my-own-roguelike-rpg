@@ -313,7 +313,7 @@
   <header class="top">
     <span class="eyebrow">My Own Roguelike RPG</span>
     <h1 class="title">Nutzungsbedingungen &amp; Datenschutzerklärung</h1>
-    <span class="meta-line">Gültig ab 15. September 2026 (v1.0) · Kontakt <a href="mailto:myownroguelikerpg@gmail.com" style="color:var(--accent)">myownroguelikerpg@gmail.com</a></span>
+    <span class="meta-line">Gültig ab 20. September 2026 (v1.1) · Kontakt <a href="mailto:myownroguelikerpg@gmail.com" style="color:var(--accent)">myownroguelikerpg@gmail.com</a></span>
     <nav class="langs" aria-label="Sprache">
       <a href="../ko/" hreflang="ko" lang="ko">한국어</a>
       <a href="../en/" hreflang="en" lang="en">English</a>
@@ -380,7 +380,7 @@
 
     <article class="clause" id="t5">
       <h2><span class="num">§ 5</span>Zustandekommen des Nutzungsvertrags</h2>
-      <p>Der Nutzungsvertrag kommt zustande, wenn der Nutzer den Dienst installiert und startet und diesen Nutzungsbedingungen sowie der Datenschutzerklärung zustimmt. Nutzer können den Dienst über Plattformen wie Google Play, App Store oder Steam installieren und nutzen; in diesem Fall gelten zusätzlich die Bedingungen des jeweiligen Plattformbetreibers. Einige Funktionen wie Cloud-Speicherung, Ranglisten und das Senden von Chatnachrichten erfordern eine Google-Anmeldung.</p>
+      <p>Der Nutzungsvertrag kommt zustande, wenn der Nutzer den Dienst installiert und startet und diesen Nutzungsbedingungen sowie der Datenschutzerklärung zustimmt. Nutzer können den Dienst über Plattformen wie Google Play, App Store oder Steam installieren und nutzen; in diesem Fall gelten zusätzlich die Bedingungen des jeweiligen Plattformbetreibers. Einige Funktionen wie Cloud-Speicherung, Ranglisten und das Senden von Chatnachrichten erfordern eine Anmeldung mit Google oder Apple.</p>
     </article>
 
     <article class="clause" id="t6">
@@ -463,7 +463,7 @@
       <div class="table-wrap">
         <table class="data">
           <tr><th>Kategorie</th><th>Daten</th></tr>
-          <tr><td>Google-Anmeldung (optional)</td><td>Firebase-Nutzerkennung (UID), E-Mail-Adresse und Anzeigename des Google-Kontos (werden bei der Google-Authentifizierung in Firebase Authentication gespeichert), Anmeldetoken, Sitzungsinformationen zur Erkennung gleichzeitiger Anmeldungen, Installationskennung (ein für diese Installation zufällig erzeugter Wert – dient dazu, zu verhindern, dass derselbe Spielfortschritt bei mehreren Konten registriert wird)</td></tr>
+          <tr><td>Google-/Apple-Anmeldung (optional)</td><td>Firebase-Nutzerkennung (UID), E-Mail-Adresse des für die Anmeldung verwendeten Kontos (bei Apple eine von Apple erzeugte Weiterleitungsadresse, falls Sie „E-Mail-Adresse verbergen“ gewählt haben), Anzeigename (nur bei Google-Konten) und Nutzerkennung beim jeweiligen Anmeldeanbieter Google oder Apple (werden bei der Authentifizierung in Firebase Authentication gespeichert), Anmeldetoken, Sitzungsinformationen zur Erkennung gleichzeitiger Anmeldungen, Installationskennung (ein für diese Installation zufällig erzeugter Wert – dient dazu, zu verhindern, dass derselbe Spielfortschritt bei mehreren Konten registriert wird)</td></tr>
           <tr><td>Cloud-Speicherung (mit Anmeldung)</td><td>Spielfortschrittsdaten (Ausrüstung, Währungen, Skills, Erfolge, Anzahl angesehener Werbeanzeigen, Besitz gekaufter Produkte, kumulierter Zahlungsbetrag (auf Basis der Produktpreise)), Speicherzeitpunkt, Art des Betriebssystems des Geräts</td></tr>
           <tr><td>Ranglisten (mit Anmeldung)</td><td>Öffentlicher Name (Nickname; falls keiner vorhanden ist, der Google-Anzeigename oder ein automatisch erzeugter Name, der einen Teil der Kennung enthält), Rekorde für höchste Turmetage, Überlebenszeit, Transzendenz-Stufe und Schaden, Angaben zu ausgerüsteten Waffen, kumulierter Zahlungsbetrag (wird nur bei aktivierter Option „An VIP-Rangliste teilnehmen“ zur Ermittlung der Platzierung verwendet; der Betrag wird nicht veröffentlicht)</td></tr>
           <tr><td>Chat (Senden mit Anmeldung)</td><td>Nachrichteninhalt, öffentlicher Name und UID des Absenders, Sendezeitpunkt</td></tr>
@@ -478,7 +478,7 @@
 
     <article class="clause" id="p2">
       <h2><span class="num">2.</span>Art der Erhebung</h2>
-      <p>Direkte Eingabe durch den Nutzer (Nickname, Chat, Coupon-Codes, Befehle zur Discord-Verknüpfung); Empfang von Google und Firebase im Rahmen der Google-Anmeldung; automatische Erzeugung während der Nutzung des Spiels (Fortschrittsdaten, Installationskennung); automatische Erhebung durch das Werbe-SDK; Empfang von Nachrichten aus dem verbundenen Discord-Kanal durch den Discord-Bot.</p>
+      <p>Direkte Eingabe durch den Nutzer (Nickname, Chat, Coupon-Codes, Befehle zur Discord-Verknüpfung); Empfang von Google, Apple und Firebase im Rahmen der Anmeldung mit Google oder Apple; automatische Erzeugung während der Nutzung des Spiels (Fortschrittsdaten, Installationskennung); automatische Erhebung durch das Werbe-SDK; Empfang von Nachrichten aus dem verbundenen Discord-Kanal durch den Discord-Bot.</p>
     </article>
 
     <article class="clause" id="p3">
@@ -545,7 +545,7 @@
           <tr><td>Valve Corporation (https://help.steampowered.com)</td><td>USA</td><td>Informationen über erreichte Erfolge (Steam-Version)</td><td>Speicherung und Anzeige von Erfolgen / gemäß den Richtlinien von Steam</td></tr>
         </table>
       </div>
-      <p>Zeitpunkt und Art der Übermittlung: Die Daten werden jeweils bei Nutzung der betreffenden Funktion über das Netzwerk übertragen. Möglichkeit der Ablehnung: Wenn Sie sich nicht mit Google anmelden, werden die für Anmeldung, Cloud-Speicherung, Ranglisten und das Senden von Chatnachrichten erforderlichen Daten nicht übermittelt; diese Funktionen können dann jedoch nicht genutzt werden. Wenn Sie keine Chatnachrichten senden und Discord nicht verknüpfen, werden die betreffenden Daten nicht an Discord Inc. übermittelt; Informationen über erreichte Erfolge werden nur bei Nutzung der Steam-Version übermittelt. Die Verarbeitung von Werbedaten können Sie auf die in Abschnitt 8 beschriebene Weise einschränken.</p>
+      <p>Zeitpunkt und Art der Übermittlung: Die Daten werden jeweils bei Nutzung der betreffenden Funktion über das Netzwerk übertragen. Möglichkeit der Ablehnung: Wenn Sie sich nicht mit Google oder Apple anmelden, werden die für Anmeldung, Cloud-Speicherung, Ranglisten und das Senden von Chatnachrichten erforderlichen Daten nicht übermittelt; diese Funktionen können dann jedoch nicht genutzt werden. Wenn Sie keine Chatnachrichten senden und Discord nicht verknüpfen, werden die betreffenden Daten nicht an Discord Inc. übermittelt; Informationen über erreichte Erfolge werden nur bei Nutzung der Steam-Version übermittelt. Die Verarbeitung von Werbedaten können Sie auf die in Abschnitt 8 beschriebene Weise einschränken.</p>
       <p>Personenbezogene Daten von Nutzern im Europäischen Wirtschaftsraum (EWR) und im Vereinigten Königreich werden auf Grundlage des Angemessenheitsbeschlusses für die Republik Korea sowie nach dem anwendbaren Recht anerkannter Schutzmaßnahmen übermittelt, etwa der von Auftragsverarbeitern und Empfängern vereinbarten Standardvertragsklauseln (SCC).</p>
     </article>
 
@@ -573,8 +573,8 @@
     <article class="clause" id="p10">
       <h2><span class="num">10.</span>Löschung von Konto und Daten</h2>
       <ol>
-        <li><strong>Im Spiel</strong>: Wenn Sie bei bestehender Google-Anmeldung Einstellungen > Konto löschen wählen, werden die Daten auf dem Server sofort gelöscht, und auch der Spielfortschritt auf diesem Gerät wird entfernt.</li>
-        <li><strong>Ohne das Spiel</strong>: Wenn Sie das Spiel deinstalliert haben oder es nicht starten können, senden Sie bitte eine E-Mail mit dem Betreff „Antrag auf Kontolöschung“ an <a href="mailto:myownroguelikerpg@gmail.com" style="color:var(--accent)">myownroguelikerpg@gmail.com</a> und geben Sie darin die für die Anmeldung verwendete E-Mail-Adresse Ihres Google-Kontos oder Ihren Nickname im Spiel an. Nach Überprüfung Ihrer Identität löschen wir das Konto innerhalb von 7 Tagen und benachrichtigen Sie.</li>
+        <li><strong>Im Spiel</strong>: Wenn Sie bei bestehender Anmeldung Einstellungen > Konto löschen wählen, werden die Daten auf dem Server sofort gelöscht, und auch der Spielfortschritt auf diesem Gerät wird entfernt.</li>
+        <li><strong>Ohne das Spiel</strong>: Wenn Sie das Spiel deinstalliert haben oder es nicht starten können, senden Sie bitte eine E-Mail mit dem Betreff „Antrag auf Kontolöschung“ an <a href="mailto:myownroguelikerpg@gmail.com" style="color:var(--accent)">myownroguelikerpg@gmail.com</a> und geben Sie darin die E-Mail-Adresse des für die Anmeldung verwendeten Kontos (Google oder Apple) oder Ihren Nickname im Spiel an. Nach Überprüfung Ihrer Identität löschen wir das Konto innerhalb von 7 Tagen und benachrichtigen Sie.</li>
       </ol>
       <div class="table-wrap">
         <table class="data">
@@ -594,7 +594,7 @@
       <h2><span class="num">12.</span>Maßnahmen zur Sicherheit personenbezogener Daten</h2>
       <ul>
         <li>Organisatorische Maßnahmen: Der Zugriff auf personenbezogene Daten ist auf den Betreiber beschränkt, und Verwaltungswerkzeuge sind nur nach Authentifizierung zugänglich.</li>
-        <li>Technische Maßnahmen: Prüfung von Anmeldetokens, serverseitige Prüfung gespeicherter Werte, Beschränkung von Schreibrechten durch Sicherheitsregeln der Datenbank sowie Transportverschlüsselung (HTTPS/WSS) der gesamten Kommunikation, einschließlich der Kommunikation mit der Google-Authentifizierung, der Cloud-Datenbank, den Servern des Betreibers und dem Chat.</li>
+        <li>Technische Maßnahmen: Prüfung von Anmeldetokens, serverseitige Prüfung gespeicherter Werte, Beschränkung von Schreibrechten durch Sicherheitsregeln der Datenbank sowie Transportverschlüsselung (HTTPS/WSS) der gesamten Kommunikation, einschließlich der Kommunikation mit der Google- und Apple-Authentifizierung, der Cloud-Datenbank, den Servern des Betreibers und dem Chat.</li>
         <li>Physische Maßnahmen: Die Daten werden in Cloud-Rechenzentren von Google gespeichert.</li>
       </ul>
     </article>
@@ -661,7 +661,7 @@
   </div>
 
   <footer class="page-foot">
-    <div>Veröffentlicht am 15. September 2026 · Gültig ab 15. September 2026</div>
+    <div>Veröffentlicht am 19. September 2026 · Gültig ab 20. September 2026</div>
     <div style="margin-top:4px;">Dieses Dokument kann bei Änderungen der Betriebsrichtlinien des Dienstes oder der geltenden Gesetze nach vorheriger Ankündigung geändert werden.</div>
   </footer>
 </div>
