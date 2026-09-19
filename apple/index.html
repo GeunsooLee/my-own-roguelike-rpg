@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<meta name="referrer" content="no-referrer">
+<title>My Own Roguelike RPG — Sign in with Apple</title>
+<!--
+  애플 웹 로그인 중계 페이지 (2026-09-19). 게임 저장소 autoload/FirebaseProvider.gd의 애플 웹 로그인이 이 주소를
+  redirect_uri로 쓴다(애플은 결과를 등록된 https 주소로만 돌려주므로 게임이 직접 받을 수 없다). 애플은
+  response_mode=fragment로 #id_token=…&code=…&state=… 를 붙여 여기로 보낸다 — fragment는 서버(GitHub)로 전송되지 않고,
+  이 페이지는 외부 리소스를 하나도 부르지 않으며, 받은 값을 곧바로 주소창·기록에서 지운 뒤 같은 기기 안으로만 넘긴다:
+    state "p<포트>.<난수>" → PC 게임이 연 http://127.0.0.1:<포트>/apple (로컬 서버)
+    state "a.<난수>"       → 안드로이드 앱 링크 myownroguelikerpg://auth/apple (패키지를 지정한 intent:// 로 다른 앱이 못 가로채게)
+  토큰만으로는 로그인할 수 없다 — Firebase가 게임만 아는 원문 nonce를 함께 요구한다.
+-->
+<style>
+  :root { color-scheme: light dark; --bg:#0f1117; --fg:#e8e8f0; --sub:#a0a4b8; --btn:#ffffff; --btnfg:#000000; }
+  @media (prefers-color-scheme: light) { :root { --bg:#f5f5f7; --fg:#1d1d1f; --sub:#6e6e73; --btn:#000000; --btnfg:#ffffff; } }
+  html, body { margin:0; background:var(--bg); color:var(--fg);
+    font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", "Noto Sans KR", sans-serif; }
+  main { max-width:520px; margin:0 auto; padding:88px 24px; text-align:center; }
+  h1 { font-size:22px; margin:0 0 12px; }
+  p { color:var(--sub); line-height:1.6; margin:0 0 28px; }
+  a.btn { display:inline-block; min-width:220px; padding:14px 22px; border-radius:10px; background:var(--btn);
+    color:var(--btnfg); text-decoration:none; font-weight:600; font-size:17px; }
+  [hidden] { display:none !important; }
+</style>
+</head>
+<body>
+<main>
+  <h1 id="title"></h1>
+  <p id="msg"></p>
+  <a id="go" class="btn" hidden></a>
+</main>
+<script>
+(function () {
+  "use strict";
+  var TEXT = {
+    ko: ["게임으로 돌아가는 중…", "잠시 후 게임이 로그인을 마칩니다. 게임으로 돌아가지 않으면 아래 버튼을 눌러 주세요.", "게임으로 돌아가기", "로그인이 취소되었습니다", "잘못된 로그인 요청입니다", "게임에서 다시 로그인해 주세요."],
+    en: ["Returning to the game…", "The game will finish signing in. If it doesn't open, tap the button below.", "Return to the game", "Sign-in was canceled", "Invalid sign-in request", "Please sign in again from the game."],
+    ja: ["ゲームに戻っています…", "まもなくゲームがログインを完了します。ゲームに戻らない場合は下のボタンを押してください。", "ゲームに戻る", "ログインがキャンセルされました", "無効なログイン要求です", "ゲームからもう一度ログインしてください。"],
+    zh_cn: ["正在返回游戏…", "游戏将完成登录。如果没有自动返回，请点击下方按钮。", "返回游戏", "已取消登录", "无效的登录请求", "请在游戏中重新登录。"],
+    zh_tw: ["正在返回遊戲…", "遊戲將完成登入。若沒有自動返回，請點選下方按鈕。", "返回遊戲", "已取消登入", "無效的登入要求", "請在遊戲中重新登入。"],
+    ru: ["Возвращаемся в игру…", "Игра завершит вход. Если она не откроется, нажмите кнопку ниже.", "Вернуться в игру", "Вход отменён", "Неверный запрос на вход", "Войдите снова из игры."],
+    de: ["Zurück zum Spiel …", "Das Spiel schließt die Anmeldung ab. Falls es sich nicht öffnet, tippe unten auf die Schaltfläche.", "Zurück zum Spiel", "Anmeldung abgebrochen", "Ungültige Anmeldeanfrage", "Bitte melde dich im Spiel erneut an."],
+    fr: ["Retour au jeu…", "Le jeu va terminer la connexion. S'il ne s'ouvre pas, appuyez sur le bouton ci-dessous.", "Revenir au jeu", "Connexion annulée", "Demande de connexion non valide", "Veuillez vous reconnecter depuis le jeu."],
+    es: ["Volviendo al juego…", "El juego terminará de iniciar sesión. Si no se abre, pulsa el botón de abajo.", "Volver al juego", "Inicio de sesión cancelado", "Solicitud de inicio de sesión no válida", "Vuelve a iniciar sesión desde el juego."],
+    pt_br: ["Voltando ao jogo…", "O jogo vai concluir o login. Se ele não abrir, toque no botão abaixo.", "Voltar ao jogo", "Login cancelado", "Solicitação de login inválida", "Faça login novamente pelo jogo."]
+  };
+  function pickLang() {
+    var l = (navigator.language || "en").toLowerCase();
+    if (l.indexOf("zh") === 0) { return (l.indexOf("tw") > 0 || l.indexOf("hk") > 0 || l.indexOf("hant") > 0) ? "zh_tw" : "zh_cn"; }
+    if (l.indexOf("pt") === 0) { return "pt_br"; }
+    var two = l.slice(0, 2);
+    return TEXT[two] ? two : "en";
+  }
+  var lang = pickLang();
+  var t = TEXT[lang];
+  document.documentElement.lang = lang.replace("_", "-");
+  var $ = function (id) { return document.getElementById(id); };
+
+  // 애플은 fragment(#…)로 보낸다. 혹시 query(?…)로 오더라도 받는다
+  var raw = location.hash.length > 1 ? location.hash.slice(1) : location.search.slice(1);
+  var p = new URLSearchParams(raw);
+  var state = p.get("state") || "";
+  var fwd = new URLSearchParams();
+  ["id_token", "code", "state", "error"].forEach(function (k) { var v = p.get(k); if (v) { fwd.set(k, v); } });
+  // 주소창·방문 기록에 토큰이 남지 않게 먼저 지운다
+  try { history.replaceState(null, "", location.pathname); } catch (e) {}
+
+  var pc = /^p(\d{4,5})\.[A-Za-z0-9_-]{8,}$/.exec(state);
+  var android = /^a\.[A-Za-z0-9_-]{8,}$/.test(state);
+  var canceled = p.get("error") === "user_cancelled_authorize";
+  var target = "";
+  if (pc && +pc[1] >= 1024 && +pc[1] <= 65535) {
+    target = "http://127.0.0.1:" + pc[1] + "/apple?" + fwd.toString();
+  } else if (android) {
+    var q = fwd.toString();
+    target = /Android/i.test(navigator.userAgent)
+      ? "intent://auth/apple?" + q + "#Intent;scheme=myownroguelikerpg;package=com.geunsoo.gsdhstudio.myownroguelikerpg;end"
+      : "myownroguelikerpg://auth/apple?" + q;
+  }
+  if (!target) {
+    $("title").textContent = t[4];
+    $("msg").textContent = t[5];
+    return;
+  }
+  $("title").textContent = canceled ? t[3] : t[0];
+  $("msg").textContent = canceled ? t[5] : t[1];
+  var go = $("go");
+  go.textContent = t[2];
+  go.href = target;
+  go.hidden = false;
+  // 취소도 게임에 알린다 — 그래야 게임이 5분 동안 "로그인 중"으로 기다리지 않는다
+  if (pc) { location.replace(target); } else { try { location.href = target; } catch (e) {} }
+})();
+</script>
+</body>
+</html>
