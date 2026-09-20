@@ -40,13 +40,14 @@ a { color:var(--accent); }
 .ico-line { display:flex; align-items:center; gap:8px; margin:14px 0 4px; }
 .ico-line.grade { font-size:15px; margin-top:22px; }
 .ico-line span { min-width:0; }
+.g { font-weight:600; }
 @media (max-width:600px) { th, td { padding:5px 7px; font-size:13px; } }
 </style>
 </head>
 <body>
 <main>
 <h1>확률 정보 · 랭킹</h1>
-<p class="meta">나의 로그라이크 (My Own Roguelike: Card RPG) · 갱신 2026. 9. 21. 오전 12:14:21 (KST) · 12시간마다 자동 갱신</p>
+<p class="meta">나의 로그라이크 (My Own Roguelike: Card RPG) · 갱신 2026. 9. 21. 오전 12:21:32 (KST) · 12시간마다 자동 갱신</p>
 <div class="note">
 <strong>고지 확률</strong>은 게임에 설정된 값이고, <strong>실제 확률</strong>은 전체 이용자의 실제 시도를
 집계한 결과입니다. 표본이 적은 항목은 두 값이 차이 날 수 있으며, 시도가 쌓일수록 고지 확률에 수렴합니다.
@@ -130,532 +131,13 @@ a { color:var(--accent); }
 <tr><td class="num">7%</td><td class="num">0.00%</td><td class="num">7회</td></tr>
 </tbody></table>
 <h3><strong>뽑기 등급 확률</strong> (코인 종류별, 고지 기준)</h3>
-<p class="ico-line"><svg class="ico coin" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="#c27a38" stroke="#804d1f" stroke-width="2"/><circle cx="12" cy="12" r="6" fill="none" stroke="#804d1f" stroke-width="1" opacity=".55"/></svg><span><strong>동코인</strong> 노말 70% / 매직 25% / 유일 5%</span></p>
-<p class="ico-line"><svg class="ico coin" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="#949cad" stroke="#575c6b" stroke-width="2"/><circle cx="12" cy="12" r="6" fill="none" stroke="#575c6b" stroke-width="1" opacity=".55"/></svg><span><strong>은코인</strong> 노말 50% / 매직 36% / 유일 10% / 영웅 4%</span></p>
-<p class="ico-line"><svg class="ico coin" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="#ffd640" stroke="#b88514" stroke-width="2"/><circle cx="12" cy="12" r="6" fill="none" stroke="#b88514" stroke-width="1" opacity=".55"/></svg><span><strong>금코인</strong> 노말 30% / 매직 33% / 유일 25% / 영웅 8% / 전설 4%</span></p>
-<p class="ico-line"><svg class="ico coin" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="#edf7ff" stroke="#8ca6c7" stroke-width="2"/><circle cx="12" cy="12" r="6" fill="none" stroke="#8ca6c7" stroke-width="1" opacity=".55"/></svg><span><strong>다이아코인</strong> 유일 45% / 영웅 35% / 전설 15% / 신화 5%</span></p>
+<p class="ico-line"><svg class="ico coin" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="#edf7ff" stroke="#8ca6c7" stroke-width="2"/><circle cx="12" cy="12" r="6" fill="none" stroke="#8ca6c7" stroke-width="1" opacity=".55"/></svg><span><strong>다이아코인</strong> <span class="g" style="color:#e8d44a">유일</span> 45% / <span class="g" style="color:#f08a2e">영웅</span> 35% / <span class="g" style="color:#ff5a4a">전설</span> 15% / <span class="g" style="color:#b45ae0">신화</span> 5%</span></p>
+<p class="ico-line"><svg class="ico coin" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="#ffd640" stroke="#b88514" stroke-width="2"/><circle cx="12" cy="12" r="6" fill="none" stroke="#b88514" stroke-width="1" opacity=".55"/></svg><span><strong>금코인</strong> <span class="g" style="color:#e8e8e8">노말</span> 30% / <span class="g" style="color:#4a9de0">매직</span> 33% / <span class="g" style="color:#e8d44a">유일</span> 25% / <span class="g" style="color:#f08a2e">영웅</span> 8% / <span class="g" style="color:#ff5a4a">전설</span> 4%</span></p>
+<p class="ico-line"><svg class="ico coin" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="#949cad" stroke="#575c6b" stroke-width="2"/><circle cx="12" cy="12" r="6" fill="none" stroke="#575c6b" stroke-width="1" opacity=".55"/></svg><span><strong>은코인</strong> <span class="g" style="color:#e8e8e8">노말</span> 50% / <span class="g" style="color:#4a9de0">매직</span> 36% / <span class="g" style="color:#e8d44a">유일</span> 10% / <span class="g" style="color:#f08a2e">영웅</span> 4%</span></p>
+<p class="ico-line"><svg class="ico coin" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="#c27a38" stroke="#804d1f" stroke-width="2"/><circle cx="12" cy="12" r="6" fill="none" stroke="#804d1f" stroke-width="1" opacity=".55"/></svg><span><strong>동코인</strong> <span class="g" style="color:#e8e8e8">노말</span> 70% / <span class="g" style="color:#4a9de0">매직</span> 25% / <span class="g" style="color:#e8d44a">유일</span> 5%</span></p>
 <h3><strong>뽑기 등급별 아이템 상세 확률</strong> (등급 확률 × 펫/세트/일반장비 조건부 확률, 기대값/실제값/관측횟수)</h3>
-<h4 class="ico-line"><svg class="ico coin" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="#c27a38" stroke="#804d1f" stroke-width="2"/><circle cx="12" cy="12" r="6" fill="none" stroke="#804d1f" stroke-width="1" opacity=".55"/></svg><span>동코인</span></h4>
-<h4 class="ico-line grade"><img class="ico" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAA3CAYAAAASeFomAAACb0lEQVR4nL2YsVLCQBCGLwzY4lDhjI9AZ6EzvAEPYIGF1hRJQ0MeIFjQYEGthRY+AG/AjBZ2lJbOaJXRVos4G7K4rHeXu8uFnckkJCFf/v/2spsIUUQ4bGewiDojHLazLHvNl9pgIYHUCWuIfUbIrPtYD+obq7BIBoDA4tu+Bm7cPHwF9EAc93O47GZcQDsXh+C2dXvL7Tnfn7dPsB6PolPZzVkFtU81VgCEpbK9eAGfsEB1QAagNmIADKwss7EpDKJzfJ6vP9Yi48CDw6uzzdhFmQ5mNGHTt0cGHOyoBdhsMX/W2Si9A/oHSHOuDOHcSp2NpSAdMGUwmv4cJrUOTuInJslqRw0CqY1goVCE0YTjClEdgBDKlXFVRsmgy6YOGTcvZYLC0EadhTwLreqRDua98Kls7DBVEFRVpQqbMFXwG0sJz0AnkEzVeBRpM9XoWWeiKo77E36sUJrXLufCFe4+pnJIkqym9Bzc3+0tr90rpNjAKGS2mP+zE497abcSBmm1L99hDftQpfe+rlVAcF17A/nzdXfkNevKAF4VxXF/wucRT4a9pXdT+ImpEGIim7QFvDoo/iuCU2ofPKY2pX3z5HACqbodgMp6v8rJEJOSzgMbFWeQSk0qab9o32AFkvV7Hd89gw6SSvo7py5I1+qmhj1D06Wfg6CWlalRgqq2xLIonUc2TT6EVZMPwVsnqgLC5k3COBmqQozHSAWwebWUHtR9AjB5FzKyjquh70WukNJvDBxKX/lDy28MgY1leHEXFYHqCQCWVfoEwyJAyPz+Jd8RXZzka5+QbTIghG97B0WFCr7tM6Rj5Ns2uOgvvw4AlVeYLKYAAAAASUVORK5CYII=" alt="유일"><span><strong>유일</strong> (고지 기댓값 5.0% / 실제 확률 5.4%(+0.4% 차이 , 3,256회 시도 / 175회 관측)</span></h4>
-<table><thead><tr><th>항목</th><th>기대값</th><th>실제값</th><th>횟수</th></tr></thead><tbody>
-<tr><td>🐾 펫</td><td class="num">0.500%</td><td class="num">0.676%</td><td class="num">22회</td></tr>
-<tr><td>⚔️ 무기</td><td class="num">0.250%</td><td class="num">0.307%</td><td class="num">10회</td></tr>
-<tr><td>⚔️ 투구</td><td class="num">0.250%</td><td class="num">0.276%</td><td class="num">9회</td></tr>
-<tr><td>⚔️ 갑옷</td><td class="num">0.250%</td><td class="num">0.338%</td><td class="num">11회</td></tr>
-<tr><td>⚔️ 바지</td><td class="num">0.250%</td><td class="num">0.461%</td><td class="num">15회</td></tr>
-<tr><td>⚔️ 신발</td><td class="num">0.250%</td><td class="num">0.491%</td><td class="num">16회</td></tr>
-<tr><td>⚔️ 장갑</td><td class="num">0.250%</td><td class="num">0.246%</td><td class="num">8회</td></tr>
-<tr><td>⚔️ 목걸이</td><td class="num">0.250%</td><td class="num">0.215%</td><td class="num">7회</td></tr>
-<tr><td>⚔️ 반지</td><td class="num">0.250%</td><td class="num">0.276%</td><td class="num">9회</td></tr>
-<tr><td>⚔️ 귀걸이</td><td class="num">0.250%</td><td class="num">0.154%</td><td class="num">5회</td></tr>
-<tr><td>❄️ 첫서리 사냥꾼 세트 - 무기</td><td class="num">0.075%</td><td class="num">0.123%</td><td class="num">4회</td></tr>
-<tr><td>❄️ 첫서리 사냥꾼 세트 - 투구</td><td class="num">0.075%</td><td class="num">0.092%</td><td class="num">3회</td></tr>
-<tr><td>❄️ 첫서리 사냥꾼 세트 - 갑옷</td><td class="num">0.075%</td><td class="num">0.092%</td><td class="num">3회</td></tr>
-<tr><td>❄️ 첫서리 사냥꾼 세트 - 장갑</td><td class="num">0.075%</td><td class="num">0.061%</td><td class="num">2회</td></tr>
-<tr><td>❄️ 첫서리 사냥꾼 세트 - 신발</td><td class="num">0.075%</td><td class="num">0.154%</td><td class="num">5회</td></tr>
-<tr><td>❄️ 첫서리 사냥꾼 세트 - 바지</td><td class="num">0.075%</td><td class="num">0.092%</td><td class="num">3회</td></tr>
-<tr><td>⚡ 폭풍추적자 세트 - 무기</td><td class="num">0.075%</td><td class="num">0.092%</td><td class="num">3회</td></tr>
-<tr><td>⚡ 폭풍추적자 세트 - 투구</td><td class="num">0.075%</td><td class="num">0.092%</td><td class="num">3회</td></tr>
-<tr><td>⚡ 폭풍추적자 세트 - 갑옷</td><td class="num">0.075%</td><td class="num">0.061%</td><td class="num">2회</td></tr>
-<tr><td>⚡ 폭풍추적자 세트 - 장갑</td><td class="num">0.075%</td><td class="num">0.031%</td><td class="num">1회</td></tr>
-<tr><td>⚡ 폭풍추적자 세트 - 신발</td><td class="num">0.075%</td><td class="num">0.061%</td><td class="num">2회</td></tr>
-<tr><td>⚡ 폭풍추적자 세트 - 바지</td><td class="num">0.075%</td><td class="num">0.031%</td><td class="num">1회</td></tr>
-<tr><td>👻 유령사수 세트 - 무기</td><td class="num">0.075%</td><td class="num">0.092%</td><td class="num">3회</td></tr>
-<tr><td>👻 유령사수 세트 - 투구</td><td class="num">0.075%</td><td class="num">0.031%</td><td class="num">1회</td></tr>
-<tr><td>👻 유령사수 세트 - 갑옷</td><td class="num">0.075%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
-<tr><td>👻 유령사수 세트 - 장갑</td><td class="num">0.075%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
-<tr><td>👻 유령사수 세트 - 신발</td><td class="num">0.075%</td><td class="num">0.061%</td><td class="num">2회</td></tr>
-<tr><td>👻 유령사수 세트 - 바지</td><td class="num">0.075%</td><td class="num">0.061%</td><td class="num">2회</td></tr>
-<tr><td>🔥 화염 궁수 세트 - 무기</td><td class="num">0.075%</td><td class="num">0.061%</td><td class="num">2회</td></tr>
-<tr><td>🔥 화염 궁수 세트 - 투구</td><td class="num">0.075%</td><td class="num">0.061%</td><td class="num">2회</td></tr>
-<tr><td>🔥 화염 궁수 세트 - 갑옷</td><td class="num">0.075%</td><td class="num">0.092%</td><td class="num">3회</td></tr>
-<tr><td>🔥 화염 궁수 세트 - 장갑</td><td class="num">0.075%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
-<tr><td>🔥 화염 궁수 세트 - 신발</td><td class="num">0.075%</td><td class="num">0.123%</td><td class="num">4회</td></tr>
-<tr><td>🔥 화염 궁수 세트 - 바지</td><td class="num">0.075%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
-<tr><td>🧪 연금술사 궁수 세트 - 무기</td><td class="num">0.075%</td><td class="num">0.123%</td><td class="num">4회</td></tr>
-<tr><td>🧪 연금술사 궁수 세트 - 투구</td><td class="num">0.075%</td><td class="num">0.031%</td><td class="num">1회</td></tr>
-<tr><td>🧪 연금술사 궁수 세트 - 갑옷</td><td class="num">0.075%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
-<tr><td>🧪 연금술사 궁수 세트 - 장갑</td><td class="num">0.075%</td><td class="num">0.031%</td><td class="num">1회</td></tr>
-<tr><td>🧪 연금술사 궁수 세트 - 신발</td><td class="num">0.075%</td><td class="num">0.061%</td><td class="num">2회</td></tr>
-<tr><td>🧪 연금술사 궁수 세트 - 바지</td><td class="num">0.075%</td><td class="num">0.123%</td><td class="num">4회</td></tr>
-</tbody></table>
-<h4 class="ico-line grade"><img class="ico" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAA3CAYAAAASeFomAAACHklEQVR4nL2YPU7DMBSA4yjcwAudegHGutwAqQfIylBRqSwslQongEosLFQqqgRrDlCJG9CwwcrQqSwdmGEIcoir10ccO/Fzn2TZblx/eT+2XxwEhfDuMJMl8Cm8O8w+vrK8eINxAPEJC4N9Ckem681X5BoxCJO1GIzzfjqbBJvldPuczHQbNKkEUvqK4R+w2Rb9NvMSDOlsEuxNeGEyqR1VYDDdgzKAixkjm0Fxp/XXKOBNgFYLNnld7wCbmLP0zWBYq3UFQQpeRzMjqAqY1IBVDsJAFxizeRsdMO60tv4zwayCoWrPi4HfnEEYpnYPGI2mSKx1HlXByA8+nRljg1ZOJ2yKtJJ9XZLTCFSm1ejsYqePYY03Sa45FMVgfCXrdDa5hi9ltanaiEAA1V8sp+6T88IfvfnqUrUf377zAp+Rp1u3D3d5fXp08KnaJMKBNkqTLMvWqijN5BhvCeTT+88h2WQc+UhpBf3kxUcjsJbwuiJbR0IX3v32Ddk6EoPxP4Dswx3EWSMBDkFoLrxNRcTbT6A7aZ2CQQBtTBJSaZMYkpRaoLJ8L6bOGaogiUXKZQWq+iBLLHOGyDWBlNI4gfSREkemAV6TfCk4dYJaSKn7jWQVDK4Qremwj1wASkr/6OMKIDRpQ3UdEGIIjDLKaxq2j1sTKUy3A1BfOjEFeXm+z384PjnPa0rI1kcKgtvkoONCC9ymlFIfUZtNTvoLW9SBm7wjJ8sAAAAASUVORK5CYII=" alt="매직"><span><strong>매직</strong> (고지 기댓값 25.0% / 실제 확률 25.4%(+0.4% 차이 , 3,256회 시도 / 827회 관측)</span></h4>
-<table><thead><tr><th>항목</th><th>기대값</th><th>실제값</th><th>횟수</th></tr></thead><tbody>
-<tr><td>🐾 펫</td><td class="num">2.500%</td><td class="num">2.733%</td><td class="num">89회</td></tr>
-<tr><td>⚔️ 무기</td><td class="num">1.250%</td><td class="num">1.351%</td><td class="num">44회</td></tr>
-<tr><td>⚔️ 투구</td><td class="num">1.250%</td><td class="num">1.321%</td><td class="num">43회</td></tr>
-<tr><td>⚔️ 갑옷</td><td class="num">1.250%</td><td class="num">1.229%</td><td class="num">40회</td></tr>
-<tr><td>⚔️ 바지</td><td class="num">1.250%</td><td class="num">1.321%</td><td class="num">43회</td></tr>
-<tr><td>⚔️ 신발</td><td class="num">1.250%</td><td class="num">1.505%</td><td class="num">49회</td></tr>
-<tr><td>⚔️ 장갑</td><td class="num">1.250%</td><td class="num">1.167%</td><td class="num">38회</td></tr>
-<tr><td>⚔️ 목걸이</td><td class="num">1.250%</td><td class="num">1.351%</td><td class="num">44회</td></tr>
-<tr><td>⚔️ 반지</td><td class="num">1.250%</td><td class="num">1.198%</td><td class="num">39회</td></tr>
-<tr><td>⚔️ 귀걸이</td><td class="num">1.250%</td><td class="num">1.106%</td><td class="num">36회</td></tr>
-<tr><td>❄️ 첫서리 사냥꾼 세트 - 무기</td><td class="num">0.375%</td><td class="num">0.307%</td><td class="num">10회</td></tr>
-<tr><td>❄️ 첫서리 사냥꾼 세트 - 투구</td><td class="num">0.375%</td><td class="num">0.276%</td><td class="num">9회</td></tr>
-<tr><td>❄️ 첫서리 사냥꾼 세트 - 갑옷</td><td class="num">0.375%</td><td class="num">0.553%</td><td class="num">18회</td></tr>
-<tr><td>❄️ 첫서리 사냥꾼 세트 - 장갑</td><td class="num">0.375%</td><td class="num">0.307%</td><td class="num">10회</td></tr>
-<tr><td>❄️ 첫서리 사냥꾼 세트 - 신발</td><td class="num">0.375%</td><td class="num">0.215%</td><td class="num">7회</td></tr>
-<tr><td>❄️ 첫서리 사냥꾼 세트 - 바지</td><td class="num">0.375%</td><td class="num">0.430%</td><td class="num">14회</td></tr>
-<tr><td>⚡ 폭풍추적자 세트 - 무기</td><td class="num">0.375%</td><td class="num">0.215%</td><td class="num">7회</td></tr>
-<tr><td>⚡ 폭풍추적자 세트 - 투구</td><td class="num">0.375%</td><td class="num">0.307%</td><td class="num">10회</td></tr>
-<tr><td>⚡ 폭풍추적자 세트 - 갑옷</td><td class="num">0.375%</td><td class="num">0.461%</td><td class="num">15회</td></tr>
-<tr><td>⚡ 폭풍추적자 세트 - 장갑</td><td class="num">0.375%</td><td class="num">0.491%</td><td class="num">16회</td></tr>
-<tr><td>⚡ 폭풍추적자 세트 - 신발</td><td class="num">0.375%</td><td class="num">0.215%</td><td class="num">7회</td></tr>
-<tr><td>⚡ 폭풍추적자 세트 - 바지</td><td class="num">0.375%</td><td class="num">0.338%</td><td class="num">11회</td></tr>
-<tr><td>👻 유령사수 세트 - 무기</td><td class="num">0.375%</td><td class="num">0.399%</td><td class="num">13회</td></tr>
-<tr><td>👻 유령사수 세트 - 투구</td><td class="num">0.375%</td><td class="num">0.307%</td><td class="num">10회</td></tr>
-<tr><td>👻 유령사수 세트 - 갑옷</td><td class="num">0.375%</td><td class="num">0.584%</td><td class="num">19회</td></tr>
-<tr><td>👻 유령사수 세트 - 장갑</td><td class="num">0.375%</td><td class="num">0.676%</td><td class="num">22회</td></tr>
-<tr><td>👻 유령사수 세트 - 신발</td><td class="num">0.375%</td><td class="num">0.369%</td><td class="num">12회</td></tr>
-<tr><td>👻 유령사수 세트 - 바지</td><td class="num">0.375%</td><td class="num">0.307%</td><td class="num">10회</td></tr>
-<tr><td>🔥 화염 궁수 세트 - 무기</td><td class="num">0.375%</td><td class="num">0.276%</td><td class="num">9회</td></tr>
-<tr><td>🔥 화염 궁수 세트 - 투구</td><td class="num">0.375%</td><td class="num">0.430%</td><td class="num">14회</td></tr>
-<tr><td>🔥 화염 궁수 세트 - 갑옷</td><td class="num">0.375%</td><td class="num">0.307%</td><td class="num">10회</td></tr>
-<tr><td>🔥 화염 궁수 세트 - 장갑</td><td class="num">0.375%</td><td class="num">0.276%</td><td class="num">9회</td></tr>
-<tr><td>🔥 화염 궁수 세트 - 신발</td><td class="num">0.375%</td><td class="num">0.614%</td><td class="num">20회</td></tr>
-<tr><td>🔥 화염 궁수 세트 - 바지</td><td class="num">0.375%</td><td class="num">0.338%</td><td class="num">11회</td></tr>
-<tr><td>🧪 연금술사 궁수 세트 - 무기</td><td class="num">0.375%</td><td class="num">0.430%</td><td class="num">14회</td></tr>
-<tr><td>🧪 연금술사 궁수 세트 - 투구</td><td class="num">0.375%</td><td class="num">0.276%</td><td class="num">9회</td></tr>
-<tr><td>🧪 연금술사 궁수 세트 - 갑옷</td><td class="num">0.375%</td><td class="num">0.154%</td><td class="num">5회</td></tr>
-<tr><td>🧪 연금술사 궁수 세트 - 장갑</td><td class="num">0.375%</td><td class="num">0.307%</td><td class="num">10회</td></tr>
-<tr><td>🧪 연금술사 궁수 세트 - 신발</td><td class="num">0.375%</td><td class="num">0.461%</td><td class="num">15회</td></tr>
-<tr><td>🧪 연금술사 궁수 세트 - 바지</td><td class="num">0.375%</td><td class="num">0.491%</td><td class="num">16회</td></tr>
-</tbody></table>
-<h4 class="ico-line grade"><img class="ico" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAArCAYAAAB4pah1AAABV0lEQVR4nM2Xu43DMAyGRcJLpLkN0rjJBqmzQerrU9wQWeLW0AZp3HiDazyGA/lCg2b0oGgjCQEDAm19+EWJIu3cw4773Rget9KaGdZ+kW/0/QBWIAqYC+M1StE6MQn0/QC++5sdYRxUXs+H0RxD/x+zCRBg7aGdXl4fvsvvTR1ToIFURNDu1rkaKEyq2CbwDSIogTVQkMAcWAOFBUSALVCIOVPgAC3FFGPOXKbwuKqBEkrnlNQFaOqcYsypgZpTzyeWn1KJJeACLlROabpfXnvqlKJJtOM8//lqqoGvv76c0rS3OFpU8JT8nCW/DQg1H2uODm4J23yXfT8AWmE/36cnmKMyal1ugF/EzV2lkJeClKFVXapYoRamUZcF5mC5UoolmLRSTWlyoFRbUiz0xw1bkUYD0sJe087xtKqFBYNUeYyllcaQw/jYApuBsmlfY9EYrvnxuQO0F8awPvjU0gAAAABJRU5ErkJggg==" alt="노말"><span><strong>노말</strong> (고지 기댓값 70.0% / 실제 확률 69.2%(-0.8% 차이 , 3,256회 시도 / 2,254회 관측)</span></h4>
-<table><thead><tr><th>항목</th><th>기대값</th><th>실제값</th><th>횟수</th></tr></thead><tbody>
-<tr><td>🐾 펫</td><td class="num">7.000%</td><td class="num">6.357%</td><td class="num">207회</td></tr>
-<tr><td>⚔️ 무기</td><td class="num">3.500%</td><td class="num">3.931%</td><td class="num">128회</td></tr>
-<tr><td>⚔️ 투구</td><td class="num">3.500%</td><td class="num">2.826%</td><td class="num">92회</td></tr>
-<tr><td>⚔️ 갑옷</td><td class="num">3.500%</td><td class="num">3.593%</td><td class="num">117회</td></tr>
-<tr><td>⚔️ 바지</td><td class="num">3.500%</td><td class="num">3.808%</td><td class="num">124회</td></tr>
-<tr><td>⚔️ 신발</td><td class="num">3.500%</td><td class="num">2.826%</td><td class="num">92회</td></tr>
-<tr><td>⚔️ 장갑</td><td class="num">3.500%</td><td class="num">3.593%</td><td class="num">117회</td></tr>
-<tr><td>⚔️ 목걸이</td><td class="num">3.500%</td><td class="num">3.778%</td><td class="num">123회</td></tr>
-<tr><td>⚔️ 반지</td><td class="num">3.500%</td><td class="num">3.256%</td><td class="num">106회</td></tr>
-<tr><td>⚔️ 귀걸이</td><td class="num">3.500%</td><td class="num">4.054%</td><td class="num">132회</td></tr>
-<tr><td>❄️ 첫서리 사냥꾼 세트 - 무기</td><td class="num">1.050%</td><td class="num">1.044%</td><td class="num">34회</td></tr>
-<tr><td>❄️ 첫서리 사냥꾼 세트 - 투구</td><td class="num">1.050%</td><td class="num">0.983%</td><td class="num">32회</td></tr>
-<tr><td>❄️ 첫서리 사냥꾼 세트 - 갑옷</td><td class="num">1.050%</td><td class="num">1.136%</td><td class="num">37회</td></tr>
-<tr><td>❄️ 첫서리 사냥꾼 세트 - 장갑</td><td class="num">1.050%</td><td class="num">1.259%</td><td class="num">41회</td></tr>
-<tr><td>❄️ 첫서리 사냥꾼 세트 - 신발</td><td class="num">1.050%</td><td class="num">1.044%</td><td class="num">34회</td></tr>
-<tr><td>❄️ 첫서리 사냥꾼 세트 - 바지</td><td class="num">1.050%</td><td class="num">1.075%</td><td class="num">35회</td></tr>
-<tr><td>⚡ 폭풍추적자 세트 - 무기</td><td class="num">1.050%</td><td class="num">1.443%</td><td class="num">47회</td></tr>
-<tr><td>⚡ 폭풍추적자 세트 - 투구</td><td class="num">1.050%</td><td class="num">1.167%</td><td class="num">38회</td></tr>
-<tr><td>⚡ 폭풍추적자 세트 - 갑옷</td><td class="num">1.050%</td><td class="num">0.921%</td><td class="num">30회</td></tr>
-<tr><td>⚡ 폭풍추적자 세트 - 장갑</td><td class="num">1.050%</td><td class="num">0.921%</td><td class="num">30회</td></tr>
-<tr><td>⚡ 폭풍추적자 세트 - 신발</td><td class="num">1.050%</td><td class="num">0.768%</td><td class="num">25회</td></tr>
-<tr><td>⚡ 폭풍추적자 세트 - 바지</td><td class="num">1.050%</td><td class="num">1.075%</td><td class="num">35회</td></tr>
-<tr><td>👻 유령사수 세트 - 무기</td><td class="num">1.050%</td><td class="num">0.829%</td><td class="num">27회</td></tr>
-<tr><td>👻 유령사수 세트 - 투구</td><td class="num">1.050%</td><td class="num">1.229%</td><td class="num">40회</td></tr>
-<tr><td>👻 유령사수 세트 - 갑옷</td><td class="num">1.050%</td><td class="num">1.075%</td><td class="num">35회</td></tr>
-<tr><td>👻 유령사수 세트 - 장갑</td><td class="num">1.050%</td><td class="num">0.921%</td><td class="num">30회</td></tr>
-<tr><td>👻 유령사수 세트 - 신발</td><td class="num">1.050%</td><td class="num">0.829%</td><td class="num">27회</td></tr>
-<tr><td>👻 유령사수 세트 - 바지</td><td class="num">1.050%</td><td class="num">0.983%</td><td class="num">32회</td></tr>
-<tr><td>🔥 화염 궁수 세트 - 무기</td><td class="num">1.050%</td><td class="num">0.706%</td><td class="num">23회</td></tr>
-<tr><td>🔥 화염 궁수 세트 - 투구</td><td class="num">1.050%</td><td class="num">1.106%</td><td class="num">36회</td></tr>
-<tr><td>🔥 화염 궁수 세트 - 갑옷</td><td class="num">1.050%</td><td class="num">0.921%</td><td class="num">30회</td></tr>
-<tr><td>🔥 화염 궁수 세트 - 장갑</td><td class="num">1.050%</td><td class="num">0.799%</td><td class="num">26회</td></tr>
-<tr><td>🔥 화염 궁수 세트 - 신발</td><td class="num">1.050%</td><td class="num">1.106%</td><td class="num">36회</td></tr>
-<tr><td>🔥 화염 궁수 세트 - 바지</td><td class="num">1.050%</td><td class="num">1.044%</td><td class="num">34회</td></tr>
-<tr><td>🧪 연금술사 궁수 세트 - 무기</td><td class="num">1.050%</td><td class="num">1.136%</td><td class="num">37회</td></tr>
-<tr><td>🧪 연금술사 궁수 세트 - 투구</td><td class="num">1.050%</td><td class="num">0.768%</td><td class="num">25회</td></tr>
-<tr><td>🧪 연금술사 궁수 세트 - 갑옷</td><td class="num">1.050%</td><td class="num">1.106%</td><td class="num">36회</td></tr>
-<tr><td>🧪 연금술사 궁수 세트 - 장갑</td><td class="num">1.050%</td><td class="num">1.597%</td><td class="num">52회</td></tr>
-<tr><td>🧪 연금술사 궁수 세트 - 신발</td><td class="num">1.050%</td><td class="num">1.167%</td><td class="num">38회</td></tr>
-<tr><td>🧪 연금술사 궁수 세트 - 바지</td><td class="num">1.050%</td><td class="num">1.044%</td><td class="num">34회</td></tr>
-</tbody></table>
-<h4 class="ico-line"><svg class="ico coin" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="#949cad" stroke="#575c6b" stroke-width="2"/><circle cx="12" cy="12" r="6" fill="none" stroke="#575c6b" stroke-width="1" opacity=".55"/></svg><span>은코인</span></h4>
-<h4 class="ico-line grade"><img class="ico" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAA3CAYAAAD9ujEYAAAC70lEQVR4nL2YrY/bMBTAX6vuQNDR8eJDkUKuYAergUn9Pw5NJ4cUlMQ6Hcr/UWmocAMdWKWi4vKBkUMBG8j0fH7R66uT2Pm4J1lxnDS/vi/72QBWVBKV2GBsUUlUln9+mTYqUDHQ2MApvLcoYcbX57sgzVSoJShAEITN9u+xNf3m73dVBptRH4rJxYdWc9Db8x77BOURi9dN9gjrNPdWaMZvEKhWUHIgl032eDCdNDegUJnJAb09X0FI1mmeWCh0kYlr0JhrNV8AgDEjAGDfSBQvaawyoRYuCAp9AQLbN/fFcVeBybTKMxqdsNun009+H8VL0wiKQIIWx91XX2Ct+jLXLAw/TkMXGkbx8gV92mTSWp9VfRYsBGTQIOCkDdYElcAoXr7wqOWCf6AxiiS0DajtJMBTAyOWNPUK2TooArkPeVpIkPes3+R04cdFHcgbJoE4y9iPc+Ceg1zpELSeNQG5dnZS6L941pk0EtqhSO16rdRSO709m4jEhjNL66zvBcGlSPhjneYYpSkbuh8E5tJOWZDenjO6L467bwCQDAajDxOEEnqd5hVUH07gndS1kLd1L0VQ3YJK5r19OuleASJ8VMmHT9lvEPL6fKd6141SKwLRFZ+RiUcrUv/9SD/KsV4+Q9Pg1cdnQyS1MY+PYIB01kys5qkj9KtnCBoszwAgI1Px/MKr/RN6kABhC2kFIVAUL7/wdztp1lC2ZaIIuoD1Teqr1VoWP71gdVoVtvDBOoQKH1nWBcFc9aRLK7uVuirnpkOACqYVB3aCNdXxsgbhIoGDFana+skFu3l4mzxGK7+1ozBqzbOQjQVK8MZirC3TtO5BG4jnU+QBqjWj9JnUhoe4LwjF+YLjhKfaEsntkBnvuoGXWlFdaJ6t5gt+yBJ6RDGTIB599kzkIrQ3MRy6nodMfMzH4HtuNjpSurFJ6wVzzRRcK3lUcfFuEpW+PqtO4/gRYOiRnvJ9/91PUtPPD9UA7w8tTp95+yBQ/gNXAiaqA+eHKQAAAABJRU5ErkJggg==" alt="영웅"><span><strong>영웅</strong> (고지 기댓값 4.0% / 실제 확률 4.7%(+0.7% 차이 , 993회 시도 / 47회 관측)</span></h4>
-<table><thead><tr><th>항목</th><th>기대값</th><th>실제값</th><th>횟수</th></tr></thead><tbody>
-<tr><td>🐾 펫</td><td class="num">0.400%</td><td class="num">0.201%</td><td class="num">2회</td></tr>
-<tr><td>⚔️ 무기</td><td class="num">0.200%</td><td class="num">0.604%</td><td class="num">6회</td></tr>
-<tr><td>⚔️ 투구</td><td class="num">0.200%</td><td class="num">0.302%</td><td class="num">3회</td></tr>
-<tr><td>⚔️ 갑옷</td><td class="num">0.200%</td><td class="num">0.302%</td><td class="num">3회</td></tr>
-<tr><td>⚔️ 바지</td><td class="num">0.200%</td><td class="num">0.101%</td><td class="num">1회</td></tr>
-<tr><td>⚔️ 신발</td><td class="num">0.200%</td><td class="num">0.403%</td><td class="num">4회</td></tr>
-<tr><td>⚔️ 장갑</td><td class="num">0.200%</td><td class="num">0.201%</td><td class="num">2회</td></tr>
-<tr><td>⚔️ 목걸이</td><td class="num">0.200%</td><td class="num">0.403%</td><td class="num">4회</td></tr>
-<tr><td>⚔️ 반지</td><td class="num">0.200%</td><td class="num">0.201%</td><td class="num">2회</td></tr>
-<tr><td>⚔️ 귀걸이</td><td class="num">0.200%</td><td class="num">0.101%</td><td class="num">1회</td></tr>
-<tr><td>❄️ 첫서리 사냥꾼 세트 - 무기</td><td class="num">0.060%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
-<tr><td>❄️ 첫서리 사냥꾼 세트 - 투구</td><td class="num">0.060%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
-<tr><td>❄️ 첫서리 사냥꾼 세트 - 갑옷</td><td class="num">0.060%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
-<tr><td>❄️ 첫서리 사냥꾼 세트 - 장갑</td><td class="num">0.060%</td><td class="num">0.101%</td><td class="num">1회</td></tr>
-<tr><td>❄️ 첫서리 사냥꾼 세트 - 신발</td><td class="num">0.060%</td><td class="num">0.101%</td><td class="num">1회</td></tr>
-<tr><td>❄️ 첫서리 사냥꾼 세트 - 바지</td><td class="num">0.060%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
-<tr><td>⚡ 폭풍추적자 세트 - 무기</td><td class="num">0.060%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
-<tr><td>⚡ 폭풍추적자 세트 - 투구</td><td class="num">0.060%</td><td class="num">0.302%</td><td class="num">3회</td></tr>
-<tr><td>⚡ 폭풍추적자 세트 - 갑옷</td><td class="num">0.060%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
-<tr><td>⚡ 폭풍추적자 세트 - 장갑</td><td class="num">0.060%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
-<tr><td>⚡ 폭풍추적자 세트 - 신발</td><td class="num">0.060%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
-<tr><td>⚡ 폭풍추적자 세트 - 바지</td><td class="num">0.060%</td><td class="num">0.101%</td><td class="num">1회</td></tr>
-<tr><td>👻 유령사수 세트 - 무기</td><td class="num">0.060%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
-<tr><td>👻 유령사수 세트 - 투구</td><td class="num">0.060%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
-<tr><td>👻 유령사수 세트 - 갑옷</td><td class="num">0.060%</td><td class="num">0.101%</td><td class="num">1회</td></tr>
-<tr><td>👻 유령사수 세트 - 장갑</td><td class="num">0.060%</td><td class="num">0.302%</td><td class="num">3회</td></tr>
-<tr><td>👻 유령사수 세트 - 신발</td><td class="num">0.060%</td><td class="num">0.201%</td><td class="num">2회</td></tr>
-<tr><td>👻 유령사수 세트 - 바지</td><td class="num">0.060%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
-<tr><td>🔥 화염 궁수 세트 - 무기</td><td class="num">0.060%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
-<tr><td>🔥 화염 궁수 세트 - 투구</td><td class="num">0.060%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
-<tr><td>🔥 화염 궁수 세트 - 갑옷</td><td class="num">0.060%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
-<tr><td>🔥 화염 궁수 세트 - 장갑</td><td class="num">0.060%</td><td class="num">0.302%</td><td class="num">3회</td></tr>
-<tr><td>🔥 화염 궁수 세트 - 신발</td><td class="num">0.060%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
-<tr><td>🔥 화염 궁수 세트 - 바지</td><td class="num">0.060%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
-<tr><td>🧪 연금술사 궁수 세트 - 무기</td><td class="num">0.060%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
-<tr><td>🧪 연금술사 궁수 세트 - 투구</td><td class="num">0.060%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
-<tr><td>🧪 연금술사 궁수 세트 - 갑옷</td><td class="num">0.060%</td><td class="num">0.201%</td><td class="num">2회</td></tr>
-<tr><td>🧪 연금술사 궁수 세트 - 장갑</td><td class="num">0.060%</td><td class="num">0.101%</td><td class="num">1회</td></tr>
-<tr><td>🧪 연금술사 궁수 세트 - 신발</td><td class="num">0.060%</td><td class="num">0.101%</td><td class="num">1회</td></tr>
-<tr><td>🧪 연금술사 궁수 세트 - 바지</td><td class="num">0.060%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
-</tbody></table>
-<h4 class="ico-line grade"><img class="ico" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAA3CAYAAAASeFomAAACb0lEQVR4nL2YsVLCQBCGLwzY4lDhjI9AZ6EzvAEPYIGF1hRJQ0MeIFjQYEGthRY+AG/AjBZ2lJbOaJXRVos4G7K4rHeXu8uFnckkJCFf/v/2spsIUUQ4bGewiDojHLazLHvNl9pgIYHUCWuIfUbIrPtYD+obq7BIBoDA4tu+Bm7cPHwF9EAc93O47GZcQDsXh+C2dXvL7Tnfn7dPsB6PolPZzVkFtU81VgCEpbK9eAGfsEB1QAagNmIADKwss7EpDKJzfJ6vP9Yi48CDw6uzzdhFmQ5mNGHTt0cGHOyoBdhsMX/W2Si9A/oHSHOuDOHcSp2NpSAdMGUwmv4cJrUOTuInJslqRw0CqY1goVCE0YTjClEdgBDKlXFVRsmgy6YOGTcvZYLC0EadhTwLreqRDua98Kls7DBVEFRVpQqbMFXwG0sJz0AnkEzVeBRpM9XoWWeiKo77E36sUJrXLufCFe4+pnJIkqym9Bzc3+0tr90rpNjAKGS2mP+zE497abcSBmm1L99hDftQpfe+rlVAcF17A/nzdXfkNevKAF4VxXF/wucRT4a9pXdT+ImpEGIim7QFvDoo/iuCU2ofPKY2pX3z5HACqbodgMp6v8rJEJOSzgMbFWeQSk0qab9o32AFkvV7Hd89gw6SSvo7py5I1+qmhj1D06Wfg6CWlalRgqq2xLIonUc2TT6EVZMPwVsnqgLC5k3COBmqQozHSAWwebWUHtR9AjB5FzKyjquh70WukNJvDBxKX/lDy28MgY1leHEXFYHqCQCWVfoEwyJAyPz+Jd8RXZzka5+QbTIghG97B0WFCr7tM6Rj5Ns2uOgvvw4AlVeYLKYAAAAASUVORK5CYII=" alt="유일"><span><strong>유일</strong> (고지 기댓값 10.0% / 실제 확률 11.0%(+1.0% 차이 , 993회 시도 / 109회 관측)</span></h4>
-<table><thead><tr><th>항목</th><th>기대값</th><th>실제값</th><th>횟수</th></tr></thead><tbody>
-<tr><td>🐾 펫</td><td class="num">1.000%</td><td class="num">1.007%</td><td class="num">10회</td></tr>
-<tr><td>⚔️ 무기</td><td class="num">0.500%</td><td class="num">0.806%</td><td class="num">8회</td></tr>
-<tr><td>⚔️ 투구</td><td class="num">0.500%</td><td class="num">0.403%</td><td class="num">4회</td></tr>
-<tr><td>⚔️ 갑옷</td><td class="num">0.500%</td><td class="num">0.906%</td><td class="num">9회</td></tr>
-<tr><td>⚔️ 바지</td><td class="num">0.500%</td><td class="num">0.302%</td><td class="num">3회</td></tr>
-<tr><td>⚔️ 신발</td><td class="num">0.500%</td><td class="num">0.302%</td><td class="num">3회</td></tr>
-<tr><td>⚔️ 장갑</td><td class="num">0.500%</td><td class="num">0.604%</td><td class="num">6회</td></tr>
-<tr><td>⚔️ 목걸이</td><td class="num">0.500%</td><td class="num">0.604%</td><td class="num">6회</td></tr>
-<tr><td>⚔️ 반지</td><td class="num">0.500%</td><td class="num">0.604%</td><td class="num">6회</td></tr>
-<tr><td>⚔️ 귀걸이</td><td class="num">0.500%</td><td class="num">0.604%</td><td class="num">6회</td></tr>
-<tr><td>❄️ 첫서리 사냥꾼 세트 - 무기</td><td class="num">0.150%</td><td class="num">0.101%</td><td class="num">1회</td></tr>
-<tr><td>❄️ 첫서리 사냥꾼 세트 - 투구</td><td class="num">0.150%</td><td class="num">0.201%</td><td class="num">2회</td></tr>
-<tr><td>❄️ 첫서리 사냥꾼 세트 - 갑옷</td><td class="num">0.150%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
-<tr><td>❄️ 첫서리 사냥꾼 세트 - 장갑</td><td class="num">0.150%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
-<tr><td>❄️ 첫서리 사냥꾼 세트 - 신발</td><td class="num">0.150%</td><td class="num">0.201%</td><td class="num">2회</td></tr>
-<tr><td>❄️ 첫서리 사냥꾼 세트 - 바지</td><td class="num">0.150%</td><td class="num">0.403%</td><td class="num">4회</td></tr>
-<tr><td>⚡ 폭풍추적자 세트 - 무기</td><td class="num">0.150%</td><td class="num">0.201%</td><td class="num">2회</td></tr>
-<tr><td>⚡ 폭풍추적자 세트 - 투구</td><td class="num">0.150%</td><td class="num">0.302%</td><td class="num">3회</td></tr>
-<tr><td>⚡ 폭풍추적자 세트 - 갑옷</td><td class="num">0.150%</td><td class="num">0.403%</td><td class="num">4회</td></tr>
-<tr><td>⚡ 폭풍추적자 세트 - 장갑</td><td class="num">0.150%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
-<tr><td>⚡ 폭풍추적자 세트 - 신발</td><td class="num">0.150%</td><td class="num">0.403%</td><td class="num">4회</td></tr>
-<tr><td>⚡ 폭풍추적자 세트 - 바지</td><td class="num">0.150%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
-<tr><td>👻 유령사수 세트 - 무기</td><td class="num">0.150%</td><td class="num">0.101%</td><td class="num">1회</td></tr>
-<tr><td>👻 유령사수 세트 - 투구</td><td class="num">0.150%</td><td class="num">0.101%</td><td class="num">1회</td></tr>
-<tr><td>👻 유령사수 세트 - 갑옷</td><td class="num">0.150%</td><td class="num">0.201%</td><td class="num">2회</td></tr>
-<tr><td>👻 유령사수 세트 - 장갑</td><td class="num">0.150%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
-<tr><td>👻 유령사수 세트 - 신발</td><td class="num">0.150%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
-<tr><td>👻 유령사수 세트 - 바지</td><td class="num">0.150%</td><td class="num">0.201%</td><td class="num">2회</td></tr>
-<tr><td>🔥 화염 궁수 세트 - 무기</td><td class="num">0.150%</td><td class="num">0.302%</td><td class="num">3회</td></tr>
-<tr><td>🔥 화염 궁수 세트 - 투구</td><td class="num">0.150%</td><td class="num">0.302%</td><td class="num">3회</td></tr>
-<tr><td>🔥 화염 궁수 세트 - 갑옷</td><td class="num">0.150%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
-<tr><td>🔥 화염 궁수 세트 - 장갑</td><td class="num">0.150%</td><td class="num">0.101%</td><td class="num">1회</td></tr>
-<tr><td>🔥 화염 궁수 세트 - 신발</td><td class="num">0.150%</td><td class="num">0.101%</td><td class="num">1회</td></tr>
-<tr><td>🔥 화염 궁수 세트 - 바지</td><td class="num">0.150%</td><td class="num">0.101%</td><td class="num">1회</td></tr>
-<tr><td>🧪 연금술사 궁수 세트 - 무기</td><td class="num">0.150%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
-<tr><td>🧪 연금술사 궁수 세트 - 투구</td><td class="num">0.150%</td><td class="num">0.302%</td><td class="num">3회</td></tr>
-<tr><td>🧪 연금술사 궁수 세트 - 갑옷</td><td class="num">0.150%</td><td class="num">0.302%</td><td class="num">3회</td></tr>
-<tr><td>🧪 연금술사 궁수 세트 - 장갑</td><td class="num">0.150%</td><td class="num">0.201%</td><td class="num">2회</td></tr>
-<tr><td>🧪 연금술사 궁수 세트 - 신발</td><td class="num">0.150%</td><td class="num">0.101%</td><td class="num">1회</td></tr>
-<tr><td>🧪 연금술사 궁수 세트 - 바지</td><td class="num">0.150%</td><td class="num">0.201%</td><td class="num">2회</td></tr>
-</tbody></table>
-<h4 class="ico-line grade"><img class="ico" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAA3CAYAAAASeFomAAACHklEQVR4nL2YPU7DMBSA4yjcwAudegHGutwAqQfIylBRqSwslQongEosLFQqqgRrDlCJG9CwwcrQqSwdmGEIcoir10ccO/Fzn2TZblx/eT+2XxwEhfDuMJMl8Cm8O8w+vrK8eINxAPEJC4N9Ckem681X5BoxCJO1GIzzfjqbBJvldPuczHQbNKkEUvqK4R+w2Rb9NvMSDOlsEuxNeGEyqR1VYDDdgzKAixkjm0Fxp/XXKOBNgFYLNnld7wCbmLP0zWBYq3UFQQpeRzMjqAqY1IBVDsJAFxizeRsdMO60tv4zwayCoWrPi4HfnEEYpnYPGI2mSKx1HlXByA8+nRljg1ZOJ2yKtJJ9XZLTCFSm1ejsYqePYY03Sa45FMVgfCXrdDa5hi9ltanaiEAA1V8sp+6T88IfvfnqUrUf377zAp+Rp1u3D3d5fXp08KnaJMKBNkqTLMvWqijN5BhvCeTT+88h2WQc+UhpBf3kxUcjsJbwuiJbR0IX3v32Ddk6EoPxP4Dswx3EWSMBDkFoLrxNRcTbT6A7aZ2CQQBtTBJSaZMYkpRaoLJ8L6bOGaogiUXKZQWq+iBLLHOGyDWBlNI4gfSREkemAV6TfCk4dYJaSKn7jWQVDK4Qremwj1wASkr/6OMKIDRpQ3UdEGIIjDLKaxq2j1sTKUy3A1BfOjEFeXm+z384PjnPa0rI1kcKgtvkoONCC9ymlFIfUZtNTvoLW9SBm7wjJ8sAAAAASUVORK5CYII=" alt="매직"><span><strong>매직</strong> (고지 기댓값 36.0% / 실제 확률 37.1%(+1.1% 차이 , 993회 시도 / 368회 관측)</span></h4>
-<table><thead><tr><th>항목</th><th>기대값</th><th>실제값</th><th>횟수</th></tr></thead><tbody>
-<tr><td>🐾 펫</td><td class="num">3.600%</td><td class="num">4.431%</td><td class="num">44회</td></tr>
-<tr><td>⚔️ 무기</td><td class="num">1.800%</td><td class="num">1.813%</td><td class="num">18회</td></tr>
-<tr><td>⚔️ 투구</td><td class="num">1.800%</td><td class="num">1.611%</td><td class="num">16회</td></tr>
-<tr><td>⚔️ 갑옷</td><td class="num">1.800%</td><td class="num">1.511%</td><td class="num">15회</td></tr>
-<tr><td>⚔️ 바지</td><td class="num">1.800%</td><td class="num">2.014%</td><td class="num">20회</td></tr>
-<tr><td>⚔️ 신발</td><td class="num">1.800%</td><td class="num">2.014%</td><td class="num">20회</td></tr>
-<tr><td>⚔️ 장갑</td><td class="num">1.800%</td><td class="num">2.518%</td><td class="num">25회</td></tr>
-<tr><td>⚔️ 목걸이</td><td class="num">1.800%</td><td class="num">1.511%</td><td class="num">15회</td></tr>
-<tr><td>⚔️ 반지</td><td class="num">1.800%</td><td class="num">1.309%</td><td class="num">13회</td></tr>
-<tr><td>⚔️ 귀걸이</td><td class="num">1.800%</td><td class="num">2.316%</td><td class="num">23회</td></tr>
-<tr><td>❄️ 첫서리 사냥꾼 세트 - 무기</td><td class="num">0.540%</td><td class="num">0.504%</td><td class="num">5회</td></tr>
-<tr><td>❄️ 첫서리 사냥꾼 세트 - 투구</td><td class="num">0.540%</td><td class="num">0.302%</td><td class="num">3회</td></tr>
-<tr><td>❄️ 첫서리 사냥꾼 세트 - 갑옷</td><td class="num">0.540%</td><td class="num">0.101%</td><td class="num">1회</td></tr>
-<tr><td>❄️ 첫서리 사냥꾼 세트 - 장갑</td><td class="num">0.540%</td><td class="num">0.604%</td><td class="num">6회</td></tr>
-<tr><td>❄️ 첫서리 사냥꾼 세트 - 신발</td><td class="num">0.540%</td><td class="num">0.302%</td><td class="num">3회</td></tr>
-<tr><td>❄️ 첫서리 사냥꾼 세트 - 바지</td><td class="num">0.540%</td><td class="num">0.705%</td><td class="num">7회</td></tr>
-<tr><td>⚡ 폭풍추적자 세트 - 무기</td><td class="num">0.540%</td><td class="num">0.504%</td><td class="num">5회</td></tr>
-<tr><td>⚡ 폭풍추적자 세트 - 투구</td><td class="num">0.540%</td><td class="num">0.604%</td><td class="num">6회</td></tr>
-<tr><td>⚡ 폭풍추적자 세트 - 갑옷</td><td class="num">0.540%</td><td class="num">0.604%</td><td class="num">6회</td></tr>
-<tr><td>⚡ 폭풍추적자 세트 - 장갑</td><td class="num">0.540%</td><td class="num">0.302%</td><td class="num">3회</td></tr>
-<tr><td>⚡ 폭풍추적자 세트 - 신발</td><td class="num">0.540%</td><td class="num">0.201%</td><td class="num">2회</td></tr>
-<tr><td>⚡ 폭풍추적자 세트 - 바지</td><td class="num">0.540%</td><td class="num">0.806%</td><td class="num">8회</td></tr>
-<tr><td>👻 유령사수 세트 - 무기</td><td class="num">0.540%</td><td class="num">0.705%</td><td class="num">7회</td></tr>
-<tr><td>👻 유령사수 세트 - 투구</td><td class="num">0.540%</td><td class="num">0.201%</td><td class="num">2회</td></tr>
-<tr><td>👻 유령사수 세트 - 갑옷</td><td class="num">0.540%</td><td class="num">0.806%</td><td class="num">8회</td></tr>
-<tr><td>👻 유령사수 세트 - 장갑</td><td class="num">0.540%</td><td class="num">0.403%</td><td class="num">4회</td></tr>
-<tr><td>👻 유령사수 세트 - 신발</td><td class="num">0.540%</td><td class="num">0.705%</td><td class="num">7회</td></tr>
-<tr><td>👻 유령사수 세트 - 바지</td><td class="num">0.540%</td><td class="num">0.201%</td><td class="num">2회</td></tr>
-<tr><td>🔥 화염 궁수 세트 - 무기</td><td class="num">0.540%</td><td class="num">0.705%</td><td class="num">7회</td></tr>
-<tr><td>🔥 화염 궁수 세트 - 투구</td><td class="num">0.540%</td><td class="num">0.906%</td><td class="num">9회</td></tr>
-<tr><td>🔥 화염 궁수 세트 - 갑옷</td><td class="num">0.540%</td><td class="num">0.403%</td><td class="num">4회</td></tr>
-<tr><td>🔥 화염 궁수 세트 - 장갑</td><td class="num">0.540%</td><td class="num">1.410%</td><td class="num">14회</td></tr>
-<tr><td>🔥 화염 궁수 세트 - 신발</td><td class="num">0.540%</td><td class="num">0.705%</td><td class="num">7회</td></tr>
-<tr><td>🔥 화염 궁수 세트 - 바지</td><td class="num">0.540%</td><td class="num">0.504%</td><td class="num">5회</td></tr>
-<tr><td>🧪 연금술사 궁수 세트 - 무기</td><td class="num">0.540%</td><td class="num">0.504%</td><td class="num">5회</td></tr>
-<tr><td>🧪 연금술사 궁수 세트 - 투구</td><td class="num">0.540%</td><td class="num">0.604%</td><td class="num">6회</td></tr>
-<tr><td>🧪 연금술사 궁수 세트 - 갑옷</td><td class="num">0.540%</td><td class="num">0.302%</td><td class="num">3회</td></tr>
-<tr><td>🧪 연금술사 궁수 세트 - 장갑</td><td class="num">0.540%</td><td class="num">0.403%</td><td class="num">4회</td></tr>
-<tr><td>🧪 연금술사 궁수 세트 - 신발</td><td class="num">0.540%</td><td class="num">0.504%</td><td class="num">5회</td></tr>
-<tr><td>🧪 연금술사 궁수 세트 - 바지</td><td class="num">0.540%</td><td class="num">0.504%</td><td class="num">5회</td></tr>
-</tbody></table>
-<h4 class="ico-line grade"><img class="ico" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAArCAYAAAB4pah1AAABV0lEQVR4nM2Xu43DMAyGRcJLpLkN0rjJBqmzQerrU9wQWeLW0AZp3HiDazyGA/lCg2b0oGgjCQEDAm19+EWJIu3cw4773Rget9KaGdZ+kW/0/QBWIAqYC+M1StE6MQn0/QC++5sdYRxUXs+H0RxD/x+zCRBg7aGdXl4fvsvvTR1ToIFURNDu1rkaKEyq2CbwDSIogTVQkMAcWAOFBUSALVCIOVPgAC3FFGPOXKbwuKqBEkrnlNQFaOqcYsypgZpTzyeWn1KJJeACLlROabpfXnvqlKJJtOM8//lqqoGvv76c0rS3OFpU8JT8nCW/DQg1H2uODm4J23yXfT8AWmE/36cnmKMyal1ugF/EzV2lkJeClKFVXapYoRamUZcF5mC5UoolmLRSTWlyoFRbUiz0xw1bkUYD0sJe087xtKqFBYNUeYyllcaQw/jYApuBsmlfY9EYrvnxuQO0F8awPvjU0gAAAABJRU5ErkJggg==" alt="노말"><span><strong>노말</strong> (고지 기댓값 50.0% / 실제 확률 47.2%(-2.8% 차이 , 993회 시도 / 469회 관측)</span></h4>
-<table><thead><tr><th>항목</th><th>기대값</th><th>실제값</th><th>횟수</th></tr></thead><tbody>
-<tr><td>🐾 펫</td><td class="num">5.000%</td><td class="num">4.431%</td><td class="num">44회</td></tr>
-<tr><td>⚔️ 무기</td><td class="num">2.500%</td><td class="num">2.417%</td><td class="num">24회</td></tr>
-<tr><td>⚔️ 투구</td><td class="num">2.500%</td><td class="num">2.014%</td><td class="num">20회</td></tr>
-<tr><td>⚔️ 갑옷</td><td class="num">2.500%</td><td class="num">2.216%</td><td class="num">22회</td></tr>
-<tr><td>⚔️ 바지</td><td class="num">2.500%</td><td class="num">2.920%</td><td class="num">29회</td></tr>
-<tr><td>⚔️ 신발</td><td class="num">2.500%</td><td class="num">2.216%</td><td class="num">22회</td></tr>
-<tr><td>⚔️ 장갑</td><td class="num">2.500%</td><td class="num">2.216%</td><td class="num">22회</td></tr>
-<tr><td>⚔️ 목걸이</td><td class="num">2.500%</td><td class="num">1.712%</td><td class="num">17회</td></tr>
-<tr><td>⚔️ 반지</td><td class="num">2.500%</td><td class="num">2.417%</td><td class="num">24회</td></tr>
-<tr><td>⚔️ 귀걸이</td><td class="num">2.500%</td><td class="num">3.927%</td><td class="num">39회</td></tr>
-<tr><td>❄️ 첫서리 사냥꾼 세트 - 무기</td><td class="num">0.750%</td><td class="num">0.806%</td><td class="num">8회</td></tr>
-<tr><td>❄️ 첫서리 사냥꾼 세트 - 투구</td><td class="num">0.750%</td><td class="num">0.906%</td><td class="num">9회</td></tr>
-<tr><td>❄️ 첫서리 사냥꾼 세트 - 갑옷</td><td class="num">0.750%</td><td class="num">0.604%</td><td class="num">6회</td></tr>
-<tr><td>❄️ 첫서리 사냥꾼 세트 - 장갑</td><td class="num">0.750%</td><td class="num">0.604%</td><td class="num">6회</td></tr>
-<tr><td>❄️ 첫서리 사냥꾼 세트 - 신발</td><td class="num">0.750%</td><td class="num">0.906%</td><td class="num">9회</td></tr>
-<tr><td>❄️ 첫서리 사냥꾼 세트 - 바지</td><td class="num">0.750%</td><td class="num">1.108%</td><td class="num">11회</td></tr>
-<tr><td>⚡ 폭풍추적자 세트 - 무기</td><td class="num">0.750%</td><td class="num">0.906%</td><td class="num">9회</td></tr>
-<tr><td>⚡ 폭풍추적자 세트 - 투구</td><td class="num">0.750%</td><td class="num">0.806%</td><td class="num">8회</td></tr>
-<tr><td>⚡ 폭풍추적자 세트 - 갑옷</td><td class="num">0.750%</td><td class="num">0.403%</td><td class="num">4회</td></tr>
-<tr><td>⚡ 폭풍추적자 세트 - 장갑</td><td class="num">0.750%</td><td class="num">0.806%</td><td class="num">8회</td></tr>
-<tr><td>⚡ 폭풍추적자 세트 - 신발</td><td class="num">0.750%</td><td class="num">0.504%</td><td class="num">5회</td></tr>
-<tr><td>⚡ 폭풍추적자 세트 - 바지</td><td class="num">0.750%</td><td class="num">0.705%</td><td class="num">7회</td></tr>
-<tr><td>👻 유령사수 세트 - 무기</td><td class="num">0.750%</td><td class="num">0.604%</td><td class="num">6회</td></tr>
-<tr><td>👻 유령사수 세트 - 투구</td><td class="num">0.750%</td><td class="num">0.604%</td><td class="num">6회</td></tr>
-<tr><td>👻 유령사수 세트 - 갑옷</td><td class="num">0.750%</td><td class="num">0.806%</td><td class="num">8회</td></tr>
-<tr><td>👻 유령사수 세트 - 장갑</td><td class="num">0.750%</td><td class="num">0.504%</td><td class="num">5회</td></tr>
-<tr><td>👻 유령사수 세트 - 신발</td><td class="num">0.750%</td><td class="num">0.302%</td><td class="num">3회</td></tr>
-<tr><td>👻 유령사수 세트 - 바지</td><td class="num">0.750%</td><td class="num">0.604%</td><td class="num">6회</td></tr>
-<tr><td>🔥 화염 궁수 세트 - 무기</td><td class="num">0.750%</td><td class="num">0.604%</td><td class="num">6회</td></tr>
-<tr><td>🔥 화염 궁수 세트 - 투구</td><td class="num">0.750%</td><td class="num">0.906%</td><td class="num">9회</td></tr>
-<tr><td>🔥 화염 궁수 세트 - 갑옷</td><td class="num">0.750%</td><td class="num">0.705%</td><td class="num">7회</td></tr>
-<tr><td>🔥 화염 궁수 세트 - 장갑</td><td class="num">0.750%</td><td class="num">0.806%</td><td class="num">8회</td></tr>
-<tr><td>🔥 화염 궁수 세트 - 신발</td><td class="num">0.750%</td><td class="num">0.705%</td><td class="num">7회</td></tr>
-<tr><td>🔥 화염 궁수 세트 - 바지</td><td class="num">0.750%</td><td class="num">0.403%</td><td class="num">4회</td></tr>
-<tr><td>🧪 연금술사 궁수 세트 - 무기</td><td class="num">0.750%</td><td class="num">0.705%</td><td class="num">7회</td></tr>
-<tr><td>🧪 연금술사 궁수 세트 - 투구</td><td class="num">0.750%</td><td class="num">0.806%</td><td class="num">8회</td></tr>
-<tr><td>🧪 연금술사 궁수 세트 - 갑옷</td><td class="num">0.750%</td><td class="num">0.705%</td><td class="num">7회</td></tr>
-<tr><td>🧪 연금술사 궁수 세트 - 장갑</td><td class="num">0.750%</td><td class="num">0.705%</td><td class="num">7회</td></tr>
-<tr><td>🧪 연금술사 궁수 세트 - 신발</td><td class="num">0.750%</td><td class="num">0.302%</td><td class="num">3회</td></tr>
-<tr><td>🧪 연금술사 궁수 세트 - 바지</td><td class="num">0.750%</td><td class="num">0.906%</td><td class="num">9회</td></tr>
-</tbody></table>
-<h4 class="ico-line"><svg class="ico coin" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="#ffd640" stroke="#b88514" stroke-width="2"/><circle cx="12" cy="12" r="6" fill="none" stroke="#b88514" stroke-width="1" opacity=".55"/></svg><span>금코인</span></h4>
-<h4 class="ico-line grade"><img class="ico" src="data:image/png;base64,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" alt="전설"><span><strong>전설</strong> (고지 기댓값 4.0% / 실제 확률 4.1%(+0.1% 차이 , 267회 시도 / 11회 관측)</span></h4>
-<table><thead><tr><th>항목</th><th>기대값</th><th>실제값</th><th>횟수</th></tr></thead><tbody>
-<tr><td>🐾 펫</td><td class="num">0.400%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
-<tr><td>⚔️ 무기</td><td class="num">0.200%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
-<tr><td>⚔️ 투구</td><td class="num">0.200%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
-<tr><td>⚔️ 갑옷</td><td class="num">0.200%</td><td class="num">0.375%</td><td class="num">1회</td></tr>
-<tr><td>⚔️ 바지</td><td class="num">0.200%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
-<tr><td>⚔️ 신발</td><td class="num">0.200%</td><td class="num">0.375%</td><td class="num">1회</td></tr>
-<tr><td>⚔️ 장갑</td><td class="num">0.200%</td><td class="num">1.124%</td><td class="num">3회</td></tr>
-<tr><td>⚔️ 목걸이</td><td class="num">0.200%</td><td class="num">0.375%</td><td class="num">1회</td></tr>
-<tr><td>⚔️ 반지</td><td class="num">0.200%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
-<tr><td>⚔️ 귀걸이</td><td class="num">0.200%</td><td class="num">0.375%</td><td class="num">1회</td></tr>
-<tr><td>❄️ 첫서리 사냥꾼 세트 - 무기</td><td class="num">0.060%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
-<tr><td>❄️ 첫서리 사냥꾼 세트 - 투구</td><td class="num">0.060%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
-<tr><td>❄️ 첫서리 사냥꾼 세트 - 갑옷</td><td class="num">0.060%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
-<tr><td>❄️ 첫서리 사냥꾼 세트 - 장갑</td><td class="num">0.060%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
-<tr><td>❄️ 첫서리 사냥꾼 세트 - 신발</td><td class="num">0.060%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
-<tr><td>❄️ 첫서리 사냥꾼 세트 - 바지</td><td class="num">0.060%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
-<tr><td>⚡ 폭풍추적자 세트 - 무기</td><td class="num">0.060%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
-<tr><td>⚡ 폭풍추적자 세트 - 투구</td><td class="num">0.060%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
-<tr><td>⚡ 폭풍추적자 세트 - 갑옷</td><td class="num">0.060%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
-<tr><td>⚡ 폭풍추적자 세트 - 장갑</td><td class="num">0.060%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
-<tr><td>⚡ 폭풍추적자 세트 - 신발</td><td class="num">0.060%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
-<tr><td>⚡ 폭풍추적자 세트 - 바지</td><td class="num">0.060%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
-<tr><td>👻 유령사수 세트 - 무기</td><td class="num">0.060%</td><td class="num">0.375%</td><td class="num">1회</td></tr>
-<tr><td>👻 유령사수 세트 - 투구</td><td class="num">0.060%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
-<tr><td>👻 유령사수 세트 - 갑옷</td><td class="num">0.060%</td><td class="num">0.375%</td><td class="num">1회</td></tr>
-<tr><td>👻 유령사수 세트 - 장갑</td><td class="num">0.060%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
-<tr><td>👻 유령사수 세트 - 신발</td><td class="num">0.060%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
-<tr><td>👻 유령사수 세트 - 바지</td><td class="num">0.060%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
-<tr><td>🔥 화염 궁수 세트 - 무기</td><td class="num">0.060%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
-<tr><td>🔥 화염 궁수 세트 - 투구</td><td class="num">0.060%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
-<tr><td>🔥 화염 궁수 세트 - 갑옷</td><td class="num">0.060%</td><td class="num">0.375%</td><td class="num">1회</td></tr>
-<tr><td>🔥 화염 궁수 세트 - 장갑</td><td class="num">0.060%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
-<tr><td>🔥 화염 궁수 세트 - 신발</td><td class="num">0.060%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
-<tr><td>🔥 화염 궁수 세트 - 바지</td><td class="num">0.060%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
-<tr><td>🧪 연금술사 궁수 세트 - 무기</td><td class="num">0.060%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
-<tr><td>🧪 연금술사 궁수 세트 - 투구</td><td class="num">0.060%</td><td class="num">0.375%</td><td class="num">1회</td></tr>
-<tr><td>🧪 연금술사 궁수 세트 - 갑옷</td><td class="num">0.060%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
-<tr><td>🧪 연금술사 궁수 세트 - 장갑</td><td class="num">0.060%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
-<tr><td>🧪 연금술사 궁수 세트 - 신발</td><td class="num">0.060%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
-<tr><td>🧪 연금술사 궁수 세트 - 바지</td><td class="num">0.060%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
-</tbody></table>
-<h4 class="ico-line grade"><img class="ico" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAA3CAYAAAD9ujEYAAAC70lEQVR4nL2YrY/bMBTAX6vuQNDR8eJDkUKuYAergUn9Pw5NJ4cUlMQ6Hcr/UWmocAMdWKWi4vKBkUMBG8j0fH7R66uT2Pm4J1lxnDS/vi/72QBWVBKV2GBsUUlUln9+mTYqUDHQ2MApvLcoYcbX57sgzVSoJShAEITN9u+xNf3m73dVBptRH4rJxYdWc9Db8x77BOURi9dN9gjrNPdWaMZvEKhWUHIgl032eDCdNDegUJnJAb09X0FI1mmeWCh0kYlr0JhrNV8AgDEjAGDfSBQvaawyoRYuCAp9AQLbN/fFcVeBybTKMxqdsNun009+H8VL0wiKQIIWx91XX2Ct+jLXLAw/TkMXGkbx8gV92mTSWp9VfRYsBGTQIOCkDdYElcAoXr7wqOWCf6AxiiS0DajtJMBTAyOWNPUK2TooArkPeVpIkPes3+R04cdFHcgbJoE4y9iPc+Ceg1zpELSeNQG5dnZS6L941pk0EtqhSO16rdRSO709m4jEhjNL66zvBcGlSPhjneYYpSkbuh8E5tJOWZDenjO6L467bwCQDAajDxOEEnqd5hVUH07gndS1kLd1L0VQ3YJK5r19OuleASJ8VMmHT9lvEPL6fKd6141SKwLRFZ+RiUcrUv/9SD/KsV4+Q9Pg1cdnQyS1MY+PYIB01kys5qkj9KtnCBoszwAgI1Px/MKr/RN6kABhC2kFIVAUL7/wdztp1lC2ZaIIuoD1Teqr1VoWP71gdVoVtvDBOoQKH1nWBcFc9aRLK7uVuirnpkOACqYVB3aCNdXxsgbhIoGDFana+skFu3l4mzxGK7+1ozBqzbOQjQVK8MZirC3TtO5BG4jnU+QBqjWj9JnUhoe4LwjF+YLjhKfaEsntkBnvuoGXWlFdaJ6t5gt+yBJ6RDGTIB599kzkIrQ3MRy6nodMfMzH4HtuNjpSurFJ6wVzzRRcK3lUcfFuEpW+PqtO4/gRYOiRnvJ9/91PUtPPD9UA7w8tTp95+yBQ/gNXAiaqA+eHKQAAAABJRU5ErkJggg==" alt="영웅"><span><strong>영웅</strong> (고지 기댓값 8.0% / 실제 확률 7.5%(-0.5% 차이 , 267회 시도 / 20회 관측)</span></h4>
-<table><thead><tr><th>항목</th><th>기대값</th><th>실제값</th><th>횟수</th></tr></thead><tbody>
-<tr><td>🐾 펫</td><td class="num">0.800%</td><td class="num">1.498%</td><td class="num">4회</td></tr>
-<tr><td>⚔️ 무기</td><td class="num">0.400%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
-<tr><td>⚔️ 투구</td><td class="num">0.400%</td><td class="num">0.375%</td><td class="num">1회</td></tr>
-<tr><td>⚔️ 갑옷</td><td class="num">0.400%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
-<tr><td>⚔️ 바지</td><td class="num">0.400%</td><td class="num">0.749%</td><td class="num">2회</td></tr>
-<tr><td>⚔️ 신발</td><td class="num">0.400%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
-<tr><td>⚔️ 장갑</td><td class="num">0.400%</td><td class="num">1.124%</td><td class="num">3회</td></tr>
-<tr><td>⚔️ 목걸이</td><td class="num">0.400%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
-<tr><td>⚔️ 반지</td><td class="num">0.400%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
-<tr><td>⚔️ 귀걸이</td><td class="num">0.400%</td><td class="num">0.375%</td><td class="num">1회</td></tr>
-<tr><td>❄️ 첫서리 사냥꾼 세트 - 무기</td><td class="num">0.120%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
-<tr><td>❄️ 첫서리 사냥꾼 세트 - 투구</td><td class="num">0.120%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
-<tr><td>❄️ 첫서리 사냥꾼 세트 - 갑옷</td><td class="num">0.120%</td><td class="num">0.375%</td><td class="num">1회</td></tr>
-<tr><td>❄️ 첫서리 사냥꾼 세트 - 장갑</td><td class="num">0.120%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
-<tr><td>❄️ 첫서리 사냥꾼 세트 - 신발</td><td class="num">0.120%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
-<tr><td>❄️ 첫서리 사냥꾼 세트 - 바지</td><td class="num">0.120%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
-<tr><td>⚡ 폭풍추적자 세트 - 무기</td><td class="num">0.120%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
-<tr><td>⚡ 폭풍추적자 세트 - 투구</td><td class="num">0.120%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
-<tr><td>⚡ 폭풍추적자 세트 - 갑옷</td><td class="num">0.120%</td><td class="num">0.375%</td><td class="num">1회</td></tr>
-<tr><td>⚡ 폭풍추적자 세트 - 장갑</td><td class="num">0.120%</td><td class="num">0.375%</td><td class="num">1회</td></tr>
-<tr><td>⚡ 폭풍추적자 세트 - 신발</td><td class="num">0.120%</td><td class="num">0.375%</td><td class="num">1회</td></tr>
-<tr><td>⚡ 폭풍추적자 세트 - 바지</td><td class="num">0.120%</td><td class="num">0.375%</td><td class="num">1회</td></tr>
-<tr><td>👻 유령사수 세트 - 무기</td><td class="num">0.120%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
-<tr><td>👻 유령사수 세트 - 투구</td><td class="num">0.120%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
-<tr><td>👻 유령사수 세트 - 갑옷</td><td class="num">0.120%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
-<tr><td>👻 유령사수 세트 - 장갑</td><td class="num">0.120%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
-<tr><td>👻 유령사수 세트 - 신발</td><td class="num">0.120%</td><td class="num">0.375%</td><td class="num">1회</td></tr>
-<tr><td>👻 유령사수 세트 - 바지</td><td class="num">0.120%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
-<tr><td>🔥 화염 궁수 세트 - 무기</td><td class="num">0.120%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
-<tr><td>🔥 화염 궁수 세트 - 투구</td><td class="num">0.120%</td><td class="num">0.375%</td><td class="num">1회</td></tr>
-<tr><td>🔥 화염 궁수 세트 - 갑옷</td><td class="num">0.120%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
-<tr><td>🔥 화염 궁수 세트 - 장갑</td><td class="num">0.120%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
-<tr><td>🔥 화염 궁수 세트 - 신발</td><td class="num">0.120%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
-<tr><td>🔥 화염 궁수 세트 - 바지</td><td class="num">0.120%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
-<tr><td>🧪 연금술사 궁수 세트 - 무기</td><td class="num">0.120%</td><td class="num">0.375%</td><td class="num">1회</td></tr>
-<tr><td>🧪 연금술사 궁수 세트 - 투구</td><td class="num">0.120%</td><td class="num">0.375%</td><td class="num">1회</td></tr>
-<tr><td>🧪 연금술사 궁수 세트 - 갑옷</td><td class="num">0.120%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
-<tr><td>🧪 연금술사 궁수 세트 - 장갑</td><td class="num">0.120%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
-<tr><td>🧪 연금술사 궁수 세트 - 신발</td><td class="num">0.120%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
-<tr><td>🧪 연금술사 궁수 세트 - 바지</td><td class="num">0.120%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
-</tbody></table>
-<h4 class="ico-line grade"><img class="ico" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAA3CAYAAAASeFomAAACb0lEQVR4nL2YsVLCQBCGLwzY4lDhjI9AZ6EzvAEPYIGF1hRJQ0MeIFjQYEGthRY+AG/AjBZ2lJbOaJXRVos4G7K4rHeXu8uFnckkJCFf/v/2spsIUUQ4bGewiDojHLazLHvNl9pgIYHUCWuIfUbIrPtYD+obq7BIBoDA4tu+Bm7cPHwF9EAc93O47GZcQDsXh+C2dXvL7Tnfn7dPsB6PolPZzVkFtU81VgCEpbK9eAGfsEB1QAagNmIADKwss7EpDKJzfJ6vP9Yi48CDw6uzzdhFmQ5mNGHTt0cGHOyoBdhsMX/W2Si9A/oHSHOuDOHcSp2NpSAdMGUwmv4cJrUOTuInJslqRw0CqY1goVCE0YTjClEdgBDKlXFVRsmgy6YOGTcvZYLC0EadhTwLreqRDua98Kls7DBVEFRVpQqbMFXwG0sJz0AnkEzVeBRpM9XoWWeiKo77E36sUJrXLufCFe4+pnJIkqym9Bzc3+0tr90rpNjAKGS2mP+zE497abcSBmm1L99hDftQpfe+rlVAcF17A/nzdXfkNevKAF4VxXF/wucRT4a9pXdT+ImpEGIim7QFvDoo/iuCU2ofPKY2pX3z5HACqbodgMp6v8rJEJOSzgMbFWeQSk0qab9o32AFkvV7Hd89gw6SSvo7py5I1+qmhj1D06Wfg6CWlalRgqq2xLIonUc2TT6EVZMPwVsnqgLC5k3COBmqQozHSAWwebWUHtR9AjB5FzKyjquh70WukNJvDBxKX/lDy28MgY1leHEXFYHqCQCWVfoEwyJAyPz+Jd8RXZzka5+QbTIghG97B0WFCr7tM6Rj5Ns2uOgvvw4AlVeYLKYAAAAASUVORK5CYII=" alt="유일"><span><strong>유일</strong> (고지 기댓값 25.0% / 실제 확률 23.2%(-1.8% 차이 , 267회 시도 / 62회 관측)</span></h4>
-<table><thead><tr><th>항목</th><th>기대값</th><th>실제값</th><th>횟수</th></tr></thead><tbody>
-<tr><td>🐾 펫</td><td class="num">2.500%</td><td class="num">0.749%</td><td class="num">2회</td></tr>
-<tr><td>⚔️ 무기</td><td class="num">1.250%</td><td class="num">0.375%</td><td class="num">1회</td></tr>
-<tr><td>⚔️ 투구</td><td class="num">1.250%</td><td class="num">0.749%</td><td class="num">2회</td></tr>
-<tr><td>⚔️ 갑옷</td><td class="num">1.250%</td><td class="num">1.498%</td><td class="num">4회</td></tr>
-<tr><td>⚔️ 바지</td><td class="num">1.250%</td><td class="num">0.375%</td><td class="num">1회</td></tr>
-<tr><td>⚔️ 신발</td><td class="num">1.250%</td><td class="num">2.996%</td><td class="num">8회</td></tr>
-<tr><td>⚔️ 장갑</td><td class="num">1.250%</td><td class="num">1.124%</td><td class="num">3회</td></tr>
-<tr><td>⚔️ 목걸이</td><td class="num">1.250%</td><td class="num">0.749%</td><td class="num">2회</td></tr>
-<tr><td>⚔️ 반지</td><td class="num">1.250%</td><td class="num">1.124%</td><td class="num">3회</td></tr>
-<tr><td>⚔️ 귀걸이</td><td class="num">1.250%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
-<tr><td>❄️ 첫서리 사냥꾼 세트 - 무기</td><td class="num">0.375%</td><td class="num">0.375%</td><td class="num">1회</td></tr>
-<tr><td>❄️ 첫서리 사냥꾼 세트 - 투구</td><td class="num">0.375%</td><td class="num">0.749%</td><td class="num">2회</td></tr>
-<tr><td>❄️ 첫서리 사냥꾼 세트 - 갑옷</td><td class="num">0.375%</td><td class="num">0.749%</td><td class="num">2회</td></tr>
-<tr><td>❄️ 첫서리 사냥꾼 세트 - 장갑</td><td class="num">0.375%</td><td class="num">0.375%</td><td class="num">1회</td></tr>
-<tr><td>❄️ 첫서리 사냥꾼 세트 - 신발</td><td class="num">0.375%</td><td class="num">0.375%</td><td class="num">1회</td></tr>
-<tr><td>❄️ 첫서리 사냥꾼 세트 - 바지</td><td class="num">0.375%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
-<tr><td>⚡ 폭풍추적자 세트 - 무기</td><td class="num">0.375%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
-<tr><td>⚡ 폭풍추적자 세트 - 투구</td><td class="num">0.375%</td><td class="num">0.749%</td><td class="num">2회</td></tr>
-<tr><td>⚡ 폭풍추적자 세트 - 갑옷</td><td class="num">0.375%</td><td class="num">0.375%</td><td class="num">1회</td></tr>
-<tr><td>⚡ 폭풍추적자 세트 - 장갑</td><td class="num">0.375%</td><td class="num">0.749%</td><td class="num">2회</td></tr>
-<tr><td>⚡ 폭풍추적자 세트 - 신발</td><td class="num">0.375%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
-<tr><td>⚡ 폭풍추적자 세트 - 바지</td><td class="num">0.375%</td><td class="num">1.124%</td><td class="num">3회</td></tr>
-<tr><td>👻 유령사수 세트 - 무기</td><td class="num">0.375%</td><td class="num">0.749%</td><td class="num">2회</td></tr>
-<tr><td>👻 유령사수 세트 - 투구</td><td class="num">0.375%</td><td class="num">0.375%</td><td class="num">1회</td></tr>
-<tr><td>👻 유령사수 세트 - 갑옷</td><td class="num">0.375%</td><td class="num">0.375%</td><td class="num">1회</td></tr>
-<tr><td>👻 유령사수 세트 - 장갑</td><td class="num">0.375%</td><td class="num">0.375%</td><td class="num">1회</td></tr>
-<tr><td>👻 유령사수 세트 - 신발</td><td class="num">0.375%</td><td class="num">0.375%</td><td class="num">1회</td></tr>
-<tr><td>👻 유령사수 세트 - 바지</td><td class="num">0.375%</td><td class="num">0.749%</td><td class="num">2회</td></tr>
-<tr><td>🔥 화염 궁수 세트 - 무기</td><td class="num">0.375%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
-<tr><td>🔥 화염 궁수 세트 - 투구</td><td class="num">0.375%</td><td class="num">1.124%</td><td class="num">3회</td></tr>
-<tr><td>🔥 화염 궁수 세트 - 갑옷</td><td class="num">0.375%</td><td class="num">0.375%</td><td class="num">1회</td></tr>
-<tr><td>🔥 화염 궁수 세트 - 장갑</td><td class="num">0.375%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
-<tr><td>🔥 화염 궁수 세트 - 신발</td><td class="num">0.375%</td><td class="num">0.749%</td><td class="num">2회</td></tr>
-<tr><td>🔥 화염 궁수 세트 - 바지</td><td class="num">0.375%</td><td class="num">0.375%</td><td class="num">1회</td></tr>
-<tr><td>🧪 연금술사 궁수 세트 - 무기</td><td class="num">0.375%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
-<tr><td>🧪 연금술사 궁수 세트 - 투구</td><td class="num">0.375%</td><td class="num">0.375%</td><td class="num">1회</td></tr>
-<tr><td>🧪 연금술사 궁수 세트 - 갑옷</td><td class="num">0.375%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
-<tr><td>🧪 연금술사 궁수 세트 - 장갑</td><td class="num">0.375%</td><td class="num">0.375%</td><td class="num">1회</td></tr>
-<tr><td>🧪 연금술사 궁수 세트 - 신발</td><td class="num">0.375%</td><td class="num">0.749%</td><td class="num">2회</td></tr>
-<tr><td>🧪 연금술사 궁수 세트 - 바지</td><td class="num">0.375%</td><td class="num">0.749%</td><td class="num">2회</td></tr>
-</tbody></table>
-<h4 class="ico-line grade"><img class="ico" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAA3CAYAAAASeFomAAACHklEQVR4nL2YPU7DMBSA4yjcwAudegHGutwAqQfIylBRqSwslQongEosLFQqqgRrDlCJG9CwwcrQqSwdmGEIcoir10ccO/Fzn2TZblx/eT+2XxwEhfDuMJMl8Cm8O8w+vrK8eINxAPEJC4N9Ckem681X5BoxCJO1GIzzfjqbBJvldPuczHQbNKkEUvqK4R+w2Rb9NvMSDOlsEuxNeGEyqR1VYDDdgzKAixkjm0Fxp/XXKOBNgFYLNnld7wCbmLP0zWBYq3UFQQpeRzMjqAqY1IBVDsJAFxizeRsdMO60tv4zwayCoWrPi4HfnEEYpnYPGI2mSKx1HlXByA8+nRljg1ZOJ2yKtJJ9XZLTCFSm1ejsYqePYY03Sa45FMVgfCXrdDa5hi9ltanaiEAA1V8sp+6T88IfvfnqUrUf377zAp+Rp1u3D3d5fXp08KnaJMKBNkqTLMvWqijN5BhvCeTT+88h2WQc+UhpBf3kxUcjsJbwuiJbR0IX3v32Ddk6EoPxP4Dswx3EWSMBDkFoLrxNRcTbT6A7aZ2CQQBtTBJSaZMYkpRaoLJ8L6bOGaogiUXKZQWq+iBLLHOGyDWBlNI4gfSREkemAV6TfCk4dYJaSKn7jWQVDK4Qremwj1wASkr/6OMKIDRpQ3UdEGIIjDLKaxq2j1sTKUy3A1BfOjEFeXm+z384PjnPa0rI1kcKgtvkoONCC9ymlFIfUZtNTvoLW9SBm7wjJ8sAAAAASUVORK5CYII=" alt="매직"><span><strong>매직</strong> (고지 기댓값 33.0% / 실제 확률 35.2%(+2.2% 차이 , 267회 시도 / 94회 관측)</span></h4>
-<table><thead><tr><th>항목</th><th>기대값</th><th>실제값</th><th>횟수</th></tr></thead><tbody>
-<tr><td>🐾 펫</td><td class="num">3.300%</td><td class="num">3.745%</td><td class="num">10회</td></tr>
-<tr><td>⚔️ 무기</td><td class="num">1.650%</td><td class="num">1.873%</td><td class="num">5회</td></tr>
-<tr><td>⚔️ 투구</td><td class="num">1.650%</td><td class="num">2.247%</td><td class="num">6회</td></tr>
-<tr><td>⚔️ 갑옷</td><td class="num">1.650%</td><td class="num">1.873%</td><td class="num">5회</td></tr>
-<tr><td>⚔️ 바지</td><td class="num">1.650%</td><td class="num">2.247%</td><td class="num">6회</td></tr>
-<tr><td>⚔️ 신발</td><td class="num">1.650%</td><td class="num">1.498%</td><td class="num">4회</td></tr>
-<tr><td>⚔️ 장갑</td><td class="num">1.650%</td><td class="num">1.498%</td><td class="num">4회</td></tr>
-<tr><td>⚔️ 목걸이</td><td class="num">1.650%</td><td class="num">1.124%</td><td class="num">3회</td></tr>
-<tr><td>⚔️ 반지</td><td class="num">1.650%</td><td class="num">1.873%</td><td class="num">5회</td></tr>
-<tr><td>⚔️ 귀걸이</td><td class="num">1.650%</td><td class="num">2.247%</td><td class="num">6회</td></tr>
-<tr><td>❄️ 첫서리 사냥꾼 세트 - 무기</td><td class="num">0.495%</td><td class="num">0.375%</td><td class="num">1회</td></tr>
-<tr><td>❄️ 첫서리 사냥꾼 세트 - 투구</td><td class="num">0.495%</td><td class="num">0.749%</td><td class="num">2회</td></tr>
-<tr><td>❄️ 첫서리 사냥꾼 세트 - 갑옷</td><td class="num">0.495%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
-<tr><td>❄️ 첫서리 사냥꾼 세트 - 장갑</td><td class="num">0.495%</td><td class="num">0.375%</td><td class="num">1회</td></tr>
-<tr><td>❄️ 첫서리 사냥꾼 세트 - 신발</td><td class="num">0.495%</td><td class="num">0.749%</td><td class="num">2회</td></tr>
-<tr><td>❄️ 첫서리 사냥꾼 세트 - 바지</td><td class="num">0.495%</td><td class="num">0.375%</td><td class="num">1회</td></tr>
-<tr><td>⚡ 폭풍추적자 세트 - 무기</td><td class="num">0.495%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
-<tr><td>⚡ 폭풍추적자 세트 - 투구</td><td class="num">0.495%</td><td class="num">0.749%</td><td class="num">2회</td></tr>
-<tr><td>⚡ 폭풍추적자 세트 - 갑옷</td><td class="num">0.495%</td><td class="num">0.375%</td><td class="num">1회</td></tr>
-<tr><td>⚡ 폭풍추적자 세트 - 장갑</td><td class="num">0.495%</td><td class="num">0.749%</td><td class="num">2회</td></tr>
-<tr><td>⚡ 폭풍추적자 세트 - 신발</td><td class="num">0.495%</td><td class="num">1.124%</td><td class="num">3회</td></tr>
-<tr><td>⚡ 폭풍추적자 세트 - 바지</td><td class="num">0.495%</td><td class="num">0.375%</td><td class="num">1회</td></tr>
-<tr><td>👻 유령사수 세트 - 무기</td><td class="num">0.495%</td><td class="num">0.375%</td><td class="num">1회</td></tr>
-<tr><td>👻 유령사수 세트 - 투구</td><td class="num">0.495%</td><td class="num">1.124%</td><td class="num">3회</td></tr>
-<tr><td>👻 유령사수 세트 - 갑옷</td><td class="num">0.495%</td><td class="num">0.749%</td><td class="num">2회</td></tr>
-<tr><td>👻 유령사수 세트 - 장갑</td><td class="num">0.495%</td><td class="num">0.749%</td><td class="num">2회</td></tr>
-<tr><td>👻 유령사수 세트 - 신발</td><td class="num">0.495%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
-<tr><td>👻 유령사수 세트 - 바지</td><td class="num">0.495%</td><td class="num">0.749%</td><td class="num">2회</td></tr>
-<tr><td>🔥 화염 궁수 세트 - 무기</td><td class="num">0.495%</td><td class="num">0.375%</td><td class="num">1회</td></tr>
-<tr><td>🔥 화염 궁수 세트 - 투구</td><td class="num">0.495%</td><td class="num">0.749%</td><td class="num">2회</td></tr>
-<tr><td>🔥 화염 궁수 세트 - 갑옷</td><td class="num">0.495%</td><td class="num">0.749%</td><td class="num">2회</td></tr>
-<tr><td>🔥 화염 궁수 세트 - 장갑</td><td class="num">0.495%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
-<tr><td>🔥 화염 궁수 세트 - 신발</td><td class="num">0.495%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
-<tr><td>🔥 화염 궁수 세트 - 바지</td><td class="num">0.495%</td><td class="num">0.375%</td><td class="num">1회</td></tr>
-<tr><td>🧪 연금술사 궁수 세트 - 무기</td><td class="num">0.495%</td><td class="num">1.124%</td><td class="num">3회</td></tr>
-<tr><td>🧪 연금술사 궁수 세트 - 투구</td><td class="num">0.495%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
-<tr><td>🧪 연금술사 궁수 세트 - 갑옷</td><td class="num">0.495%</td><td class="num">0.749%</td><td class="num">2회</td></tr>
-<tr><td>🧪 연금술사 궁수 세트 - 장갑</td><td class="num">0.495%</td><td class="num">0.749%</td><td class="num">2회</td></tr>
-<tr><td>🧪 연금술사 궁수 세트 - 신발</td><td class="num">0.495%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
-<tr><td>🧪 연금술사 궁수 세트 - 바지</td><td class="num">0.495%</td><td class="num">0.375%</td><td class="num">1회</td></tr>
-</tbody></table>
-<h4 class="ico-line grade"><img class="ico" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAArCAYAAAB4pah1AAABV0lEQVR4nM2Xu43DMAyGRcJLpLkN0rjJBqmzQerrU9wQWeLW0AZp3HiDazyGA/lCg2b0oGgjCQEDAm19+EWJIu3cw4773Rget9KaGdZ+kW/0/QBWIAqYC+M1StE6MQn0/QC++5sdYRxUXs+H0RxD/x+zCRBg7aGdXl4fvsvvTR1ToIFURNDu1rkaKEyq2CbwDSIogTVQkMAcWAOFBUSALVCIOVPgAC3FFGPOXKbwuKqBEkrnlNQFaOqcYsypgZpTzyeWn1KJJeACLlROabpfXnvqlKJJtOM8//lqqoGvv76c0rS3OFpU8JT8nCW/DQg1H2uODm4J23yXfT8AWmE/36cnmKMyal1ugF/EzV2lkJeClKFVXapYoRamUZcF5mC5UoolmLRSTWlyoFRbUiz0xw1bkUYD0sJe087xtKqFBYNUeYyllcaQw/jYApuBsmlfY9EYrvnxuQO0F8awPvjU0gAAAABJRU5ErkJggg==" alt="노말"><span><strong>노말</strong> (고지 기댓값 30.0% / 실제 확률 30.0%(-0.0% 차이 , 267회 시도 / 80회 관측)</span></h4>
-<table><thead><tr><th>항목</th><th>기대값</th><th>실제값</th><th>횟수</th></tr></thead><tbody>
-<tr><td>🐾 펫</td><td class="num">3.000%</td><td class="num">2.622%</td><td class="num">7회</td></tr>
-<tr><td>⚔️ 무기</td><td class="num">1.500%</td><td class="num">1.124%</td><td class="num">3회</td></tr>
-<tr><td>⚔️ 투구</td><td class="num">1.500%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
-<tr><td>⚔️ 갑옷</td><td class="num">1.500%</td><td class="num">1.873%</td><td class="num">5회</td></tr>
-<tr><td>⚔️ 바지</td><td class="num">1.500%</td><td class="num">1.124%</td><td class="num">3회</td></tr>
-<tr><td>⚔️ 신발</td><td class="num">1.500%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
-<tr><td>⚔️ 장갑</td><td class="num">1.500%</td><td class="num">1.124%</td><td class="num">3회</td></tr>
-<tr><td>⚔️ 목걸이</td><td class="num">1.500%</td><td class="num">2.247%</td><td class="num">6회</td></tr>
-<tr><td>⚔️ 반지</td><td class="num">1.500%</td><td class="num">1.873%</td><td class="num">5회</td></tr>
-<tr><td>⚔️ 귀걸이</td><td class="num">1.500%</td><td class="num">1.124%</td><td class="num">3회</td></tr>
-<tr><td>❄️ 첫서리 사냥꾼 세트 - 무기</td><td class="num">0.450%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
-<tr><td>❄️ 첫서리 사냥꾼 세트 - 투구</td><td class="num">0.450%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
-<tr><td>❄️ 첫서리 사냥꾼 세트 - 갑옷</td><td class="num">0.450%</td><td class="num">1.124%</td><td class="num">3회</td></tr>
-<tr><td>❄️ 첫서리 사냥꾼 세트 - 장갑</td><td class="num">0.450%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
-<tr><td>❄️ 첫서리 사냥꾼 세트 - 신발</td><td class="num">0.450%</td><td class="num">1.124%</td><td class="num">3회</td></tr>
-<tr><td>❄️ 첫서리 사냥꾼 세트 - 바지</td><td class="num">0.450%</td><td class="num">0.375%</td><td class="num">1회</td></tr>
-<tr><td>⚡ 폭풍추적자 세트 - 무기</td><td class="num">0.450%</td><td class="num">0.749%</td><td class="num">2회</td></tr>
-<tr><td>⚡ 폭풍추적자 세트 - 투구</td><td class="num">0.450%</td><td class="num">0.749%</td><td class="num">2회</td></tr>
-<tr><td>⚡ 폭풍추적자 세트 - 갑옷</td><td class="num">0.450%</td><td class="num">0.749%</td><td class="num">2회</td></tr>
-<tr><td>⚡ 폭풍추적자 세트 - 장갑</td><td class="num">0.450%</td><td class="num">0.375%</td><td class="num">1회</td></tr>
-<tr><td>⚡ 폭풍추적자 세트 - 신발</td><td class="num">0.450%</td><td class="num">0.375%</td><td class="num">1회</td></tr>
-<tr><td>⚡ 폭풍추적자 세트 - 바지</td><td class="num">0.450%</td><td class="num">0.375%</td><td class="num">1회</td></tr>
-<tr><td>👻 유령사수 세트 - 무기</td><td class="num">0.450%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
-<tr><td>👻 유령사수 세트 - 투구</td><td class="num">0.450%</td><td class="num">0.749%</td><td class="num">2회</td></tr>
-<tr><td>👻 유령사수 세트 - 갑옷</td><td class="num">0.450%</td><td class="num">1.498%</td><td class="num">4회</td></tr>
-<tr><td>👻 유령사수 세트 - 장갑</td><td class="num">0.450%</td><td class="num">0.375%</td><td class="num">1회</td></tr>
-<tr><td>👻 유령사수 세트 - 신발</td><td class="num">0.450%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
-<tr><td>👻 유령사수 세트 - 바지</td><td class="num">0.450%</td><td class="num">0.375%</td><td class="num">1회</td></tr>
-<tr><td>🔥 화염 궁수 세트 - 무기</td><td class="num">0.450%</td><td class="num">0.375%</td><td class="num">1회</td></tr>
-<tr><td>🔥 화염 궁수 세트 - 투구</td><td class="num">0.450%</td><td class="num">0.375%</td><td class="num">1회</td></tr>
-<tr><td>🔥 화염 궁수 세트 - 갑옷</td><td class="num">0.450%</td><td class="num">0.375%</td><td class="num">1회</td></tr>
-<tr><td>🔥 화염 궁수 세트 - 장갑</td><td class="num">0.450%</td><td class="num">0.375%</td><td class="num">1회</td></tr>
-<tr><td>🔥 화염 궁수 세트 - 신발</td><td class="num">0.450%</td><td class="num">0.749%</td><td class="num">2회</td></tr>
-<tr><td>🔥 화염 궁수 세트 - 바지</td><td class="num">0.450%</td><td class="num">0.749%</td><td class="num">2회</td></tr>
-<tr><td>🧪 연금술사 궁수 세트 - 무기</td><td class="num">0.450%</td><td class="num">1.498%</td><td class="num">4회</td></tr>
-<tr><td>🧪 연금술사 궁수 세트 - 투구</td><td class="num">0.450%</td><td class="num">1.124%</td><td class="num">3회</td></tr>
-<tr><td>🧪 연금술사 궁수 세트 - 갑옷</td><td class="num">0.450%</td><td class="num">0.375%</td><td class="num">1회</td></tr>
-<tr><td>🧪 연금술사 궁수 세트 - 장갑</td><td class="num">0.450%</td><td class="num">0.749%</td><td class="num">2회</td></tr>
-<tr><td>🧪 연금술사 궁수 세트 - 신발</td><td class="num">0.450%</td><td class="num">0.749%</td><td class="num">2회</td></tr>
-<tr><td>🧪 연금술사 궁수 세트 - 바지</td><td class="num">0.450%</td><td class="num">0.375%</td><td class="num">1회</td></tr>
-</tbody></table>
 <h4 class="ico-line"><svg class="ico coin" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="#edf7ff" stroke="#8ca6c7" stroke-width="2"/><circle cx="12" cy="12" r="6" fill="none" stroke="#8ca6c7" stroke-width="1" opacity=".55"/></svg><span>다이아코인</span></h4>
-<h4 class="ico-line grade"><img class="ico" src="data:image/png;base64,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" alt="신화"><span><strong>신화</strong> (고지 기댓값 5.0% / 실제 확률 5.9%(+0.9% 차이 , 2,788회 시도 / 164회 관측)</span></h4>
+<h4 class="ico-line grade"><img class="ico" src="data:image/png;base64,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" alt="신화"><span><strong><span class="g" style="color:#b45ae0">신화</span></strong> (고지 기댓값 5.0% / 실제 확률 5.9%(+0.9% 차이 , 2,788회 시도 / 164회 관측)</span></h4>
 <table><thead><tr><th>항목</th><th>기대값</th><th>실제값</th><th>횟수</th></tr></thead><tbody>
 <tr><td>🐾 펫</td><td class="num">0.500%</td><td class="num">0.681%</td><td class="num">19회</td></tr>
 <tr><td>⚔️ 무기</td><td class="num">0.250%</td><td class="num">0.179%</td><td class="num">5회</td></tr>
@@ -698,7 +180,7 @@ a { color:var(--accent); }
 <tr><td>🧪 연금술사 궁수 세트 - 신발</td><td class="num">0.075%</td><td class="num">0.072%</td><td class="num">2회</td></tr>
 <tr><td>🧪 연금술사 궁수 세트 - 바지</td><td class="num">0.075%</td><td class="num">0.036%</td><td class="num">1회</td></tr>
 </tbody></table>
-<h4 class="ico-line grade"><img class="ico" src="data:image/png;base64,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" alt="전설"><span><strong>전설</strong> (고지 기댓값 15.0% / 실제 확률 14.3%(-0.7% 차이 , 2,788회 시도 / 398회 관측)</span></h4>
+<h4 class="ico-line grade"><img class="ico" src="data:image/png;base64,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" alt="전설"><span><strong><span class="g" style="color:#ff5a4a">전설</span></strong> (고지 기댓값 15.0% / 실제 확률 14.3%(-0.7% 차이 , 2,788회 시도 / 398회 관측)</span></h4>
 <table><thead><tr><th>항목</th><th>기대값</th><th>실제값</th><th>횟수</th></tr></thead><tbody>
 <tr><td>🐾 펫</td><td class="num">1.500%</td><td class="num">1.220%</td><td class="num">34회</td></tr>
 <tr><td>⚔️ 무기</td><td class="num">0.750%</td><td class="num">0.610%</td><td class="num">17회</td></tr>
@@ -741,7 +223,7 @@ a { color:var(--accent); }
 <tr><td>🧪 연금술사 궁수 세트 - 신발</td><td class="num">0.225%</td><td class="num">0.179%</td><td class="num">5회</td></tr>
 <tr><td>🧪 연금술사 궁수 세트 - 바지</td><td class="num">0.225%</td><td class="num">0.251%</td><td class="num">7회</td></tr>
 </tbody></table>
-<h4 class="ico-line grade"><img class="ico" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAA3CAYAAAD9ujEYAAAC70lEQVR4nL2YrY/bMBTAX6vuQNDR8eJDkUKuYAergUn9Pw5NJ4cUlMQ6Hcr/UWmocAMdWKWi4vKBkUMBG8j0fH7R66uT2Pm4J1lxnDS/vi/72QBWVBKV2GBsUUlUln9+mTYqUDHQ2MApvLcoYcbX57sgzVSoJShAEITN9u+xNf3m73dVBptRH4rJxYdWc9Db8x77BOURi9dN9gjrNPdWaMZvEKhWUHIgl032eDCdNDegUJnJAb09X0FI1mmeWCh0kYlr0JhrNV8AgDEjAGDfSBQvaawyoRYuCAp9AQLbN/fFcVeBybTKMxqdsNun009+H8VL0wiKQIIWx91XX2Ct+jLXLAw/TkMXGkbx8gV92mTSWp9VfRYsBGTQIOCkDdYElcAoXr7wqOWCf6AxiiS0DajtJMBTAyOWNPUK2TooArkPeVpIkPes3+R04cdFHcgbJoE4y9iPc+Ceg1zpELSeNQG5dnZS6L941pk0EtqhSO16rdRSO709m4jEhjNL66zvBcGlSPhjneYYpSkbuh8E5tJOWZDenjO6L467bwCQDAajDxOEEnqd5hVUH07gndS1kLd1L0VQ3YJK5r19OuleASJ8VMmHT9lvEPL6fKd6141SKwLRFZ+RiUcrUv/9SD/KsV4+Q9Pg1cdnQyS1MY+PYIB01kys5qkj9KtnCBoszwAgI1Px/MKr/RN6kABhC2kFIVAUL7/wdztp1lC2ZaIIuoD1Teqr1VoWP71gdVoVtvDBOoQKH1nWBcFc9aRLK7uVuirnpkOACqYVB3aCNdXxsgbhIoGDFana+skFu3l4mzxGK7+1ozBqzbOQjQVK8MZirC3TtO5BG4jnU+QBqjWj9JnUhoe4LwjF+YLjhKfaEsntkBnvuoGXWlFdaJ6t5gt+yBJ6RDGTIB599kzkIrQ3MRy6nodMfMzH4HtuNjpSurFJ6wVzzRRcK3lUcfFuEpW+PqtO4/gRYOiRnvJ9/91PUtPPD9UA7w8tTp95+yBQ/gNXAiaqA+eHKQAAAABJRU5ErkJggg==" alt="영웅"><span><strong>영웅</strong> (고지 기댓값 35.0% / 실제 확률 33.2%(-1.8% 차이 , 2,788회 시도 / 925회 관측)</span></h4>
+<h4 class="ico-line grade"><img class="ico" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAA3CAYAAAD9ujEYAAAC70lEQVR4nL2YrY/bMBTAX6vuQNDR8eJDkUKuYAergUn9Pw5NJ4cUlMQ6Hcr/UWmocAMdWKWi4vKBkUMBG8j0fH7R66uT2Pm4J1lxnDS/vi/72QBWVBKV2GBsUUlUln9+mTYqUDHQ2MApvLcoYcbX57sgzVSoJShAEITN9u+xNf3m73dVBptRH4rJxYdWc9Db8x77BOURi9dN9gjrNPdWaMZvEKhWUHIgl032eDCdNDegUJnJAb09X0FI1mmeWCh0kYlr0JhrNV8AgDEjAGDfSBQvaawyoRYuCAp9AQLbN/fFcVeBybTKMxqdsNun009+H8VL0wiKQIIWx91XX2Ct+jLXLAw/TkMXGkbx8gV92mTSWp9VfRYsBGTQIOCkDdYElcAoXr7wqOWCf6AxiiS0DajtJMBTAyOWNPUK2TooArkPeVpIkPes3+R04cdFHcgbJoE4y9iPc+Ceg1zpELSeNQG5dnZS6L941pk0EtqhSO16rdRSO709m4jEhjNL66zvBcGlSPhjneYYpSkbuh8E5tJOWZDenjO6L467bwCQDAajDxOEEnqd5hVUH07gndS1kLd1L0VQ3YJK5r19OuleASJ8VMmHT9lvEPL6fKd6141SKwLRFZ+RiUcrUv/9SD/KsV4+Q9Pg1cdnQyS1MY+PYIB01kys5qkj9KtnCBoszwAgI1Px/MKr/RN6kABhC2kFIVAUL7/wdztp1lC2ZaIIuoD1Teqr1VoWP71gdVoVtvDBOoQKH1nWBcFc9aRLK7uVuirnpkOACqYVB3aCNdXxsgbhIoGDFana+skFu3l4mzxGK7+1ozBqzbOQjQVK8MZirC3TtO5BG4jnU+QBqjWj9JnUhoe4LwjF+YLjhKfaEsntkBnvuoGXWlFdaJ6t5gt+yBJ6RDGTIB599kzkIrQ3MRy6nodMfMzH4HtuNjpSurFJ6wVzzRRcK3lUcfFuEpW+PqtO4/gRYOiRnvJ9/91PUtPPD9UA7w8tTp95+yBQ/gNXAiaqA+eHKQAAAABJRU5ErkJggg==" alt="영웅"><span><strong><span class="g" style="color:#f08a2e">영웅</span></strong> (고지 기댓값 35.0% / 실제 확률 33.2%(-1.8% 차이 , 2,788회 시도 / 925회 관측)</span></h4>
 <table><thead><tr><th>항목</th><th>기대값</th><th>실제값</th><th>횟수</th></tr></thead><tbody>
 <tr><td>🐾 펫</td><td class="num">3.500%</td><td class="num">3.228%</td><td class="num">90회</td></tr>
 <tr><td>⚔️ 무기</td><td class="num">1.750%</td><td class="num">1.614%</td><td class="num">45회</td></tr>
@@ -784,7 +266,7 @@ a { color:var(--accent); }
 <tr><td>🧪 연금술사 궁수 세트 - 신발</td><td class="num">0.525%</td><td class="num">0.681%</td><td class="num">19회</td></tr>
 <tr><td>🧪 연금술사 궁수 세트 - 바지</td><td class="num">0.525%</td><td class="num">0.466%</td><td class="num">13회</td></tr>
 </tbody></table>
-<h4 class="ico-line grade"><img class="ico" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAA3CAYAAAASeFomAAACb0lEQVR4nL2YsVLCQBCGLwzY4lDhjI9AZ6EzvAEPYIGF1hRJQ0MeIFjQYEGthRY+AG/AjBZ2lJbOaJXRVos4G7K4rHeXu8uFnckkJCFf/v/2spsIUUQ4bGewiDojHLazLHvNl9pgIYHUCWuIfUbIrPtYD+obq7BIBoDA4tu+Bm7cPHwF9EAc93O47GZcQDsXh+C2dXvL7Tnfn7dPsB6PolPZzVkFtU81VgCEpbK9eAGfsEB1QAagNmIADKwss7EpDKJzfJ6vP9Yi48CDw6uzzdhFmQ5mNGHTt0cGHOyoBdhsMX/W2Si9A/oHSHOuDOHcSp2NpSAdMGUwmv4cJrUOTuInJslqRw0CqY1goVCE0YTjClEdgBDKlXFVRsmgy6YOGTcvZYLC0EadhTwLreqRDua98Kls7DBVEFRVpQqbMFXwG0sJz0AnkEzVeBRpM9XoWWeiKo77E36sUJrXLufCFe4+pnJIkqym9Bzc3+0tr90rpNjAKGS2mP+zE497abcSBmm1L99hDftQpfe+rlVAcF17A/nzdXfkNevKAF4VxXF/wucRT4a9pXdT+ImpEGIim7QFvDoo/iuCU2ofPKY2pX3z5HACqbodgMp6v8rJEJOSzgMbFWeQSk0qab9o32AFkvV7Hd89gw6SSvo7py5I1+qmhj1D06Wfg6CWlalRgqq2xLIonUc2TT6EVZMPwVsnqgLC5k3COBmqQozHSAWwebWUHtR9AjB5FzKyjquh70WukNJvDBxKX/lDy28MgY1leHEXFYHqCQCWVfoEwyJAyPz+Jd8RXZzka5+QbTIghG97B0WFCr7tM6Rj5Ns2uOgvvw4AlVeYLKYAAAAASUVORK5CYII=" alt="유일"><span><strong>유일</strong> (고지 기댓값 45.0% / 실제 확률 46.7%(+1.7% 차이 , 2,788회 시도 / 1,301회 관측)</span></h4>
+<h4 class="ico-line grade"><img class="ico" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAA3CAYAAAASeFomAAACb0lEQVR4nL2YsVLCQBCGLwzY4lDhjI9AZ6EzvAEPYIGF1hRJQ0MeIFjQYEGthRY+AG/AjBZ2lJbOaJXRVos4G7K4rHeXu8uFnckkJCFf/v/2spsIUUQ4bGewiDojHLazLHvNl9pgIYHUCWuIfUbIrPtYD+obq7BIBoDA4tu+Bm7cPHwF9EAc93O47GZcQDsXh+C2dXvL7Tnfn7dPsB6PolPZzVkFtU81VgCEpbK9eAGfsEB1QAagNmIADKwss7EpDKJzfJ6vP9Yi48CDw6uzzdhFmQ5mNGHTt0cGHOyoBdhsMX/W2Si9A/oHSHOuDOHcSp2NpSAdMGUwmv4cJrUOTuInJslqRw0CqY1goVCE0YTjClEdgBDKlXFVRsmgy6YOGTcvZYLC0EadhTwLreqRDua98Kls7DBVEFRVpQqbMFXwG0sJz0AnkEzVeBRpM9XoWWeiKo77E36sUJrXLufCFe4+pnJIkqym9Bzc3+0tr90rpNjAKGS2mP+zE497abcSBmm1L99hDftQpfe+rlVAcF17A/nzdXfkNevKAF4VxXF/wucRT4a9pXdT+ImpEGIim7QFvDoo/iuCU2ofPKY2pX3z5HACqbodgMp6v8rJEJOSzgMbFWeQSk0qab9o32AFkvV7Hd89gw6SSvo7py5I1+qmhj1D06Wfg6CWlalRgqq2xLIonUc2TT6EVZMPwVsnqgLC5k3COBmqQozHSAWwebWUHtR9AjB5FzKyjquh70WukNJvDBxKX/lDy28MgY1leHEXFYHqCQCWVfoEwyJAyPz+Jd8RXZzka5+QbTIghG97B0WFCr7tM6Rj5Ns2uOgvvw4AlVeYLKYAAAAASUVORK5CYII=" alt="유일"><span><strong><span class="g" style="color:#e8d44a">유일</span></strong> (고지 기댓값 45.0% / 실제 확률 46.7%(+1.7% 차이 , 2,788회 시도 / 1,301회 관측)</span></h4>
 <table><thead><tr><th>항목</th><th>기대값</th><th>실제값</th><th>횟수</th></tr></thead><tbody>
 <tr><td>🐾 펫</td><td class="num">4.500%</td><td class="num">4.304%</td><td class="num">120회</td></tr>
 <tr><td>⚔️ 무기</td><td class="num">2.250%</td><td class="num">2.331%</td><td class="num">65회</td></tr>
@@ -827,27 +309,546 @@ a { color:var(--accent); }
 <tr><td>🧪 연금술사 궁수 세트 - 신발</td><td class="num">0.675%</td><td class="num">0.933%</td><td class="num">26회</td></tr>
 <tr><td>🧪 연금술사 궁수 세트 - 바지</td><td class="num">0.675%</td><td class="num">0.789%</td><td class="num">22회</td></tr>
 </tbody></table>
+<h4 class="ico-line"><svg class="ico coin" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="#ffd640" stroke="#b88514" stroke-width="2"/><circle cx="12" cy="12" r="6" fill="none" stroke="#b88514" stroke-width="1" opacity=".55"/></svg><span>금코인</span></h4>
+<h4 class="ico-line grade"><img class="ico" src="data:image/png;base64,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" alt="전설"><span><strong><span class="g" style="color:#ff5a4a">전설</span></strong> (고지 기댓값 4.0% / 실제 확률 4.1%(+0.1% 차이 , 267회 시도 / 11회 관측)</span></h4>
+<table><thead><tr><th>항목</th><th>기대값</th><th>실제값</th><th>횟수</th></tr></thead><tbody>
+<tr><td>🐾 펫</td><td class="num">0.400%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
+<tr><td>⚔️ 무기</td><td class="num">0.200%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
+<tr><td>⚔️ 투구</td><td class="num">0.200%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
+<tr><td>⚔️ 갑옷</td><td class="num">0.200%</td><td class="num">0.375%</td><td class="num">1회</td></tr>
+<tr><td>⚔️ 바지</td><td class="num">0.200%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
+<tr><td>⚔️ 신발</td><td class="num">0.200%</td><td class="num">0.375%</td><td class="num">1회</td></tr>
+<tr><td>⚔️ 장갑</td><td class="num">0.200%</td><td class="num">1.124%</td><td class="num">3회</td></tr>
+<tr><td>⚔️ 목걸이</td><td class="num">0.200%</td><td class="num">0.375%</td><td class="num">1회</td></tr>
+<tr><td>⚔️ 반지</td><td class="num">0.200%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
+<tr><td>⚔️ 귀걸이</td><td class="num">0.200%</td><td class="num">0.375%</td><td class="num">1회</td></tr>
+<tr><td>❄️ 첫서리 사냥꾼 세트 - 무기</td><td class="num">0.060%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
+<tr><td>❄️ 첫서리 사냥꾼 세트 - 투구</td><td class="num">0.060%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
+<tr><td>❄️ 첫서리 사냥꾼 세트 - 갑옷</td><td class="num">0.060%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
+<tr><td>❄️ 첫서리 사냥꾼 세트 - 장갑</td><td class="num">0.060%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
+<tr><td>❄️ 첫서리 사냥꾼 세트 - 신발</td><td class="num">0.060%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
+<tr><td>❄️ 첫서리 사냥꾼 세트 - 바지</td><td class="num">0.060%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
+<tr><td>⚡ 폭풍추적자 세트 - 무기</td><td class="num">0.060%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
+<tr><td>⚡ 폭풍추적자 세트 - 투구</td><td class="num">0.060%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
+<tr><td>⚡ 폭풍추적자 세트 - 갑옷</td><td class="num">0.060%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
+<tr><td>⚡ 폭풍추적자 세트 - 장갑</td><td class="num">0.060%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
+<tr><td>⚡ 폭풍추적자 세트 - 신발</td><td class="num">0.060%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
+<tr><td>⚡ 폭풍추적자 세트 - 바지</td><td class="num">0.060%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
+<tr><td>👻 유령사수 세트 - 무기</td><td class="num">0.060%</td><td class="num">0.375%</td><td class="num">1회</td></tr>
+<tr><td>👻 유령사수 세트 - 투구</td><td class="num">0.060%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
+<tr><td>👻 유령사수 세트 - 갑옷</td><td class="num">0.060%</td><td class="num">0.375%</td><td class="num">1회</td></tr>
+<tr><td>👻 유령사수 세트 - 장갑</td><td class="num">0.060%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
+<tr><td>👻 유령사수 세트 - 신발</td><td class="num">0.060%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
+<tr><td>👻 유령사수 세트 - 바지</td><td class="num">0.060%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
+<tr><td>🔥 화염 궁수 세트 - 무기</td><td class="num">0.060%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
+<tr><td>🔥 화염 궁수 세트 - 투구</td><td class="num">0.060%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
+<tr><td>🔥 화염 궁수 세트 - 갑옷</td><td class="num">0.060%</td><td class="num">0.375%</td><td class="num">1회</td></tr>
+<tr><td>🔥 화염 궁수 세트 - 장갑</td><td class="num">0.060%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
+<tr><td>🔥 화염 궁수 세트 - 신발</td><td class="num">0.060%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
+<tr><td>🔥 화염 궁수 세트 - 바지</td><td class="num">0.060%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
+<tr><td>🧪 연금술사 궁수 세트 - 무기</td><td class="num">0.060%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
+<tr><td>🧪 연금술사 궁수 세트 - 투구</td><td class="num">0.060%</td><td class="num">0.375%</td><td class="num">1회</td></tr>
+<tr><td>🧪 연금술사 궁수 세트 - 갑옷</td><td class="num">0.060%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
+<tr><td>🧪 연금술사 궁수 세트 - 장갑</td><td class="num">0.060%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
+<tr><td>🧪 연금술사 궁수 세트 - 신발</td><td class="num">0.060%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
+<tr><td>🧪 연금술사 궁수 세트 - 바지</td><td class="num">0.060%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
+</tbody></table>
+<h4 class="ico-line grade"><img class="ico" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAA3CAYAAAD9ujEYAAAC70lEQVR4nL2YrY/bMBTAX6vuQNDR8eJDkUKuYAergUn9Pw5NJ4cUlMQ6Hcr/UWmocAMdWKWi4vKBkUMBG8j0fH7R66uT2Pm4J1lxnDS/vi/72QBWVBKV2GBsUUlUln9+mTYqUDHQ2MApvLcoYcbX57sgzVSoJShAEITN9u+xNf3m73dVBptRH4rJxYdWc9Db8x77BOURi9dN9gjrNPdWaMZvEKhWUHIgl032eDCdNDegUJnJAb09X0FI1mmeWCh0kYlr0JhrNV8AgDEjAGDfSBQvaawyoRYuCAp9AQLbN/fFcVeBybTKMxqdsNun009+H8VL0wiKQIIWx91XX2Ct+jLXLAw/TkMXGkbx8gV92mTSWp9VfRYsBGTQIOCkDdYElcAoXr7wqOWCf6AxiiS0DajtJMBTAyOWNPUK2TooArkPeVpIkPes3+R04cdFHcgbJoE4y9iPc+Ceg1zpELSeNQG5dnZS6L941pk0EtqhSO16rdRSO709m4jEhjNL66zvBcGlSPhjneYYpSkbuh8E5tJOWZDenjO6L467bwCQDAajDxOEEnqd5hVUH07gndS1kLd1L0VQ3YJK5r19OuleASJ8VMmHT9lvEPL6fKd6141SKwLRFZ+RiUcrUv/9SD/KsV4+Q9Pg1cdnQyS1MY+PYIB01kys5qkj9KtnCBoszwAgI1Px/MKr/RN6kABhC2kFIVAUL7/wdztp1lC2ZaIIuoD1Teqr1VoWP71gdVoVtvDBOoQKH1nWBcFc9aRLK7uVuirnpkOACqYVB3aCNdXxsgbhIoGDFana+skFu3l4mzxGK7+1ozBqzbOQjQVK8MZirC3TtO5BG4jnU+QBqjWj9JnUhoe4LwjF+YLjhKfaEsntkBnvuoGXWlFdaJ6t5gt+yBJ6RDGTIB599kzkIrQ3MRy6nodMfMzH4HtuNjpSurFJ6wVzzRRcK3lUcfFuEpW+PqtO4/gRYOiRnvJ9/91PUtPPD9UA7w8tTp95+yBQ/gNXAiaqA+eHKQAAAABJRU5ErkJggg==" alt="영웅"><span><strong><span class="g" style="color:#f08a2e">영웅</span></strong> (고지 기댓값 8.0% / 실제 확률 7.5%(-0.5% 차이 , 267회 시도 / 20회 관측)</span></h4>
+<table><thead><tr><th>항목</th><th>기대값</th><th>실제값</th><th>횟수</th></tr></thead><tbody>
+<tr><td>🐾 펫</td><td class="num">0.800%</td><td class="num">1.498%</td><td class="num">4회</td></tr>
+<tr><td>⚔️ 무기</td><td class="num">0.400%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
+<tr><td>⚔️ 투구</td><td class="num">0.400%</td><td class="num">0.375%</td><td class="num">1회</td></tr>
+<tr><td>⚔️ 갑옷</td><td class="num">0.400%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
+<tr><td>⚔️ 바지</td><td class="num">0.400%</td><td class="num">0.749%</td><td class="num">2회</td></tr>
+<tr><td>⚔️ 신발</td><td class="num">0.400%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
+<tr><td>⚔️ 장갑</td><td class="num">0.400%</td><td class="num">1.124%</td><td class="num">3회</td></tr>
+<tr><td>⚔️ 목걸이</td><td class="num">0.400%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
+<tr><td>⚔️ 반지</td><td class="num">0.400%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
+<tr><td>⚔️ 귀걸이</td><td class="num">0.400%</td><td class="num">0.375%</td><td class="num">1회</td></tr>
+<tr><td>❄️ 첫서리 사냥꾼 세트 - 무기</td><td class="num">0.120%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
+<tr><td>❄️ 첫서리 사냥꾼 세트 - 투구</td><td class="num">0.120%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
+<tr><td>❄️ 첫서리 사냥꾼 세트 - 갑옷</td><td class="num">0.120%</td><td class="num">0.375%</td><td class="num">1회</td></tr>
+<tr><td>❄️ 첫서리 사냥꾼 세트 - 장갑</td><td class="num">0.120%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
+<tr><td>❄️ 첫서리 사냥꾼 세트 - 신발</td><td class="num">0.120%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
+<tr><td>❄️ 첫서리 사냥꾼 세트 - 바지</td><td class="num">0.120%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
+<tr><td>⚡ 폭풍추적자 세트 - 무기</td><td class="num">0.120%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
+<tr><td>⚡ 폭풍추적자 세트 - 투구</td><td class="num">0.120%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
+<tr><td>⚡ 폭풍추적자 세트 - 갑옷</td><td class="num">0.120%</td><td class="num">0.375%</td><td class="num">1회</td></tr>
+<tr><td>⚡ 폭풍추적자 세트 - 장갑</td><td class="num">0.120%</td><td class="num">0.375%</td><td class="num">1회</td></tr>
+<tr><td>⚡ 폭풍추적자 세트 - 신발</td><td class="num">0.120%</td><td class="num">0.375%</td><td class="num">1회</td></tr>
+<tr><td>⚡ 폭풍추적자 세트 - 바지</td><td class="num">0.120%</td><td class="num">0.375%</td><td class="num">1회</td></tr>
+<tr><td>👻 유령사수 세트 - 무기</td><td class="num">0.120%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
+<tr><td>👻 유령사수 세트 - 투구</td><td class="num">0.120%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
+<tr><td>👻 유령사수 세트 - 갑옷</td><td class="num">0.120%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
+<tr><td>👻 유령사수 세트 - 장갑</td><td class="num">0.120%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
+<tr><td>👻 유령사수 세트 - 신발</td><td class="num">0.120%</td><td class="num">0.375%</td><td class="num">1회</td></tr>
+<tr><td>👻 유령사수 세트 - 바지</td><td class="num">0.120%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
+<tr><td>🔥 화염 궁수 세트 - 무기</td><td class="num">0.120%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
+<tr><td>🔥 화염 궁수 세트 - 투구</td><td class="num">0.120%</td><td class="num">0.375%</td><td class="num">1회</td></tr>
+<tr><td>🔥 화염 궁수 세트 - 갑옷</td><td class="num">0.120%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
+<tr><td>🔥 화염 궁수 세트 - 장갑</td><td class="num">0.120%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
+<tr><td>🔥 화염 궁수 세트 - 신발</td><td class="num">0.120%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
+<tr><td>🔥 화염 궁수 세트 - 바지</td><td class="num">0.120%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
+<tr><td>🧪 연금술사 궁수 세트 - 무기</td><td class="num">0.120%</td><td class="num">0.375%</td><td class="num">1회</td></tr>
+<tr><td>🧪 연금술사 궁수 세트 - 투구</td><td class="num">0.120%</td><td class="num">0.375%</td><td class="num">1회</td></tr>
+<tr><td>🧪 연금술사 궁수 세트 - 갑옷</td><td class="num">0.120%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
+<tr><td>🧪 연금술사 궁수 세트 - 장갑</td><td class="num">0.120%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
+<tr><td>🧪 연금술사 궁수 세트 - 신발</td><td class="num">0.120%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
+<tr><td>🧪 연금술사 궁수 세트 - 바지</td><td class="num">0.120%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
+</tbody></table>
+<h4 class="ico-line grade"><img class="ico" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAA3CAYAAAASeFomAAACb0lEQVR4nL2YsVLCQBCGLwzY4lDhjI9AZ6EzvAEPYIGF1hRJQ0MeIFjQYEGthRY+AG/AjBZ2lJbOaJXRVos4G7K4rHeXu8uFnckkJCFf/v/2spsIUUQ4bGewiDojHLazLHvNl9pgIYHUCWuIfUbIrPtYD+obq7BIBoDA4tu+Bm7cPHwF9EAc93O47GZcQDsXh+C2dXvL7Tnfn7dPsB6PolPZzVkFtU81VgCEpbK9eAGfsEB1QAagNmIADKwss7EpDKJzfJ6vP9Yi48CDw6uzzdhFmQ5mNGHTt0cGHOyoBdhsMX/W2Si9A/oHSHOuDOHcSp2NpSAdMGUwmv4cJrUOTuInJslqRw0CqY1goVCE0YTjClEdgBDKlXFVRsmgy6YOGTcvZYLC0EadhTwLreqRDua98Kls7DBVEFRVpQqbMFXwG0sJz0AnkEzVeBRpM9XoWWeiKo77E36sUJrXLufCFe4+pnJIkqym9Bzc3+0tr90rpNjAKGS2mP+zE497abcSBmm1L99hDftQpfe+rlVAcF17A/nzdXfkNevKAF4VxXF/wucRT4a9pXdT+ImpEGIim7QFvDoo/iuCU2ofPKY2pX3z5HACqbodgMp6v8rJEJOSzgMbFWeQSk0qab9o32AFkvV7Hd89gw6SSvo7py5I1+qmhj1D06Wfg6CWlalRgqq2xLIonUc2TT6EVZMPwVsnqgLC5k3COBmqQozHSAWwebWUHtR9AjB5FzKyjquh70WukNJvDBxKX/lDy28MgY1leHEXFYHqCQCWVfoEwyJAyPz+Jd8RXZzka5+QbTIghG97B0WFCr7tM6Rj5Ns2uOgvvw4AlVeYLKYAAAAASUVORK5CYII=" alt="유일"><span><strong><span class="g" style="color:#e8d44a">유일</span></strong> (고지 기댓값 25.0% / 실제 확률 23.2%(-1.8% 차이 , 267회 시도 / 62회 관측)</span></h4>
+<table><thead><tr><th>항목</th><th>기대값</th><th>실제값</th><th>횟수</th></tr></thead><tbody>
+<tr><td>🐾 펫</td><td class="num">2.500%</td><td class="num">0.749%</td><td class="num">2회</td></tr>
+<tr><td>⚔️ 무기</td><td class="num">1.250%</td><td class="num">0.375%</td><td class="num">1회</td></tr>
+<tr><td>⚔️ 투구</td><td class="num">1.250%</td><td class="num">0.749%</td><td class="num">2회</td></tr>
+<tr><td>⚔️ 갑옷</td><td class="num">1.250%</td><td class="num">1.498%</td><td class="num">4회</td></tr>
+<tr><td>⚔️ 바지</td><td class="num">1.250%</td><td class="num">0.375%</td><td class="num">1회</td></tr>
+<tr><td>⚔️ 신발</td><td class="num">1.250%</td><td class="num">2.996%</td><td class="num">8회</td></tr>
+<tr><td>⚔️ 장갑</td><td class="num">1.250%</td><td class="num">1.124%</td><td class="num">3회</td></tr>
+<tr><td>⚔️ 목걸이</td><td class="num">1.250%</td><td class="num">0.749%</td><td class="num">2회</td></tr>
+<tr><td>⚔️ 반지</td><td class="num">1.250%</td><td class="num">1.124%</td><td class="num">3회</td></tr>
+<tr><td>⚔️ 귀걸이</td><td class="num">1.250%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
+<tr><td>❄️ 첫서리 사냥꾼 세트 - 무기</td><td class="num">0.375%</td><td class="num">0.375%</td><td class="num">1회</td></tr>
+<tr><td>❄️ 첫서리 사냥꾼 세트 - 투구</td><td class="num">0.375%</td><td class="num">0.749%</td><td class="num">2회</td></tr>
+<tr><td>❄️ 첫서리 사냥꾼 세트 - 갑옷</td><td class="num">0.375%</td><td class="num">0.749%</td><td class="num">2회</td></tr>
+<tr><td>❄️ 첫서리 사냥꾼 세트 - 장갑</td><td class="num">0.375%</td><td class="num">0.375%</td><td class="num">1회</td></tr>
+<tr><td>❄️ 첫서리 사냥꾼 세트 - 신발</td><td class="num">0.375%</td><td class="num">0.375%</td><td class="num">1회</td></tr>
+<tr><td>❄️ 첫서리 사냥꾼 세트 - 바지</td><td class="num">0.375%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
+<tr><td>⚡ 폭풍추적자 세트 - 무기</td><td class="num">0.375%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
+<tr><td>⚡ 폭풍추적자 세트 - 투구</td><td class="num">0.375%</td><td class="num">0.749%</td><td class="num">2회</td></tr>
+<tr><td>⚡ 폭풍추적자 세트 - 갑옷</td><td class="num">0.375%</td><td class="num">0.375%</td><td class="num">1회</td></tr>
+<tr><td>⚡ 폭풍추적자 세트 - 장갑</td><td class="num">0.375%</td><td class="num">0.749%</td><td class="num">2회</td></tr>
+<tr><td>⚡ 폭풍추적자 세트 - 신발</td><td class="num">0.375%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
+<tr><td>⚡ 폭풍추적자 세트 - 바지</td><td class="num">0.375%</td><td class="num">1.124%</td><td class="num">3회</td></tr>
+<tr><td>👻 유령사수 세트 - 무기</td><td class="num">0.375%</td><td class="num">0.749%</td><td class="num">2회</td></tr>
+<tr><td>👻 유령사수 세트 - 투구</td><td class="num">0.375%</td><td class="num">0.375%</td><td class="num">1회</td></tr>
+<tr><td>👻 유령사수 세트 - 갑옷</td><td class="num">0.375%</td><td class="num">0.375%</td><td class="num">1회</td></tr>
+<tr><td>👻 유령사수 세트 - 장갑</td><td class="num">0.375%</td><td class="num">0.375%</td><td class="num">1회</td></tr>
+<tr><td>👻 유령사수 세트 - 신발</td><td class="num">0.375%</td><td class="num">0.375%</td><td class="num">1회</td></tr>
+<tr><td>👻 유령사수 세트 - 바지</td><td class="num">0.375%</td><td class="num">0.749%</td><td class="num">2회</td></tr>
+<tr><td>🔥 화염 궁수 세트 - 무기</td><td class="num">0.375%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
+<tr><td>🔥 화염 궁수 세트 - 투구</td><td class="num">0.375%</td><td class="num">1.124%</td><td class="num">3회</td></tr>
+<tr><td>🔥 화염 궁수 세트 - 갑옷</td><td class="num">0.375%</td><td class="num">0.375%</td><td class="num">1회</td></tr>
+<tr><td>🔥 화염 궁수 세트 - 장갑</td><td class="num">0.375%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
+<tr><td>🔥 화염 궁수 세트 - 신발</td><td class="num">0.375%</td><td class="num">0.749%</td><td class="num">2회</td></tr>
+<tr><td>🔥 화염 궁수 세트 - 바지</td><td class="num">0.375%</td><td class="num">0.375%</td><td class="num">1회</td></tr>
+<tr><td>🧪 연금술사 궁수 세트 - 무기</td><td class="num">0.375%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
+<tr><td>🧪 연금술사 궁수 세트 - 투구</td><td class="num">0.375%</td><td class="num">0.375%</td><td class="num">1회</td></tr>
+<tr><td>🧪 연금술사 궁수 세트 - 갑옷</td><td class="num">0.375%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
+<tr><td>🧪 연금술사 궁수 세트 - 장갑</td><td class="num">0.375%</td><td class="num">0.375%</td><td class="num">1회</td></tr>
+<tr><td>🧪 연금술사 궁수 세트 - 신발</td><td class="num">0.375%</td><td class="num">0.749%</td><td class="num">2회</td></tr>
+<tr><td>🧪 연금술사 궁수 세트 - 바지</td><td class="num">0.375%</td><td class="num">0.749%</td><td class="num">2회</td></tr>
+</tbody></table>
+<h4 class="ico-line grade"><img class="ico" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAA3CAYAAAASeFomAAACHklEQVR4nL2YPU7DMBSA4yjcwAudegHGutwAqQfIylBRqSwslQongEosLFQqqgRrDlCJG9CwwcrQqSwdmGEIcoir10ccO/Fzn2TZblx/eT+2XxwEhfDuMJMl8Cm8O8w+vrK8eINxAPEJC4N9Ckem681X5BoxCJO1GIzzfjqbBJvldPuczHQbNKkEUvqK4R+w2Rb9NvMSDOlsEuxNeGEyqR1VYDDdgzKAixkjm0Fxp/XXKOBNgFYLNnld7wCbmLP0zWBYq3UFQQpeRzMjqAqY1IBVDsJAFxizeRsdMO60tv4zwayCoWrPi4HfnEEYpnYPGI2mSKx1HlXByA8+nRljg1ZOJ2yKtJJ9XZLTCFSm1ejsYqePYY03Sa45FMVgfCXrdDa5hi9ltanaiEAA1V8sp+6T88IfvfnqUrUf377zAp+Rp1u3D3d5fXp08KnaJMKBNkqTLMvWqijN5BhvCeTT+88h2WQc+UhpBf3kxUcjsJbwuiJbR0IX3v32Ddk6EoPxP4Dswx3EWSMBDkFoLrxNRcTbT6A7aZ2CQQBtTBJSaZMYkpRaoLJ8L6bOGaogiUXKZQWq+iBLLHOGyDWBlNI4gfSREkemAV6TfCk4dYJaSKn7jWQVDK4Qremwj1wASkr/6OMKIDRpQ3UdEGIIjDLKaxq2j1sTKUy3A1BfOjEFeXm+z384PjnPa0rI1kcKgtvkoONCC9ymlFIfUZtNTvoLW9SBm7wjJ8sAAAAASUVORK5CYII=" alt="매직"><span><strong><span class="g" style="color:#4a9de0">매직</span></strong> (고지 기댓값 33.0% / 실제 확률 35.2%(+2.2% 차이 , 267회 시도 / 94회 관측)</span></h4>
+<table><thead><tr><th>항목</th><th>기대값</th><th>실제값</th><th>횟수</th></tr></thead><tbody>
+<tr><td>🐾 펫</td><td class="num">3.300%</td><td class="num">3.745%</td><td class="num">10회</td></tr>
+<tr><td>⚔️ 무기</td><td class="num">1.650%</td><td class="num">1.873%</td><td class="num">5회</td></tr>
+<tr><td>⚔️ 투구</td><td class="num">1.650%</td><td class="num">2.247%</td><td class="num">6회</td></tr>
+<tr><td>⚔️ 갑옷</td><td class="num">1.650%</td><td class="num">1.873%</td><td class="num">5회</td></tr>
+<tr><td>⚔️ 바지</td><td class="num">1.650%</td><td class="num">2.247%</td><td class="num">6회</td></tr>
+<tr><td>⚔️ 신발</td><td class="num">1.650%</td><td class="num">1.498%</td><td class="num">4회</td></tr>
+<tr><td>⚔️ 장갑</td><td class="num">1.650%</td><td class="num">1.498%</td><td class="num">4회</td></tr>
+<tr><td>⚔️ 목걸이</td><td class="num">1.650%</td><td class="num">1.124%</td><td class="num">3회</td></tr>
+<tr><td>⚔️ 반지</td><td class="num">1.650%</td><td class="num">1.873%</td><td class="num">5회</td></tr>
+<tr><td>⚔️ 귀걸이</td><td class="num">1.650%</td><td class="num">2.247%</td><td class="num">6회</td></tr>
+<tr><td>❄️ 첫서리 사냥꾼 세트 - 무기</td><td class="num">0.495%</td><td class="num">0.375%</td><td class="num">1회</td></tr>
+<tr><td>❄️ 첫서리 사냥꾼 세트 - 투구</td><td class="num">0.495%</td><td class="num">0.749%</td><td class="num">2회</td></tr>
+<tr><td>❄️ 첫서리 사냥꾼 세트 - 갑옷</td><td class="num">0.495%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
+<tr><td>❄️ 첫서리 사냥꾼 세트 - 장갑</td><td class="num">0.495%</td><td class="num">0.375%</td><td class="num">1회</td></tr>
+<tr><td>❄️ 첫서리 사냥꾼 세트 - 신발</td><td class="num">0.495%</td><td class="num">0.749%</td><td class="num">2회</td></tr>
+<tr><td>❄️ 첫서리 사냥꾼 세트 - 바지</td><td class="num">0.495%</td><td class="num">0.375%</td><td class="num">1회</td></tr>
+<tr><td>⚡ 폭풍추적자 세트 - 무기</td><td class="num">0.495%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
+<tr><td>⚡ 폭풍추적자 세트 - 투구</td><td class="num">0.495%</td><td class="num">0.749%</td><td class="num">2회</td></tr>
+<tr><td>⚡ 폭풍추적자 세트 - 갑옷</td><td class="num">0.495%</td><td class="num">0.375%</td><td class="num">1회</td></tr>
+<tr><td>⚡ 폭풍추적자 세트 - 장갑</td><td class="num">0.495%</td><td class="num">0.749%</td><td class="num">2회</td></tr>
+<tr><td>⚡ 폭풍추적자 세트 - 신발</td><td class="num">0.495%</td><td class="num">1.124%</td><td class="num">3회</td></tr>
+<tr><td>⚡ 폭풍추적자 세트 - 바지</td><td class="num">0.495%</td><td class="num">0.375%</td><td class="num">1회</td></tr>
+<tr><td>👻 유령사수 세트 - 무기</td><td class="num">0.495%</td><td class="num">0.375%</td><td class="num">1회</td></tr>
+<tr><td>👻 유령사수 세트 - 투구</td><td class="num">0.495%</td><td class="num">1.124%</td><td class="num">3회</td></tr>
+<tr><td>👻 유령사수 세트 - 갑옷</td><td class="num">0.495%</td><td class="num">0.749%</td><td class="num">2회</td></tr>
+<tr><td>👻 유령사수 세트 - 장갑</td><td class="num">0.495%</td><td class="num">0.749%</td><td class="num">2회</td></tr>
+<tr><td>👻 유령사수 세트 - 신발</td><td class="num">0.495%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
+<tr><td>👻 유령사수 세트 - 바지</td><td class="num">0.495%</td><td class="num">0.749%</td><td class="num">2회</td></tr>
+<tr><td>🔥 화염 궁수 세트 - 무기</td><td class="num">0.495%</td><td class="num">0.375%</td><td class="num">1회</td></tr>
+<tr><td>🔥 화염 궁수 세트 - 투구</td><td class="num">0.495%</td><td class="num">0.749%</td><td class="num">2회</td></tr>
+<tr><td>🔥 화염 궁수 세트 - 갑옷</td><td class="num">0.495%</td><td class="num">0.749%</td><td class="num">2회</td></tr>
+<tr><td>🔥 화염 궁수 세트 - 장갑</td><td class="num">0.495%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
+<tr><td>🔥 화염 궁수 세트 - 신발</td><td class="num">0.495%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
+<tr><td>🔥 화염 궁수 세트 - 바지</td><td class="num">0.495%</td><td class="num">0.375%</td><td class="num">1회</td></tr>
+<tr><td>🧪 연금술사 궁수 세트 - 무기</td><td class="num">0.495%</td><td class="num">1.124%</td><td class="num">3회</td></tr>
+<tr><td>🧪 연금술사 궁수 세트 - 투구</td><td class="num">0.495%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
+<tr><td>🧪 연금술사 궁수 세트 - 갑옷</td><td class="num">0.495%</td><td class="num">0.749%</td><td class="num">2회</td></tr>
+<tr><td>🧪 연금술사 궁수 세트 - 장갑</td><td class="num">0.495%</td><td class="num">0.749%</td><td class="num">2회</td></tr>
+<tr><td>🧪 연금술사 궁수 세트 - 신발</td><td class="num">0.495%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
+<tr><td>🧪 연금술사 궁수 세트 - 바지</td><td class="num">0.495%</td><td class="num">0.375%</td><td class="num">1회</td></tr>
+</tbody></table>
+<h4 class="ico-line grade"><img class="ico" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAArCAYAAAB4pah1AAABV0lEQVR4nM2Xu43DMAyGRcJLpLkN0rjJBqmzQerrU9wQWeLW0AZp3HiDazyGA/lCg2b0oGgjCQEDAm19+EWJIu3cw4773Rget9KaGdZ+kW/0/QBWIAqYC+M1StE6MQn0/QC++5sdYRxUXs+H0RxD/x+zCRBg7aGdXl4fvsvvTR1ToIFURNDu1rkaKEyq2CbwDSIogTVQkMAcWAOFBUSALVCIOVPgAC3FFGPOXKbwuKqBEkrnlNQFaOqcYsypgZpTzyeWn1KJJeACLlROabpfXnvqlKJJtOM8//lqqoGvv76c0rS3OFpU8JT8nCW/DQg1H2uODm4J23yXfT8AWmE/36cnmKMyal1ugF/EzV2lkJeClKFVXapYoRamUZcF5mC5UoolmLRSTWlyoFRbUiz0xw1bkUYD0sJe087xtKqFBYNUeYyllcaQw/jYApuBsmlfY9EYrvnxuQO0F8awPvjU0gAAAABJRU5ErkJggg==" alt="노말"><span><strong><span class="g" style="color:#e8e8e8">노말</span></strong> (고지 기댓값 30.0% / 실제 확률 30.0%(-0.0% 차이 , 267회 시도 / 80회 관측)</span></h4>
+<table><thead><tr><th>항목</th><th>기대값</th><th>실제값</th><th>횟수</th></tr></thead><tbody>
+<tr><td>🐾 펫</td><td class="num">3.000%</td><td class="num">2.622%</td><td class="num">7회</td></tr>
+<tr><td>⚔️ 무기</td><td class="num">1.500%</td><td class="num">1.124%</td><td class="num">3회</td></tr>
+<tr><td>⚔️ 투구</td><td class="num">1.500%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
+<tr><td>⚔️ 갑옷</td><td class="num">1.500%</td><td class="num">1.873%</td><td class="num">5회</td></tr>
+<tr><td>⚔️ 바지</td><td class="num">1.500%</td><td class="num">1.124%</td><td class="num">3회</td></tr>
+<tr><td>⚔️ 신발</td><td class="num">1.500%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
+<tr><td>⚔️ 장갑</td><td class="num">1.500%</td><td class="num">1.124%</td><td class="num">3회</td></tr>
+<tr><td>⚔️ 목걸이</td><td class="num">1.500%</td><td class="num">2.247%</td><td class="num">6회</td></tr>
+<tr><td>⚔️ 반지</td><td class="num">1.500%</td><td class="num">1.873%</td><td class="num">5회</td></tr>
+<tr><td>⚔️ 귀걸이</td><td class="num">1.500%</td><td class="num">1.124%</td><td class="num">3회</td></tr>
+<tr><td>❄️ 첫서리 사냥꾼 세트 - 무기</td><td class="num">0.450%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
+<tr><td>❄️ 첫서리 사냥꾼 세트 - 투구</td><td class="num">0.450%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
+<tr><td>❄️ 첫서리 사냥꾼 세트 - 갑옷</td><td class="num">0.450%</td><td class="num">1.124%</td><td class="num">3회</td></tr>
+<tr><td>❄️ 첫서리 사냥꾼 세트 - 장갑</td><td class="num">0.450%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
+<tr><td>❄️ 첫서리 사냥꾼 세트 - 신발</td><td class="num">0.450%</td><td class="num">1.124%</td><td class="num">3회</td></tr>
+<tr><td>❄️ 첫서리 사냥꾼 세트 - 바지</td><td class="num">0.450%</td><td class="num">0.375%</td><td class="num">1회</td></tr>
+<tr><td>⚡ 폭풍추적자 세트 - 무기</td><td class="num">0.450%</td><td class="num">0.749%</td><td class="num">2회</td></tr>
+<tr><td>⚡ 폭풍추적자 세트 - 투구</td><td class="num">0.450%</td><td class="num">0.749%</td><td class="num">2회</td></tr>
+<tr><td>⚡ 폭풍추적자 세트 - 갑옷</td><td class="num">0.450%</td><td class="num">0.749%</td><td class="num">2회</td></tr>
+<tr><td>⚡ 폭풍추적자 세트 - 장갑</td><td class="num">0.450%</td><td class="num">0.375%</td><td class="num">1회</td></tr>
+<tr><td>⚡ 폭풍추적자 세트 - 신발</td><td class="num">0.450%</td><td class="num">0.375%</td><td class="num">1회</td></tr>
+<tr><td>⚡ 폭풍추적자 세트 - 바지</td><td class="num">0.450%</td><td class="num">0.375%</td><td class="num">1회</td></tr>
+<tr><td>👻 유령사수 세트 - 무기</td><td class="num">0.450%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
+<tr><td>👻 유령사수 세트 - 투구</td><td class="num">0.450%</td><td class="num">0.749%</td><td class="num">2회</td></tr>
+<tr><td>👻 유령사수 세트 - 갑옷</td><td class="num">0.450%</td><td class="num">1.498%</td><td class="num">4회</td></tr>
+<tr><td>👻 유령사수 세트 - 장갑</td><td class="num">0.450%</td><td class="num">0.375%</td><td class="num">1회</td></tr>
+<tr><td>👻 유령사수 세트 - 신발</td><td class="num">0.450%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
+<tr><td>👻 유령사수 세트 - 바지</td><td class="num">0.450%</td><td class="num">0.375%</td><td class="num">1회</td></tr>
+<tr><td>🔥 화염 궁수 세트 - 무기</td><td class="num">0.450%</td><td class="num">0.375%</td><td class="num">1회</td></tr>
+<tr><td>🔥 화염 궁수 세트 - 투구</td><td class="num">0.450%</td><td class="num">0.375%</td><td class="num">1회</td></tr>
+<tr><td>🔥 화염 궁수 세트 - 갑옷</td><td class="num">0.450%</td><td class="num">0.375%</td><td class="num">1회</td></tr>
+<tr><td>🔥 화염 궁수 세트 - 장갑</td><td class="num">0.450%</td><td class="num">0.375%</td><td class="num">1회</td></tr>
+<tr><td>🔥 화염 궁수 세트 - 신발</td><td class="num">0.450%</td><td class="num">0.749%</td><td class="num">2회</td></tr>
+<tr><td>🔥 화염 궁수 세트 - 바지</td><td class="num">0.450%</td><td class="num">0.749%</td><td class="num">2회</td></tr>
+<tr><td>🧪 연금술사 궁수 세트 - 무기</td><td class="num">0.450%</td><td class="num">1.498%</td><td class="num">4회</td></tr>
+<tr><td>🧪 연금술사 궁수 세트 - 투구</td><td class="num">0.450%</td><td class="num">1.124%</td><td class="num">3회</td></tr>
+<tr><td>🧪 연금술사 궁수 세트 - 갑옷</td><td class="num">0.450%</td><td class="num">0.375%</td><td class="num">1회</td></tr>
+<tr><td>🧪 연금술사 궁수 세트 - 장갑</td><td class="num">0.450%</td><td class="num">0.749%</td><td class="num">2회</td></tr>
+<tr><td>🧪 연금술사 궁수 세트 - 신발</td><td class="num">0.450%</td><td class="num">0.749%</td><td class="num">2회</td></tr>
+<tr><td>🧪 연금술사 궁수 세트 - 바지</td><td class="num">0.450%</td><td class="num">0.375%</td><td class="num">1회</td></tr>
+</tbody></table>
+<h4 class="ico-line"><svg class="ico coin" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="#949cad" stroke="#575c6b" stroke-width="2"/><circle cx="12" cy="12" r="6" fill="none" stroke="#575c6b" stroke-width="1" opacity=".55"/></svg><span>은코인</span></h4>
+<h4 class="ico-line grade"><img class="ico" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAA3CAYAAAD9ujEYAAAC70lEQVR4nL2YrY/bMBTAX6vuQNDR8eJDkUKuYAergUn9Pw5NJ4cUlMQ6Hcr/UWmocAMdWKWi4vKBkUMBG8j0fH7R66uT2Pm4J1lxnDS/vi/72QBWVBKV2GBsUUlUln9+mTYqUDHQ2MApvLcoYcbX57sgzVSoJShAEITN9u+xNf3m73dVBptRH4rJxYdWc9Db8x77BOURi9dN9gjrNPdWaMZvEKhWUHIgl032eDCdNDegUJnJAb09X0FI1mmeWCh0kYlr0JhrNV8AgDEjAGDfSBQvaawyoRYuCAp9AQLbN/fFcVeBybTKMxqdsNun009+H8VL0wiKQIIWx91XX2Ct+jLXLAw/TkMXGkbx8gV92mTSWp9VfRYsBGTQIOCkDdYElcAoXr7wqOWCf6AxiiS0DajtJMBTAyOWNPUK2TooArkPeVpIkPes3+R04cdFHcgbJoE4y9iPc+Ceg1zpELSeNQG5dnZS6L941pk0EtqhSO16rdRSO709m4jEhjNL66zvBcGlSPhjneYYpSkbuh8E5tJOWZDenjO6L467bwCQDAajDxOEEnqd5hVUH07gndS1kLd1L0VQ3YJK5r19OuleASJ8VMmHT9lvEPL6fKd6141SKwLRFZ+RiUcrUv/9SD/KsV4+Q9Pg1cdnQyS1MY+PYIB01kys5qkj9KtnCBoszwAgI1Px/MKr/RN6kABhC2kFIVAUL7/wdztp1lC2ZaIIuoD1Teqr1VoWP71gdVoVtvDBOoQKH1nWBcFc9aRLK7uVuirnpkOACqYVB3aCNdXxsgbhIoGDFana+skFu3l4mzxGK7+1ozBqzbOQjQVK8MZirC3TtO5BG4jnU+QBqjWj9JnUhoe4LwjF+YLjhKfaEsntkBnvuoGXWlFdaJ6t5gt+yBJ6RDGTIB599kzkIrQ3MRy6nodMfMzH4HtuNjpSurFJ6wVzzRRcK3lUcfFuEpW+PqtO4/gRYOiRnvJ9/91PUtPPD9UA7w8tTp95+yBQ/gNXAiaqA+eHKQAAAABJRU5ErkJggg==" alt="영웅"><span><strong><span class="g" style="color:#f08a2e">영웅</span></strong> (고지 기댓값 4.0% / 실제 확률 4.7%(+0.7% 차이 , 993회 시도 / 47회 관측)</span></h4>
+<table><thead><tr><th>항목</th><th>기대값</th><th>실제값</th><th>횟수</th></tr></thead><tbody>
+<tr><td>🐾 펫</td><td class="num">0.400%</td><td class="num">0.201%</td><td class="num">2회</td></tr>
+<tr><td>⚔️ 무기</td><td class="num">0.200%</td><td class="num">0.604%</td><td class="num">6회</td></tr>
+<tr><td>⚔️ 투구</td><td class="num">0.200%</td><td class="num">0.302%</td><td class="num">3회</td></tr>
+<tr><td>⚔️ 갑옷</td><td class="num">0.200%</td><td class="num">0.302%</td><td class="num">3회</td></tr>
+<tr><td>⚔️ 바지</td><td class="num">0.200%</td><td class="num">0.101%</td><td class="num">1회</td></tr>
+<tr><td>⚔️ 신발</td><td class="num">0.200%</td><td class="num">0.403%</td><td class="num">4회</td></tr>
+<tr><td>⚔️ 장갑</td><td class="num">0.200%</td><td class="num">0.201%</td><td class="num">2회</td></tr>
+<tr><td>⚔️ 목걸이</td><td class="num">0.200%</td><td class="num">0.403%</td><td class="num">4회</td></tr>
+<tr><td>⚔️ 반지</td><td class="num">0.200%</td><td class="num">0.201%</td><td class="num">2회</td></tr>
+<tr><td>⚔️ 귀걸이</td><td class="num">0.200%</td><td class="num">0.101%</td><td class="num">1회</td></tr>
+<tr><td>❄️ 첫서리 사냥꾼 세트 - 무기</td><td class="num">0.060%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
+<tr><td>❄️ 첫서리 사냥꾼 세트 - 투구</td><td class="num">0.060%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
+<tr><td>❄️ 첫서리 사냥꾼 세트 - 갑옷</td><td class="num">0.060%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
+<tr><td>❄️ 첫서리 사냥꾼 세트 - 장갑</td><td class="num">0.060%</td><td class="num">0.101%</td><td class="num">1회</td></tr>
+<tr><td>❄️ 첫서리 사냥꾼 세트 - 신발</td><td class="num">0.060%</td><td class="num">0.101%</td><td class="num">1회</td></tr>
+<tr><td>❄️ 첫서리 사냥꾼 세트 - 바지</td><td class="num">0.060%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
+<tr><td>⚡ 폭풍추적자 세트 - 무기</td><td class="num">0.060%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
+<tr><td>⚡ 폭풍추적자 세트 - 투구</td><td class="num">0.060%</td><td class="num">0.302%</td><td class="num">3회</td></tr>
+<tr><td>⚡ 폭풍추적자 세트 - 갑옷</td><td class="num">0.060%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
+<tr><td>⚡ 폭풍추적자 세트 - 장갑</td><td class="num">0.060%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
+<tr><td>⚡ 폭풍추적자 세트 - 신발</td><td class="num">0.060%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
+<tr><td>⚡ 폭풍추적자 세트 - 바지</td><td class="num">0.060%</td><td class="num">0.101%</td><td class="num">1회</td></tr>
+<tr><td>👻 유령사수 세트 - 무기</td><td class="num">0.060%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
+<tr><td>👻 유령사수 세트 - 투구</td><td class="num">0.060%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
+<tr><td>👻 유령사수 세트 - 갑옷</td><td class="num">0.060%</td><td class="num">0.101%</td><td class="num">1회</td></tr>
+<tr><td>👻 유령사수 세트 - 장갑</td><td class="num">0.060%</td><td class="num">0.302%</td><td class="num">3회</td></tr>
+<tr><td>👻 유령사수 세트 - 신발</td><td class="num">0.060%</td><td class="num">0.201%</td><td class="num">2회</td></tr>
+<tr><td>👻 유령사수 세트 - 바지</td><td class="num">0.060%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
+<tr><td>🔥 화염 궁수 세트 - 무기</td><td class="num">0.060%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
+<tr><td>🔥 화염 궁수 세트 - 투구</td><td class="num">0.060%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
+<tr><td>🔥 화염 궁수 세트 - 갑옷</td><td class="num">0.060%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
+<tr><td>🔥 화염 궁수 세트 - 장갑</td><td class="num">0.060%</td><td class="num">0.302%</td><td class="num">3회</td></tr>
+<tr><td>🔥 화염 궁수 세트 - 신발</td><td class="num">0.060%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
+<tr><td>🔥 화염 궁수 세트 - 바지</td><td class="num">0.060%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
+<tr><td>🧪 연금술사 궁수 세트 - 무기</td><td class="num">0.060%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
+<tr><td>🧪 연금술사 궁수 세트 - 투구</td><td class="num">0.060%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
+<tr><td>🧪 연금술사 궁수 세트 - 갑옷</td><td class="num">0.060%</td><td class="num">0.201%</td><td class="num">2회</td></tr>
+<tr><td>🧪 연금술사 궁수 세트 - 장갑</td><td class="num">0.060%</td><td class="num">0.101%</td><td class="num">1회</td></tr>
+<tr><td>🧪 연금술사 궁수 세트 - 신발</td><td class="num">0.060%</td><td class="num">0.101%</td><td class="num">1회</td></tr>
+<tr><td>🧪 연금술사 궁수 세트 - 바지</td><td class="num">0.060%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
+</tbody></table>
+<h4 class="ico-line grade"><img class="ico" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAA3CAYAAAASeFomAAACb0lEQVR4nL2YsVLCQBCGLwzY4lDhjI9AZ6EzvAEPYIGF1hRJQ0MeIFjQYEGthRY+AG/AjBZ2lJbOaJXRVos4G7K4rHeXu8uFnckkJCFf/v/2spsIUUQ4bGewiDojHLazLHvNl9pgIYHUCWuIfUbIrPtYD+obq7BIBoDA4tu+Bm7cPHwF9EAc93O47GZcQDsXh+C2dXvL7Tnfn7dPsB6PolPZzVkFtU81VgCEpbK9eAGfsEB1QAagNmIADKwss7EpDKJzfJ6vP9Yi48CDw6uzzdhFmQ5mNGHTt0cGHOyoBdhsMX/W2Si9A/oHSHOuDOHcSp2NpSAdMGUwmv4cJrUOTuInJslqRw0CqY1goVCE0YTjClEdgBDKlXFVRsmgy6YOGTcvZYLC0EadhTwLreqRDua98Kls7DBVEFRVpQqbMFXwG0sJz0AnkEzVeBRpM9XoWWeiKo77E36sUJrXLufCFe4+pnJIkqym9Bzc3+0tr90rpNjAKGS2mP+zE497abcSBmm1L99hDftQpfe+rlVAcF17A/nzdXfkNevKAF4VxXF/wucRT4a9pXdT+ImpEGIim7QFvDoo/iuCU2ofPKY2pX3z5HACqbodgMp6v8rJEJOSzgMbFWeQSk0qab9o32AFkvV7Hd89gw6SSvo7py5I1+qmhj1D06Wfg6CWlalRgqq2xLIonUc2TT6EVZMPwVsnqgLC5k3COBmqQozHSAWwebWUHtR9AjB5FzKyjquh70WukNJvDBxKX/lDy28MgY1leHEXFYHqCQCWVfoEwyJAyPz+Jd8RXZzka5+QbTIghG97B0WFCr7tM6Rj5Ns2uOgvvw4AlVeYLKYAAAAASUVORK5CYII=" alt="유일"><span><strong><span class="g" style="color:#e8d44a">유일</span></strong> (고지 기댓값 10.0% / 실제 확률 11.0%(+1.0% 차이 , 993회 시도 / 109회 관측)</span></h4>
+<table><thead><tr><th>항목</th><th>기대값</th><th>실제값</th><th>횟수</th></tr></thead><tbody>
+<tr><td>🐾 펫</td><td class="num">1.000%</td><td class="num">1.007%</td><td class="num">10회</td></tr>
+<tr><td>⚔️ 무기</td><td class="num">0.500%</td><td class="num">0.806%</td><td class="num">8회</td></tr>
+<tr><td>⚔️ 투구</td><td class="num">0.500%</td><td class="num">0.403%</td><td class="num">4회</td></tr>
+<tr><td>⚔️ 갑옷</td><td class="num">0.500%</td><td class="num">0.906%</td><td class="num">9회</td></tr>
+<tr><td>⚔️ 바지</td><td class="num">0.500%</td><td class="num">0.302%</td><td class="num">3회</td></tr>
+<tr><td>⚔️ 신발</td><td class="num">0.500%</td><td class="num">0.302%</td><td class="num">3회</td></tr>
+<tr><td>⚔️ 장갑</td><td class="num">0.500%</td><td class="num">0.604%</td><td class="num">6회</td></tr>
+<tr><td>⚔️ 목걸이</td><td class="num">0.500%</td><td class="num">0.604%</td><td class="num">6회</td></tr>
+<tr><td>⚔️ 반지</td><td class="num">0.500%</td><td class="num">0.604%</td><td class="num">6회</td></tr>
+<tr><td>⚔️ 귀걸이</td><td class="num">0.500%</td><td class="num">0.604%</td><td class="num">6회</td></tr>
+<tr><td>❄️ 첫서리 사냥꾼 세트 - 무기</td><td class="num">0.150%</td><td class="num">0.101%</td><td class="num">1회</td></tr>
+<tr><td>❄️ 첫서리 사냥꾼 세트 - 투구</td><td class="num">0.150%</td><td class="num">0.201%</td><td class="num">2회</td></tr>
+<tr><td>❄️ 첫서리 사냥꾼 세트 - 갑옷</td><td class="num">0.150%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
+<tr><td>❄️ 첫서리 사냥꾼 세트 - 장갑</td><td class="num">0.150%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
+<tr><td>❄️ 첫서리 사냥꾼 세트 - 신발</td><td class="num">0.150%</td><td class="num">0.201%</td><td class="num">2회</td></tr>
+<tr><td>❄️ 첫서리 사냥꾼 세트 - 바지</td><td class="num">0.150%</td><td class="num">0.403%</td><td class="num">4회</td></tr>
+<tr><td>⚡ 폭풍추적자 세트 - 무기</td><td class="num">0.150%</td><td class="num">0.201%</td><td class="num">2회</td></tr>
+<tr><td>⚡ 폭풍추적자 세트 - 투구</td><td class="num">0.150%</td><td class="num">0.302%</td><td class="num">3회</td></tr>
+<tr><td>⚡ 폭풍추적자 세트 - 갑옷</td><td class="num">0.150%</td><td class="num">0.403%</td><td class="num">4회</td></tr>
+<tr><td>⚡ 폭풍추적자 세트 - 장갑</td><td class="num">0.150%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
+<tr><td>⚡ 폭풍추적자 세트 - 신발</td><td class="num">0.150%</td><td class="num">0.403%</td><td class="num">4회</td></tr>
+<tr><td>⚡ 폭풍추적자 세트 - 바지</td><td class="num">0.150%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
+<tr><td>👻 유령사수 세트 - 무기</td><td class="num">0.150%</td><td class="num">0.101%</td><td class="num">1회</td></tr>
+<tr><td>👻 유령사수 세트 - 투구</td><td class="num">0.150%</td><td class="num">0.101%</td><td class="num">1회</td></tr>
+<tr><td>👻 유령사수 세트 - 갑옷</td><td class="num">0.150%</td><td class="num">0.201%</td><td class="num">2회</td></tr>
+<tr><td>👻 유령사수 세트 - 장갑</td><td class="num">0.150%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
+<tr><td>👻 유령사수 세트 - 신발</td><td class="num">0.150%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
+<tr><td>👻 유령사수 세트 - 바지</td><td class="num">0.150%</td><td class="num">0.201%</td><td class="num">2회</td></tr>
+<tr><td>🔥 화염 궁수 세트 - 무기</td><td class="num">0.150%</td><td class="num">0.302%</td><td class="num">3회</td></tr>
+<tr><td>🔥 화염 궁수 세트 - 투구</td><td class="num">0.150%</td><td class="num">0.302%</td><td class="num">3회</td></tr>
+<tr><td>🔥 화염 궁수 세트 - 갑옷</td><td class="num">0.150%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
+<tr><td>🔥 화염 궁수 세트 - 장갑</td><td class="num">0.150%</td><td class="num">0.101%</td><td class="num">1회</td></tr>
+<tr><td>🔥 화염 궁수 세트 - 신발</td><td class="num">0.150%</td><td class="num">0.101%</td><td class="num">1회</td></tr>
+<tr><td>🔥 화염 궁수 세트 - 바지</td><td class="num">0.150%</td><td class="num">0.101%</td><td class="num">1회</td></tr>
+<tr><td>🧪 연금술사 궁수 세트 - 무기</td><td class="num">0.150%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
+<tr><td>🧪 연금술사 궁수 세트 - 투구</td><td class="num">0.150%</td><td class="num">0.302%</td><td class="num">3회</td></tr>
+<tr><td>🧪 연금술사 궁수 세트 - 갑옷</td><td class="num">0.150%</td><td class="num">0.302%</td><td class="num">3회</td></tr>
+<tr><td>🧪 연금술사 궁수 세트 - 장갑</td><td class="num">0.150%</td><td class="num">0.201%</td><td class="num">2회</td></tr>
+<tr><td>🧪 연금술사 궁수 세트 - 신발</td><td class="num">0.150%</td><td class="num">0.101%</td><td class="num">1회</td></tr>
+<tr><td>🧪 연금술사 궁수 세트 - 바지</td><td class="num">0.150%</td><td class="num">0.201%</td><td class="num">2회</td></tr>
+</tbody></table>
+<h4 class="ico-line grade"><img class="ico" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAA3CAYAAAASeFomAAACHklEQVR4nL2YPU7DMBSA4yjcwAudegHGutwAqQfIylBRqSwslQongEosLFQqqgRrDlCJG9CwwcrQqSwdmGEIcoir10ccO/Fzn2TZblx/eT+2XxwEhfDuMJMl8Cm8O8w+vrK8eINxAPEJC4N9Ckem681X5BoxCJO1GIzzfjqbBJvldPuczHQbNKkEUvqK4R+w2Rb9NvMSDOlsEuxNeGEyqR1VYDDdgzKAixkjm0Fxp/XXKOBNgFYLNnld7wCbmLP0zWBYq3UFQQpeRzMjqAqY1IBVDsJAFxizeRsdMO60tv4zwayCoWrPi4HfnEEYpnYPGI2mSKx1HlXByA8+nRljg1ZOJ2yKtJJ9XZLTCFSm1ejsYqePYY03Sa45FMVgfCXrdDa5hi9ltanaiEAA1V8sp+6T88IfvfnqUrUf377zAp+Rp1u3D3d5fXp08KnaJMKBNkqTLMvWqijN5BhvCeTT+88h2WQc+UhpBf3kxUcjsJbwuiJbR0IX3v32Ddk6EoPxP4Dswx3EWSMBDkFoLrxNRcTbT6A7aZ2CQQBtTBJSaZMYkpRaoLJ8L6bOGaogiUXKZQWq+iBLLHOGyDWBlNI4gfSREkemAV6TfCk4dYJaSKn7jWQVDK4Qremwj1wASkr/6OMKIDRpQ3UdEGIIjDLKaxq2j1sTKUy3A1BfOjEFeXm+z384PjnPa0rI1kcKgtvkoONCC9ymlFIfUZtNTvoLW9SBm7wjJ8sAAAAASUVORK5CYII=" alt="매직"><span><strong><span class="g" style="color:#4a9de0">매직</span></strong> (고지 기댓값 36.0% / 실제 확률 37.1%(+1.1% 차이 , 993회 시도 / 368회 관측)</span></h4>
+<table><thead><tr><th>항목</th><th>기대값</th><th>실제값</th><th>횟수</th></tr></thead><tbody>
+<tr><td>🐾 펫</td><td class="num">3.600%</td><td class="num">4.431%</td><td class="num">44회</td></tr>
+<tr><td>⚔️ 무기</td><td class="num">1.800%</td><td class="num">1.813%</td><td class="num">18회</td></tr>
+<tr><td>⚔️ 투구</td><td class="num">1.800%</td><td class="num">1.611%</td><td class="num">16회</td></tr>
+<tr><td>⚔️ 갑옷</td><td class="num">1.800%</td><td class="num">1.511%</td><td class="num">15회</td></tr>
+<tr><td>⚔️ 바지</td><td class="num">1.800%</td><td class="num">2.014%</td><td class="num">20회</td></tr>
+<tr><td>⚔️ 신발</td><td class="num">1.800%</td><td class="num">2.014%</td><td class="num">20회</td></tr>
+<tr><td>⚔️ 장갑</td><td class="num">1.800%</td><td class="num">2.518%</td><td class="num">25회</td></tr>
+<tr><td>⚔️ 목걸이</td><td class="num">1.800%</td><td class="num">1.511%</td><td class="num">15회</td></tr>
+<tr><td>⚔️ 반지</td><td class="num">1.800%</td><td class="num">1.309%</td><td class="num">13회</td></tr>
+<tr><td>⚔️ 귀걸이</td><td class="num">1.800%</td><td class="num">2.316%</td><td class="num">23회</td></tr>
+<tr><td>❄️ 첫서리 사냥꾼 세트 - 무기</td><td class="num">0.540%</td><td class="num">0.504%</td><td class="num">5회</td></tr>
+<tr><td>❄️ 첫서리 사냥꾼 세트 - 투구</td><td class="num">0.540%</td><td class="num">0.302%</td><td class="num">3회</td></tr>
+<tr><td>❄️ 첫서리 사냥꾼 세트 - 갑옷</td><td class="num">0.540%</td><td class="num">0.101%</td><td class="num">1회</td></tr>
+<tr><td>❄️ 첫서리 사냥꾼 세트 - 장갑</td><td class="num">0.540%</td><td class="num">0.604%</td><td class="num">6회</td></tr>
+<tr><td>❄️ 첫서리 사냥꾼 세트 - 신발</td><td class="num">0.540%</td><td class="num">0.302%</td><td class="num">3회</td></tr>
+<tr><td>❄️ 첫서리 사냥꾼 세트 - 바지</td><td class="num">0.540%</td><td class="num">0.705%</td><td class="num">7회</td></tr>
+<tr><td>⚡ 폭풍추적자 세트 - 무기</td><td class="num">0.540%</td><td class="num">0.504%</td><td class="num">5회</td></tr>
+<tr><td>⚡ 폭풍추적자 세트 - 투구</td><td class="num">0.540%</td><td class="num">0.604%</td><td class="num">6회</td></tr>
+<tr><td>⚡ 폭풍추적자 세트 - 갑옷</td><td class="num">0.540%</td><td class="num">0.604%</td><td class="num">6회</td></tr>
+<tr><td>⚡ 폭풍추적자 세트 - 장갑</td><td class="num">0.540%</td><td class="num">0.302%</td><td class="num">3회</td></tr>
+<tr><td>⚡ 폭풍추적자 세트 - 신발</td><td class="num">0.540%</td><td class="num">0.201%</td><td class="num">2회</td></tr>
+<tr><td>⚡ 폭풍추적자 세트 - 바지</td><td class="num">0.540%</td><td class="num">0.806%</td><td class="num">8회</td></tr>
+<tr><td>👻 유령사수 세트 - 무기</td><td class="num">0.540%</td><td class="num">0.705%</td><td class="num">7회</td></tr>
+<tr><td>👻 유령사수 세트 - 투구</td><td class="num">0.540%</td><td class="num">0.201%</td><td class="num">2회</td></tr>
+<tr><td>👻 유령사수 세트 - 갑옷</td><td class="num">0.540%</td><td class="num">0.806%</td><td class="num">8회</td></tr>
+<tr><td>👻 유령사수 세트 - 장갑</td><td class="num">0.540%</td><td class="num">0.403%</td><td class="num">4회</td></tr>
+<tr><td>👻 유령사수 세트 - 신발</td><td class="num">0.540%</td><td class="num">0.705%</td><td class="num">7회</td></tr>
+<tr><td>👻 유령사수 세트 - 바지</td><td class="num">0.540%</td><td class="num">0.201%</td><td class="num">2회</td></tr>
+<tr><td>🔥 화염 궁수 세트 - 무기</td><td class="num">0.540%</td><td class="num">0.705%</td><td class="num">7회</td></tr>
+<tr><td>🔥 화염 궁수 세트 - 투구</td><td class="num">0.540%</td><td class="num">0.906%</td><td class="num">9회</td></tr>
+<tr><td>🔥 화염 궁수 세트 - 갑옷</td><td class="num">0.540%</td><td class="num">0.403%</td><td class="num">4회</td></tr>
+<tr><td>🔥 화염 궁수 세트 - 장갑</td><td class="num">0.540%</td><td class="num">1.410%</td><td class="num">14회</td></tr>
+<tr><td>🔥 화염 궁수 세트 - 신발</td><td class="num">0.540%</td><td class="num">0.705%</td><td class="num">7회</td></tr>
+<tr><td>🔥 화염 궁수 세트 - 바지</td><td class="num">0.540%</td><td class="num">0.504%</td><td class="num">5회</td></tr>
+<tr><td>🧪 연금술사 궁수 세트 - 무기</td><td class="num">0.540%</td><td class="num">0.504%</td><td class="num">5회</td></tr>
+<tr><td>🧪 연금술사 궁수 세트 - 투구</td><td class="num">0.540%</td><td class="num">0.604%</td><td class="num">6회</td></tr>
+<tr><td>🧪 연금술사 궁수 세트 - 갑옷</td><td class="num">0.540%</td><td class="num">0.302%</td><td class="num">3회</td></tr>
+<tr><td>🧪 연금술사 궁수 세트 - 장갑</td><td class="num">0.540%</td><td class="num">0.403%</td><td class="num">4회</td></tr>
+<tr><td>🧪 연금술사 궁수 세트 - 신발</td><td class="num">0.540%</td><td class="num">0.504%</td><td class="num">5회</td></tr>
+<tr><td>🧪 연금술사 궁수 세트 - 바지</td><td class="num">0.540%</td><td class="num">0.504%</td><td class="num">5회</td></tr>
+</tbody></table>
+<h4 class="ico-line grade"><img class="ico" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAArCAYAAAB4pah1AAABV0lEQVR4nM2Xu43DMAyGRcJLpLkN0rjJBqmzQerrU9wQWeLW0AZp3HiDazyGA/lCg2b0oGgjCQEDAm19+EWJIu3cw4773Rget9KaGdZ+kW/0/QBWIAqYC+M1StE6MQn0/QC++5sdYRxUXs+H0RxD/x+zCRBg7aGdXl4fvsvvTR1ToIFURNDu1rkaKEyq2CbwDSIogTVQkMAcWAOFBUSALVCIOVPgAC3FFGPOXKbwuKqBEkrnlNQFaOqcYsypgZpTzyeWn1KJJeACLlROabpfXnvqlKJJtOM8//lqqoGvv76c0rS3OFpU8JT8nCW/DQg1H2uODm4J23yXfT8AWmE/36cnmKMyal1ugF/EzV2lkJeClKFVXapYoRamUZcF5mC5UoolmLRSTWlyoFRbUiz0xw1bkUYD0sJe087xtKqFBYNUeYyllcaQw/jYApuBsmlfY9EYrvnxuQO0F8awPvjU0gAAAABJRU5ErkJggg==" alt="노말"><span><strong><span class="g" style="color:#e8e8e8">노말</span></strong> (고지 기댓값 50.0% / 실제 확률 47.2%(-2.8% 차이 , 993회 시도 / 469회 관측)</span></h4>
+<table><thead><tr><th>항목</th><th>기대값</th><th>실제값</th><th>횟수</th></tr></thead><tbody>
+<tr><td>🐾 펫</td><td class="num">5.000%</td><td class="num">4.431%</td><td class="num">44회</td></tr>
+<tr><td>⚔️ 무기</td><td class="num">2.500%</td><td class="num">2.417%</td><td class="num">24회</td></tr>
+<tr><td>⚔️ 투구</td><td class="num">2.500%</td><td class="num">2.014%</td><td class="num">20회</td></tr>
+<tr><td>⚔️ 갑옷</td><td class="num">2.500%</td><td class="num">2.216%</td><td class="num">22회</td></tr>
+<tr><td>⚔️ 바지</td><td class="num">2.500%</td><td class="num">2.920%</td><td class="num">29회</td></tr>
+<tr><td>⚔️ 신발</td><td class="num">2.500%</td><td class="num">2.216%</td><td class="num">22회</td></tr>
+<tr><td>⚔️ 장갑</td><td class="num">2.500%</td><td class="num">2.216%</td><td class="num">22회</td></tr>
+<tr><td>⚔️ 목걸이</td><td class="num">2.500%</td><td class="num">1.712%</td><td class="num">17회</td></tr>
+<tr><td>⚔️ 반지</td><td class="num">2.500%</td><td class="num">2.417%</td><td class="num">24회</td></tr>
+<tr><td>⚔️ 귀걸이</td><td class="num">2.500%</td><td class="num">3.927%</td><td class="num">39회</td></tr>
+<tr><td>❄️ 첫서리 사냥꾼 세트 - 무기</td><td class="num">0.750%</td><td class="num">0.806%</td><td class="num">8회</td></tr>
+<tr><td>❄️ 첫서리 사냥꾼 세트 - 투구</td><td class="num">0.750%</td><td class="num">0.906%</td><td class="num">9회</td></tr>
+<tr><td>❄️ 첫서리 사냥꾼 세트 - 갑옷</td><td class="num">0.750%</td><td class="num">0.604%</td><td class="num">6회</td></tr>
+<tr><td>❄️ 첫서리 사냥꾼 세트 - 장갑</td><td class="num">0.750%</td><td class="num">0.604%</td><td class="num">6회</td></tr>
+<tr><td>❄️ 첫서리 사냥꾼 세트 - 신발</td><td class="num">0.750%</td><td class="num">0.906%</td><td class="num">9회</td></tr>
+<tr><td>❄️ 첫서리 사냥꾼 세트 - 바지</td><td class="num">0.750%</td><td class="num">1.108%</td><td class="num">11회</td></tr>
+<tr><td>⚡ 폭풍추적자 세트 - 무기</td><td class="num">0.750%</td><td class="num">0.906%</td><td class="num">9회</td></tr>
+<tr><td>⚡ 폭풍추적자 세트 - 투구</td><td class="num">0.750%</td><td class="num">0.806%</td><td class="num">8회</td></tr>
+<tr><td>⚡ 폭풍추적자 세트 - 갑옷</td><td class="num">0.750%</td><td class="num">0.403%</td><td class="num">4회</td></tr>
+<tr><td>⚡ 폭풍추적자 세트 - 장갑</td><td class="num">0.750%</td><td class="num">0.806%</td><td class="num">8회</td></tr>
+<tr><td>⚡ 폭풍추적자 세트 - 신발</td><td class="num">0.750%</td><td class="num">0.504%</td><td class="num">5회</td></tr>
+<tr><td>⚡ 폭풍추적자 세트 - 바지</td><td class="num">0.750%</td><td class="num">0.705%</td><td class="num">7회</td></tr>
+<tr><td>👻 유령사수 세트 - 무기</td><td class="num">0.750%</td><td class="num">0.604%</td><td class="num">6회</td></tr>
+<tr><td>👻 유령사수 세트 - 투구</td><td class="num">0.750%</td><td class="num">0.604%</td><td class="num">6회</td></tr>
+<tr><td>👻 유령사수 세트 - 갑옷</td><td class="num">0.750%</td><td class="num">0.806%</td><td class="num">8회</td></tr>
+<tr><td>👻 유령사수 세트 - 장갑</td><td class="num">0.750%</td><td class="num">0.504%</td><td class="num">5회</td></tr>
+<tr><td>👻 유령사수 세트 - 신발</td><td class="num">0.750%</td><td class="num">0.302%</td><td class="num">3회</td></tr>
+<tr><td>👻 유령사수 세트 - 바지</td><td class="num">0.750%</td><td class="num">0.604%</td><td class="num">6회</td></tr>
+<tr><td>🔥 화염 궁수 세트 - 무기</td><td class="num">0.750%</td><td class="num">0.604%</td><td class="num">6회</td></tr>
+<tr><td>🔥 화염 궁수 세트 - 투구</td><td class="num">0.750%</td><td class="num">0.906%</td><td class="num">9회</td></tr>
+<tr><td>🔥 화염 궁수 세트 - 갑옷</td><td class="num">0.750%</td><td class="num">0.705%</td><td class="num">7회</td></tr>
+<tr><td>🔥 화염 궁수 세트 - 장갑</td><td class="num">0.750%</td><td class="num">0.806%</td><td class="num">8회</td></tr>
+<tr><td>🔥 화염 궁수 세트 - 신발</td><td class="num">0.750%</td><td class="num">0.705%</td><td class="num">7회</td></tr>
+<tr><td>🔥 화염 궁수 세트 - 바지</td><td class="num">0.750%</td><td class="num">0.403%</td><td class="num">4회</td></tr>
+<tr><td>🧪 연금술사 궁수 세트 - 무기</td><td class="num">0.750%</td><td class="num">0.705%</td><td class="num">7회</td></tr>
+<tr><td>🧪 연금술사 궁수 세트 - 투구</td><td class="num">0.750%</td><td class="num">0.806%</td><td class="num">8회</td></tr>
+<tr><td>🧪 연금술사 궁수 세트 - 갑옷</td><td class="num">0.750%</td><td class="num">0.705%</td><td class="num">7회</td></tr>
+<tr><td>🧪 연금술사 궁수 세트 - 장갑</td><td class="num">0.750%</td><td class="num">0.705%</td><td class="num">7회</td></tr>
+<tr><td>🧪 연금술사 궁수 세트 - 신발</td><td class="num">0.750%</td><td class="num">0.302%</td><td class="num">3회</td></tr>
+<tr><td>🧪 연금술사 궁수 세트 - 바지</td><td class="num">0.750%</td><td class="num">0.906%</td><td class="num">9회</td></tr>
+</tbody></table>
+<h4 class="ico-line"><svg class="ico coin" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="#c27a38" stroke="#804d1f" stroke-width="2"/><circle cx="12" cy="12" r="6" fill="none" stroke="#804d1f" stroke-width="1" opacity=".55"/></svg><span>동코인</span></h4>
+<h4 class="ico-line grade"><img class="ico" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAA3CAYAAAASeFomAAACb0lEQVR4nL2YsVLCQBCGLwzY4lDhjI9AZ6EzvAEPYIGF1hRJQ0MeIFjQYEGthRY+AG/AjBZ2lJbOaJXRVos4G7K4rHeXu8uFnckkJCFf/v/2spsIUUQ4bGewiDojHLazLHvNl9pgIYHUCWuIfUbIrPtYD+obq7BIBoDA4tu+Bm7cPHwF9EAc93O47GZcQDsXh+C2dXvL7Tnfn7dPsB6PolPZzVkFtU81VgCEpbK9eAGfsEB1QAagNmIADKwss7EpDKJzfJ6vP9Yi48CDw6uzzdhFmQ5mNGHTt0cGHOyoBdhsMX/W2Si9A/oHSHOuDOHcSp2NpSAdMGUwmv4cJrUOTuInJslqRw0CqY1goVCE0YTjClEdgBDKlXFVRsmgy6YOGTcvZYLC0EadhTwLreqRDua98Kls7DBVEFRVpQqbMFXwG0sJz0AnkEzVeBRpM9XoWWeiKo77E36sUJrXLufCFe4+pnJIkqym9Bzc3+0tr90rpNjAKGS2mP+zE497abcSBmm1L99hDftQpfe+rlVAcF17A/nzdXfkNevKAF4VxXF/wucRT4a9pXdT+ImpEGIim7QFvDoo/iuCU2ofPKY2pX3z5HACqbodgMp6v8rJEJOSzgMbFWeQSk0qab9o32AFkvV7Hd89gw6SSvo7py5I1+qmhj1D06Wfg6CWlalRgqq2xLIonUc2TT6EVZMPwVsnqgLC5k3COBmqQozHSAWwebWUHtR9AjB5FzKyjquh70WukNJvDBxKX/lDy28MgY1leHEXFYHqCQCWVfoEwyJAyPz+Jd8RXZzka5+QbTIghG97B0WFCr7tM6Rj5Ns2uOgvvw4AlVeYLKYAAAAASUVORK5CYII=" alt="유일"><span><strong><span class="g" style="color:#e8d44a">유일</span></strong> (고지 기댓값 5.0% / 실제 확률 5.4%(+0.4% 차이 , 3,256회 시도 / 175회 관측)</span></h4>
+<table><thead><tr><th>항목</th><th>기대값</th><th>실제값</th><th>횟수</th></tr></thead><tbody>
+<tr><td>🐾 펫</td><td class="num">0.500%</td><td class="num">0.676%</td><td class="num">22회</td></tr>
+<tr><td>⚔️ 무기</td><td class="num">0.250%</td><td class="num">0.307%</td><td class="num">10회</td></tr>
+<tr><td>⚔️ 투구</td><td class="num">0.250%</td><td class="num">0.276%</td><td class="num">9회</td></tr>
+<tr><td>⚔️ 갑옷</td><td class="num">0.250%</td><td class="num">0.338%</td><td class="num">11회</td></tr>
+<tr><td>⚔️ 바지</td><td class="num">0.250%</td><td class="num">0.461%</td><td class="num">15회</td></tr>
+<tr><td>⚔️ 신발</td><td class="num">0.250%</td><td class="num">0.491%</td><td class="num">16회</td></tr>
+<tr><td>⚔️ 장갑</td><td class="num">0.250%</td><td class="num">0.246%</td><td class="num">8회</td></tr>
+<tr><td>⚔️ 목걸이</td><td class="num">0.250%</td><td class="num">0.215%</td><td class="num">7회</td></tr>
+<tr><td>⚔️ 반지</td><td class="num">0.250%</td><td class="num">0.276%</td><td class="num">9회</td></tr>
+<tr><td>⚔️ 귀걸이</td><td class="num">0.250%</td><td class="num">0.154%</td><td class="num">5회</td></tr>
+<tr><td>❄️ 첫서리 사냥꾼 세트 - 무기</td><td class="num">0.075%</td><td class="num">0.123%</td><td class="num">4회</td></tr>
+<tr><td>❄️ 첫서리 사냥꾼 세트 - 투구</td><td class="num">0.075%</td><td class="num">0.092%</td><td class="num">3회</td></tr>
+<tr><td>❄️ 첫서리 사냥꾼 세트 - 갑옷</td><td class="num">0.075%</td><td class="num">0.092%</td><td class="num">3회</td></tr>
+<tr><td>❄️ 첫서리 사냥꾼 세트 - 장갑</td><td class="num">0.075%</td><td class="num">0.061%</td><td class="num">2회</td></tr>
+<tr><td>❄️ 첫서리 사냥꾼 세트 - 신발</td><td class="num">0.075%</td><td class="num">0.154%</td><td class="num">5회</td></tr>
+<tr><td>❄️ 첫서리 사냥꾼 세트 - 바지</td><td class="num">0.075%</td><td class="num">0.092%</td><td class="num">3회</td></tr>
+<tr><td>⚡ 폭풍추적자 세트 - 무기</td><td class="num">0.075%</td><td class="num">0.092%</td><td class="num">3회</td></tr>
+<tr><td>⚡ 폭풍추적자 세트 - 투구</td><td class="num">0.075%</td><td class="num">0.092%</td><td class="num">3회</td></tr>
+<tr><td>⚡ 폭풍추적자 세트 - 갑옷</td><td class="num">0.075%</td><td class="num">0.061%</td><td class="num">2회</td></tr>
+<tr><td>⚡ 폭풍추적자 세트 - 장갑</td><td class="num">0.075%</td><td class="num">0.031%</td><td class="num">1회</td></tr>
+<tr><td>⚡ 폭풍추적자 세트 - 신발</td><td class="num">0.075%</td><td class="num">0.061%</td><td class="num">2회</td></tr>
+<tr><td>⚡ 폭풍추적자 세트 - 바지</td><td class="num">0.075%</td><td class="num">0.031%</td><td class="num">1회</td></tr>
+<tr><td>👻 유령사수 세트 - 무기</td><td class="num">0.075%</td><td class="num">0.092%</td><td class="num">3회</td></tr>
+<tr><td>👻 유령사수 세트 - 투구</td><td class="num">0.075%</td><td class="num">0.031%</td><td class="num">1회</td></tr>
+<tr><td>👻 유령사수 세트 - 갑옷</td><td class="num">0.075%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
+<tr><td>👻 유령사수 세트 - 장갑</td><td class="num">0.075%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
+<tr><td>👻 유령사수 세트 - 신발</td><td class="num">0.075%</td><td class="num">0.061%</td><td class="num">2회</td></tr>
+<tr><td>👻 유령사수 세트 - 바지</td><td class="num">0.075%</td><td class="num">0.061%</td><td class="num">2회</td></tr>
+<tr><td>🔥 화염 궁수 세트 - 무기</td><td class="num">0.075%</td><td class="num">0.061%</td><td class="num">2회</td></tr>
+<tr><td>🔥 화염 궁수 세트 - 투구</td><td class="num">0.075%</td><td class="num">0.061%</td><td class="num">2회</td></tr>
+<tr><td>🔥 화염 궁수 세트 - 갑옷</td><td class="num">0.075%</td><td class="num">0.092%</td><td class="num">3회</td></tr>
+<tr><td>🔥 화염 궁수 세트 - 장갑</td><td class="num">0.075%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
+<tr><td>🔥 화염 궁수 세트 - 신발</td><td class="num">0.075%</td><td class="num">0.123%</td><td class="num">4회</td></tr>
+<tr><td>🔥 화염 궁수 세트 - 바지</td><td class="num">0.075%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
+<tr><td>🧪 연금술사 궁수 세트 - 무기</td><td class="num">0.075%</td><td class="num">0.123%</td><td class="num">4회</td></tr>
+<tr><td>🧪 연금술사 궁수 세트 - 투구</td><td class="num">0.075%</td><td class="num">0.031%</td><td class="num">1회</td></tr>
+<tr><td>🧪 연금술사 궁수 세트 - 갑옷</td><td class="num">0.075%</td><td class="num">0.000%</td><td class="num">0회</td></tr>
+<tr><td>🧪 연금술사 궁수 세트 - 장갑</td><td class="num">0.075%</td><td class="num">0.031%</td><td class="num">1회</td></tr>
+<tr><td>🧪 연금술사 궁수 세트 - 신발</td><td class="num">0.075%</td><td class="num">0.061%</td><td class="num">2회</td></tr>
+<tr><td>🧪 연금술사 궁수 세트 - 바지</td><td class="num">0.075%</td><td class="num">0.123%</td><td class="num">4회</td></tr>
+</tbody></table>
+<h4 class="ico-line grade"><img class="ico" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAA3CAYAAAASeFomAAACHklEQVR4nL2YPU7DMBSA4yjcwAudegHGutwAqQfIylBRqSwslQongEosLFQqqgRrDlCJG9CwwcrQqSwdmGEIcoir10ccO/Fzn2TZblx/eT+2XxwEhfDuMJMl8Cm8O8w+vrK8eINxAPEJC4N9Ckem681X5BoxCJO1GIzzfjqbBJvldPuczHQbNKkEUvqK4R+w2Rb9NvMSDOlsEuxNeGEyqR1VYDDdgzKAixkjm0Fxp/XXKOBNgFYLNnld7wCbmLP0zWBYq3UFQQpeRzMjqAqY1IBVDsJAFxizeRsdMO60tv4zwayCoWrPi4HfnEEYpnYPGI2mSKx1HlXByA8+nRljg1ZOJ2yKtJJ9XZLTCFSm1ejsYqePYY03Sa45FMVgfCXrdDa5hi9ltanaiEAA1V8sp+6T88IfvfnqUrUf377zAp+Rp1u3D3d5fXp08KnaJMKBNkqTLMvWqijN5BhvCeTT+88h2WQc+UhpBf3kxUcjsJbwuiJbR0IX3v32Ddk6EoPxP4Dswx3EWSMBDkFoLrxNRcTbT6A7aZ2CQQBtTBJSaZMYkpRaoLJ8L6bOGaogiUXKZQWq+iBLLHOGyDWBlNI4gfSREkemAV6TfCk4dYJaSKn7jWQVDK4Qremwj1wASkr/6OMKIDRpQ3UdEGIIjDLKaxq2j1sTKUy3A1BfOjEFeXm+z384PjnPa0rI1kcKgtvkoONCC9ymlFIfUZtNTvoLW9SBm7wjJ8sAAAAASUVORK5CYII=" alt="매직"><span><strong><span class="g" style="color:#4a9de0">매직</span></strong> (고지 기댓값 25.0% / 실제 확률 25.4%(+0.4% 차이 , 3,256회 시도 / 827회 관측)</span></h4>
+<table><thead><tr><th>항목</th><th>기대값</th><th>실제값</th><th>횟수</th></tr></thead><tbody>
+<tr><td>🐾 펫</td><td class="num">2.500%</td><td class="num">2.733%</td><td class="num">89회</td></tr>
+<tr><td>⚔️ 무기</td><td class="num">1.250%</td><td class="num">1.351%</td><td class="num">44회</td></tr>
+<tr><td>⚔️ 투구</td><td class="num">1.250%</td><td class="num">1.321%</td><td class="num">43회</td></tr>
+<tr><td>⚔️ 갑옷</td><td class="num">1.250%</td><td class="num">1.229%</td><td class="num">40회</td></tr>
+<tr><td>⚔️ 바지</td><td class="num">1.250%</td><td class="num">1.321%</td><td class="num">43회</td></tr>
+<tr><td>⚔️ 신발</td><td class="num">1.250%</td><td class="num">1.505%</td><td class="num">49회</td></tr>
+<tr><td>⚔️ 장갑</td><td class="num">1.250%</td><td class="num">1.167%</td><td class="num">38회</td></tr>
+<tr><td>⚔️ 목걸이</td><td class="num">1.250%</td><td class="num">1.351%</td><td class="num">44회</td></tr>
+<tr><td>⚔️ 반지</td><td class="num">1.250%</td><td class="num">1.198%</td><td class="num">39회</td></tr>
+<tr><td>⚔️ 귀걸이</td><td class="num">1.250%</td><td class="num">1.106%</td><td class="num">36회</td></tr>
+<tr><td>❄️ 첫서리 사냥꾼 세트 - 무기</td><td class="num">0.375%</td><td class="num">0.307%</td><td class="num">10회</td></tr>
+<tr><td>❄️ 첫서리 사냥꾼 세트 - 투구</td><td class="num">0.375%</td><td class="num">0.276%</td><td class="num">9회</td></tr>
+<tr><td>❄️ 첫서리 사냥꾼 세트 - 갑옷</td><td class="num">0.375%</td><td class="num">0.553%</td><td class="num">18회</td></tr>
+<tr><td>❄️ 첫서리 사냥꾼 세트 - 장갑</td><td class="num">0.375%</td><td class="num">0.307%</td><td class="num">10회</td></tr>
+<tr><td>❄️ 첫서리 사냥꾼 세트 - 신발</td><td class="num">0.375%</td><td class="num">0.215%</td><td class="num">7회</td></tr>
+<tr><td>❄️ 첫서리 사냥꾼 세트 - 바지</td><td class="num">0.375%</td><td class="num">0.430%</td><td class="num">14회</td></tr>
+<tr><td>⚡ 폭풍추적자 세트 - 무기</td><td class="num">0.375%</td><td class="num">0.215%</td><td class="num">7회</td></tr>
+<tr><td>⚡ 폭풍추적자 세트 - 투구</td><td class="num">0.375%</td><td class="num">0.307%</td><td class="num">10회</td></tr>
+<tr><td>⚡ 폭풍추적자 세트 - 갑옷</td><td class="num">0.375%</td><td class="num">0.461%</td><td class="num">15회</td></tr>
+<tr><td>⚡ 폭풍추적자 세트 - 장갑</td><td class="num">0.375%</td><td class="num">0.491%</td><td class="num">16회</td></tr>
+<tr><td>⚡ 폭풍추적자 세트 - 신발</td><td class="num">0.375%</td><td class="num">0.215%</td><td class="num">7회</td></tr>
+<tr><td>⚡ 폭풍추적자 세트 - 바지</td><td class="num">0.375%</td><td class="num">0.338%</td><td class="num">11회</td></tr>
+<tr><td>👻 유령사수 세트 - 무기</td><td class="num">0.375%</td><td class="num">0.399%</td><td class="num">13회</td></tr>
+<tr><td>👻 유령사수 세트 - 투구</td><td class="num">0.375%</td><td class="num">0.307%</td><td class="num">10회</td></tr>
+<tr><td>👻 유령사수 세트 - 갑옷</td><td class="num">0.375%</td><td class="num">0.584%</td><td class="num">19회</td></tr>
+<tr><td>👻 유령사수 세트 - 장갑</td><td class="num">0.375%</td><td class="num">0.676%</td><td class="num">22회</td></tr>
+<tr><td>👻 유령사수 세트 - 신발</td><td class="num">0.375%</td><td class="num">0.369%</td><td class="num">12회</td></tr>
+<tr><td>👻 유령사수 세트 - 바지</td><td class="num">0.375%</td><td class="num">0.307%</td><td class="num">10회</td></tr>
+<tr><td>🔥 화염 궁수 세트 - 무기</td><td class="num">0.375%</td><td class="num">0.276%</td><td class="num">9회</td></tr>
+<tr><td>🔥 화염 궁수 세트 - 투구</td><td class="num">0.375%</td><td class="num">0.430%</td><td class="num">14회</td></tr>
+<tr><td>🔥 화염 궁수 세트 - 갑옷</td><td class="num">0.375%</td><td class="num">0.307%</td><td class="num">10회</td></tr>
+<tr><td>🔥 화염 궁수 세트 - 장갑</td><td class="num">0.375%</td><td class="num">0.276%</td><td class="num">9회</td></tr>
+<tr><td>🔥 화염 궁수 세트 - 신발</td><td class="num">0.375%</td><td class="num">0.614%</td><td class="num">20회</td></tr>
+<tr><td>🔥 화염 궁수 세트 - 바지</td><td class="num">0.375%</td><td class="num">0.338%</td><td class="num">11회</td></tr>
+<tr><td>🧪 연금술사 궁수 세트 - 무기</td><td class="num">0.375%</td><td class="num">0.430%</td><td class="num">14회</td></tr>
+<tr><td>🧪 연금술사 궁수 세트 - 투구</td><td class="num">0.375%</td><td class="num">0.276%</td><td class="num">9회</td></tr>
+<tr><td>🧪 연금술사 궁수 세트 - 갑옷</td><td class="num">0.375%</td><td class="num">0.154%</td><td class="num">5회</td></tr>
+<tr><td>🧪 연금술사 궁수 세트 - 장갑</td><td class="num">0.375%</td><td class="num">0.307%</td><td class="num">10회</td></tr>
+<tr><td>🧪 연금술사 궁수 세트 - 신발</td><td class="num">0.375%</td><td class="num">0.461%</td><td class="num">15회</td></tr>
+<tr><td>🧪 연금술사 궁수 세트 - 바지</td><td class="num">0.375%</td><td class="num">0.491%</td><td class="num">16회</td></tr>
+</tbody></table>
+<h4 class="ico-line grade"><img class="ico" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAArCAYAAAB4pah1AAABV0lEQVR4nM2Xu43DMAyGRcJLpLkN0rjJBqmzQerrU9wQWeLW0AZp3HiDazyGA/lCg2b0oGgjCQEDAm19+EWJIu3cw4773Rget9KaGdZ+kW/0/QBWIAqYC+M1StE6MQn0/QC++5sdYRxUXs+H0RxD/x+zCRBg7aGdXl4fvsvvTR1ToIFURNDu1rkaKEyq2CbwDSIogTVQkMAcWAOFBUSALVCIOVPgAC3FFGPOXKbwuKqBEkrnlNQFaOqcYsypgZpTzyeWn1KJJeACLlROabpfXnvqlKJJtOM8//lqqoGvv76c0rS3OFpU8JT8nCW/DQg1H2uODm4J23yXfT8AWmE/36cnmKMyal1ugF/EzV2lkJeClKFVXapYoRamUZcF5mC5UoolmLRSTWlyoFRbUiz0xw1bkUYD0sJe087xtKqFBYNUeYyllcaQw/jYApuBsmlfY9EYrvnxuQO0F8awPvjU0gAAAABJRU5ErkJggg==" alt="노말"><span><strong><span class="g" style="color:#e8e8e8">노말</span></strong> (고지 기댓값 70.0% / 실제 확률 69.2%(-0.8% 차이 , 3,256회 시도 / 2,254회 관측)</span></h4>
+<table><thead><tr><th>항목</th><th>기대값</th><th>실제값</th><th>횟수</th></tr></thead><tbody>
+<tr><td>🐾 펫</td><td class="num">7.000%</td><td class="num">6.357%</td><td class="num">207회</td></tr>
+<tr><td>⚔️ 무기</td><td class="num">3.500%</td><td class="num">3.931%</td><td class="num">128회</td></tr>
+<tr><td>⚔️ 투구</td><td class="num">3.500%</td><td class="num">2.826%</td><td class="num">92회</td></tr>
+<tr><td>⚔️ 갑옷</td><td class="num">3.500%</td><td class="num">3.593%</td><td class="num">117회</td></tr>
+<tr><td>⚔️ 바지</td><td class="num">3.500%</td><td class="num">3.808%</td><td class="num">124회</td></tr>
+<tr><td>⚔️ 신발</td><td class="num">3.500%</td><td class="num">2.826%</td><td class="num">92회</td></tr>
+<tr><td>⚔️ 장갑</td><td class="num">3.500%</td><td class="num">3.593%</td><td class="num">117회</td></tr>
+<tr><td>⚔️ 목걸이</td><td class="num">3.500%</td><td class="num">3.778%</td><td class="num">123회</td></tr>
+<tr><td>⚔️ 반지</td><td class="num">3.500%</td><td class="num">3.256%</td><td class="num">106회</td></tr>
+<tr><td>⚔️ 귀걸이</td><td class="num">3.500%</td><td class="num">4.054%</td><td class="num">132회</td></tr>
+<tr><td>❄️ 첫서리 사냥꾼 세트 - 무기</td><td class="num">1.050%</td><td class="num">1.044%</td><td class="num">34회</td></tr>
+<tr><td>❄️ 첫서리 사냥꾼 세트 - 투구</td><td class="num">1.050%</td><td class="num">0.983%</td><td class="num">32회</td></tr>
+<tr><td>❄️ 첫서리 사냥꾼 세트 - 갑옷</td><td class="num">1.050%</td><td class="num">1.136%</td><td class="num">37회</td></tr>
+<tr><td>❄️ 첫서리 사냥꾼 세트 - 장갑</td><td class="num">1.050%</td><td class="num">1.259%</td><td class="num">41회</td></tr>
+<tr><td>❄️ 첫서리 사냥꾼 세트 - 신발</td><td class="num">1.050%</td><td class="num">1.044%</td><td class="num">34회</td></tr>
+<tr><td>❄️ 첫서리 사냥꾼 세트 - 바지</td><td class="num">1.050%</td><td class="num">1.075%</td><td class="num">35회</td></tr>
+<tr><td>⚡ 폭풍추적자 세트 - 무기</td><td class="num">1.050%</td><td class="num">1.443%</td><td class="num">47회</td></tr>
+<tr><td>⚡ 폭풍추적자 세트 - 투구</td><td class="num">1.050%</td><td class="num">1.167%</td><td class="num">38회</td></tr>
+<tr><td>⚡ 폭풍추적자 세트 - 갑옷</td><td class="num">1.050%</td><td class="num">0.921%</td><td class="num">30회</td></tr>
+<tr><td>⚡ 폭풍추적자 세트 - 장갑</td><td class="num">1.050%</td><td class="num">0.921%</td><td class="num">30회</td></tr>
+<tr><td>⚡ 폭풍추적자 세트 - 신발</td><td class="num">1.050%</td><td class="num">0.768%</td><td class="num">25회</td></tr>
+<tr><td>⚡ 폭풍추적자 세트 - 바지</td><td class="num">1.050%</td><td class="num">1.075%</td><td class="num">35회</td></tr>
+<tr><td>👻 유령사수 세트 - 무기</td><td class="num">1.050%</td><td class="num">0.829%</td><td class="num">27회</td></tr>
+<tr><td>👻 유령사수 세트 - 투구</td><td class="num">1.050%</td><td class="num">1.229%</td><td class="num">40회</td></tr>
+<tr><td>👻 유령사수 세트 - 갑옷</td><td class="num">1.050%</td><td class="num">1.075%</td><td class="num">35회</td></tr>
+<tr><td>👻 유령사수 세트 - 장갑</td><td class="num">1.050%</td><td class="num">0.921%</td><td class="num">30회</td></tr>
+<tr><td>👻 유령사수 세트 - 신발</td><td class="num">1.050%</td><td class="num">0.829%</td><td class="num">27회</td></tr>
+<tr><td>👻 유령사수 세트 - 바지</td><td class="num">1.050%</td><td class="num">0.983%</td><td class="num">32회</td></tr>
+<tr><td>🔥 화염 궁수 세트 - 무기</td><td class="num">1.050%</td><td class="num">0.706%</td><td class="num">23회</td></tr>
+<tr><td>🔥 화염 궁수 세트 - 투구</td><td class="num">1.050%</td><td class="num">1.106%</td><td class="num">36회</td></tr>
+<tr><td>🔥 화염 궁수 세트 - 갑옷</td><td class="num">1.050%</td><td class="num">0.921%</td><td class="num">30회</td></tr>
+<tr><td>🔥 화염 궁수 세트 - 장갑</td><td class="num">1.050%</td><td class="num">0.799%</td><td class="num">26회</td></tr>
+<tr><td>🔥 화염 궁수 세트 - 신발</td><td class="num">1.050%</td><td class="num">1.106%</td><td class="num">36회</td></tr>
+<tr><td>🔥 화염 궁수 세트 - 바지</td><td class="num">1.050%</td><td class="num">1.044%</td><td class="num">34회</td></tr>
+<tr><td>🧪 연금술사 궁수 세트 - 무기</td><td class="num">1.050%</td><td class="num">1.136%</td><td class="num">37회</td></tr>
+<tr><td>🧪 연금술사 궁수 세트 - 투구</td><td class="num">1.050%</td><td class="num">0.768%</td><td class="num">25회</td></tr>
+<tr><td>🧪 연금술사 궁수 세트 - 갑옷</td><td class="num">1.050%</td><td class="num">1.106%</td><td class="num">36회</td></tr>
+<tr><td>🧪 연금술사 궁수 세트 - 장갑</td><td class="num">1.050%</td><td class="num">1.597%</td><td class="num">52회</td></tr>
+<tr><td>🧪 연금술사 궁수 세트 - 신발</td><td class="num">1.050%</td><td class="num">1.167%</td><td class="num">38회</td></tr>
+<tr><td>🧪 연금술사 궁수 세트 - 바지</td><td class="num">1.050%</td><td class="num">1.044%</td><td class="num">34회</td></tr>
+</tbody></table>
 <h3><strong>코인·등급별 실제 관측 — 뽑기</strong> (고지확률 · 뽑음 · 전체 · 실제확률)</h3>
-<p><u>동코인 (전체 3,256회)</u></p>
-<p>노말 (고지 기댓값 70.0% / 실제 확률 69.2%(-0.8% 차이 , 3,256회 시도 / 2,254회 관측)</p>
-<p>매직 (고지 기댓값 25.0% / 실제 확률 25.4%(+0.4% 차이 , 3,256회 시도 / 827회 관측)</p>
-<p>유일 (고지 기댓값 5.0% / 실제 확률 5.4%(+0.4% 차이 , 3,256회 시도 / 175회 관측)</p>
-<p><u>은코인 (전체 993회)</u></p>
-<p>노말 (고지 기댓값 50.0% / 실제 확률 47.2%(-2.8% 차이 , 993회 시도 / 469회 관측)</p>
-<p>매직 (고지 기댓값 36.0% / 실제 확률 37.1%(+1.1% 차이 , 993회 시도 / 368회 관측)</p>
-<p>유일 (고지 기댓값 10.0% / 실제 확률 11.0%(+1.0% 차이 , 993회 시도 / 109회 관측)</p>
-<p>영웅 (고지 기댓값 4.0% / 실제 확률 4.7%(+0.7% 차이 , 993회 시도 / 47회 관측)</p>
-<p><u>금코인 (전체 267회)</u></p>
-<p>노말 (고지 기댓값 30.0% / 실제 확률 30.0%(-0.0% 차이 , 267회 시도 / 80회 관측)</p>
-<p>매직 (고지 기댓값 33.0% / 실제 확률 35.2%(+2.2% 차이 , 267회 시도 / 94회 관측)</p>
-<p>유일 (고지 기댓값 25.0% / 실제 확률 23.2%(-1.8% 차이 , 267회 시도 / 62회 관측)</p>
-<p>영웅 (고지 기댓값 8.0% / 실제 확률 7.5%(-0.5% 차이 , 267회 시도 / 20회 관측)</p>
-<p>전설 (고지 기댓값 4.0% / 실제 확률 4.1%(+0.1% 차이 , 267회 시도 / 11회 관측)</p>
 <p><u>다이아코인 (전체 2,788회)</u></p>
-<p>유일 (고지 기댓값 45.0% / 실제 확률 46.7%(+1.7% 차이 , 2,788회 시도 / 1,301회 관측)</p>
-<p>영웅 (고지 기댓값 35.0% / 실제 확률 33.2%(-1.8% 차이 , 2,788회 시도 / 925회 관측)</p>
-<p>전설 (고지 기댓값 15.0% / 실제 확률 14.3%(-0.7% 차이 , 2,788회 시도 / 398회 관측)</p>
-<p>신화 (고지 기댓값 5.0% / 실제 확률 5.9%(+0.9% 차이 , 2,788회 시도 / 164회 관측)</p>
+<p><span class="g" style="color:#e8d44a">유일</span> (고지 기댓값 45.0% / 실제 확률 46.7%(+1.7% 차이 , 2,788회 시도 / 1,301회 관측)</p>
+<p><span class="g" style="color:#f08a2e">영웅</span> (고지 기댓값 35.0% / 실제 확률 33.2%(-1.8% 차이 , 2,788회 시도 / 925회 관측)</p>
+<p><span class="g" style="color:#ff5a4a">전설</span> (고지 기댓값 15.0% / 실제 확률 14.3%(-0.7% 차이 , 2,788회 시도 / 398회 관측)</p>
+<p><span class="g" style="color:#b45ae0">신화</span> (고지 기댓값 5.0% / 실제 확률 5.9%(+0.9% 차이 , 2,788회 시도 / 164회 관측)</p>
+<p><u>금코인 (전체 267회)</u></p>
+<p><span class="g" style="color:#e8e8e8">노말</span> (고지 기댓값 30.0% / 실제 확률 30.0%(-0.0% 차이 , 267회 시도 / 80회 관측)</p>
+<p><span class="g" style="color:#4a9de0">매직</span> (고지 기댓값 33.0% / 실제 확률 35.2%(+2.2% 차이 , 267회 시도 / 94회 관측)</p>
+<p><span class="g" style="color:#e8d44a">유일</span> (고지 기댓값 25.0% / 실제 확률 23.2%(-1.8% 차이 , 267회 시도 / 62회 관측)</p>
+<p><span class="g" style="color:#f08a2e">영웅</span> (고지 기댓값 8.0% / 실제 확률 7.5%(-0.5% 차이 , 267회 시도 / 20회 관측)</p>
+<p><span class="g" style="color:#ff5a4a">전설</span> (고지 기댓값 4.0% / 실제 확률 4.1%(+0.1% 차이 , 267회 시도 / 11회 관측)</p>
+<p><u>은코인 (전체 993회)</u></p>
+<p><span class="g" style="color:#e8e8e8">노말</span> (고지 기댓값 50.0% / 실제 확률 47.2%(-2.8% 차이 , 993회 시도 / 469회 관측)</p>
+<p><span class="g" style="color:#4a9de0">매직</span> (고지 기댓값 36.0% / 실제 확률 37.1%(+1.1% 차이 , 993회 시도 / 368회 관측)</p>
+<p><span class="g" style="color:#e8d44a">유일</span> (고지 기댓값 10.0% / 실제 확률 11.0%(+1.0% 차이 , 993회 시도 / 109회 관측)</p>
+<p><span class="g" style="color:#f08a2e">영웅</span> (고지 기댓값 4.0% / 실제 확률 4.7%(+0.7% 차이 , 993회 시도 / 47회 관측)</p>
+<p><u>동코인 (전체 3,256회)</u></p>
+<p><span class="g" style="color:#e8e8e8">노말</span> (고지 기댓값 70.0% / 실제 확률 69.2%(-0.8% 차이 , 3,256회 시도 / 2,254회 관측)</p>
+<p><span class="g" style="color:#4a9de0">매직</span> (고지 기댓값 25.0% / 실제 확률 25.4%(+0.4% 차이 , 3,256회 시도 / 827회 관측)</p>
+<p><span class="g" style="color:#e8d44a">유일</span> (고지 기댓값 5.0% / 실제 확률 5.4%(+0.4% 차이 , 3,256회 시도 / 175회 관측)</p>
 </section>
 <section id="pane-rank" class="pane">
 <h2>🏆 랭킹</h2>
