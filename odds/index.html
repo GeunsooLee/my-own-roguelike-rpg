@@ -79,9 +79,16 @@ pre { background:#0e0b09; border:1px solid var(--line); border-radius:8px; paddi
 .cols { display:flex; flex-wrap:wrap; gap:10px; align-items:flex-start; }
 /* 2026-09-22 사용자 요청 "2x2로" — 코인 4종을 2열로. 좁은 화면(폰)에선 1열로 접힌다. */
 .grid2 { display:grid; grid-template-columns:repeat(2, minmax(0,1fr)); gap:12px 16px; margin:10px 0 4px; }
-.grid2 .cell { min-width:0; border:1px solid var(--line2); border-radius:10px; padding:10px 12px 6px; }
+/* 칸이 좁아 표가 다 안 들어가면 잘라내지 말고 가로로 스크롤시킨다 — 확률 공시 페이지라
+   숫자 한 칸이라도 가려지면 안 된다(2026-09-22: 조율 탭을 2열로 바꾸며 모바일에서
+   '관측' 열이 잘리는 걸 실제로 확인해 추가). */
+.grid2 .cell { min-width:0; border:1px solid var(--line2); border-radius:10px; padding:10px 12px 6px;
+  overflow-x:auto; }
 .grid2 .cell > :first-child { margin-top:0; }
 .grid2 .cell table { width:100%; }
+/* 2열 격자 안의 표는 칸 폭이 절반이라 좌우 여백을 조금 줄여야 한 화면에 들어온다
+   (2026-09-22: 무기 표가 16px 넘쳐 데스크탑에서도 가로 스크롤이 생기던 것) */
+.grid2 .cell th, .grid2 .cell td { padding-left:9px; padding-right:9px; }
 @media (max-width: 720px) { .grid2 { grid-template-columns:1fr; } }
 .cols table { margin:10px 0 6px; flex:0 1 auto; }
 
@@ -119,7 +126,7 @@ pre { background:#0e0b09; border:1px solid var(--line); border-radius:8px; paddi
 <header class="top">
 <h1>확률 정보 · 랭킹</h1>
 <hr class="rule">
-<p class="meta">나의 로그라이크 (My Own Roguelike: Card RPG) · 갱신 2026. 9. 23. 오전 12:00:27 (KST) · 12시간마다 자동 갱신</p>
+<p class="meta">나의 로그라이크 (My Own Roguelike: Card RPG) · 갱신 2026. 9. 23. 오전 8:27:21 (KST) · 12시간마다 자동 갱신</p>
 </header>
 <div class="note">
 <strong>고지 확률</strong>은 게임에 설정된 값이고, <strong>실제 확률</strong>은 전체 이용자의 실제 시도를
@@ -966,7 +973,9 @@ pre { background:#0e0b09; border:1px solid var(--line); border-radius:8px; paddi
 <section id="pane-reroll" class="pane">
 <h2>🔧 조율 확률</h2>
 <p>장비 옵션 변경(조율)은 부위별 옵션 목록에서 균등하게 한 줄을 다시 뽑습니다. 등급은 확률에 영향을 주지 않습니다.</p>
-<h3><strong>조율 확률</strong> — 무기 (아직 집계 없음)</h3>
+<div class="grid2">
+<div class="cell">
+<p><u>무기</u> (아직 집계 없음)</p>
 <table><thead><tr><th>옵션</th><th>수치 범위</th><th>고지</th><th>실제</th><th>관측</th></tr></thead><tbody>
 <tr><td>공격력</td><td>+6~16</td><td class="num">25.00%</td><td>-</td><td>-</td></tr>
 <tr><td>공격속도</td><td>+8.0~15.0%</td><td class="num">12.50%</td><td>-</td><td>-</td></tr>
@@ -976,76 +985,92 @@ pre { background:#0e0b09; border:1px solid var(--line); border-radius:8px; paddi
 <tr><td>관통</td><td class="num">+1</td><td class="num">12.50%</td><td>-</td><td>-</td></tr>
 <tr><td>투사체 증가</td><td class="num">+1</td><td class="num">12.50%</td><td>-</td><td>-</td></tr>
 </tbody></table>
-<h3><strong>조율 확률</strong> — 투구 (아직 집계 없음)</h3>
+</div>
+<div class="cell">
+<p><u>투구</u> (아직 집계 없음)</p>
 <table><thead><tr><th>옵션</th><th>수치 범위</th><th>고지</th><th>실제</th><th>관측</th></tr></thead><tbody>
 <tr><td>최대 체력</td><td>+1.0~10.0%</td><td class="num">14.29%</td><td>-</td><td>-</td></tr>
 <tr><td>최대 마나</td><td>+1.0~10.0%</td><td class="num">14.29%</td><td>-</td><td>-</td></tr>
 <tr><td>체력 재생</td><td>+1.0~15.0%</td><td class="num">14.29%</td><td>-</td><td>-</td></tr>
 <tr><td>마나 재생</td><td>+0.5~7.5%</td><td class="num">14.29%</td><td>-</td><td>-</td></tr>
-<tr><td>방어력</td><td>+1~10</td><td class="num">14.29%</td><td>-</td><td>-</td></tr>
+<tr><td>방어력</td><td>+3~30</td><td class="num">14.29%</td><td>-</td><td>-</td></tr>
 <tr><td>회피</td><td>+1~10</td><td class="num">14.29%</td><td>-</td><td>-</td></tr>
 <tr><td>범위 증가</td><td>+0.5~2.7%</td><td class="num">14.29%</td><td>-</td><td>-</td></tr>
 </tbody></table>
-<h3><strong>조율 확률</strong> — 갑옷 (아직 집계 없음)</h3>
+</div>
+<div class="cell">
+<p><u>갑옷</u> (아직 집계 없음)</p>
 <table><thead><tr><th>옵션</th><th>수치 범위</th><th>고지</th><th>실제</th><th>관측</th></tr></thead><tbody>
 <tr><td>최대 체력</td><td>+1.0~10.0%</td><td class="num">16.67%</td><td>-</td><td>-</td></tr>
 <tr><td>최대 마나</td><td>+1.0~10.0%</td><td class="num">16.67%</td><td>-</td><td>-</td></tr>
 <tr><td>체력 재생</td><td>+1.0~15.0%</td><td class="num">16.67%</td><td>-</td><td>-</td></tr>
 <tr><td>마나 재생</td><td>+0.5~7.5%</td><td class="num">16.67%</td><td>-</td><td>-</td></tr>
-<tr><td>방어력</td><td>+1~10</td><td class="num">16.67%</td><td>-</td><td>-</td></tr>
+<tr><td>방어력</td><td>+3~30</td><td class="num">16.67%</td><td>-</td><td>-</td></tr>
 <tr><td>회피</td><td>+1~10</td><td class="num">16.67%</td><td>-</td><td>-</td></tr>
 </tbody></table>
-<h3><strong>조율 확률</strong> — 바지 (아직 집계 없음)</h3>
+</div>
+<div class="cell">
+<p><u>바지</u> (아직 집계 없음)</p>
 <table><thead><tr><th>옵션</th><th>수치 범위</th><th>고지</th><th>실제</th><th>관측</th></tr></thead><tbody>
 <tr><td>체력</td><td>+23~227</td><td class="num">16.67%</td><td>-</td><td>-</td></tr>
 <tr><td>마나</td><td>+23~227</td><td class="num">16.67%</td><td>-</td><td>-</td></tr>
 <tr><td>체력 재생</td><td>+1.0~15.0%</td><td class="num">16.67%</td><td>-</td><td>-</td></tr>
 <tr><td>마나 재생</td><td>+0.5~7.5%</td><td class="num">16.67%</td><td>-</td><td>-</td></tr>
-<tr><td>방어력</td><td>+1~10</td><td class="num">16.67%</td><td>-</td><td>-</td></tr>
+<tr><td>방어력</td><td>+3~30</td><td class="num">16.67%</td><td>-</td><td>-</td></tr>
 <tr><td>회피</td><td>+1~10</td><td class="num">16.67%</td><td>-</td><td>-</td></tr>
 </tbody></table>
-<h3><strong>조율 확률</strong> — 신발 (아직 집계 없음)</h3>
+</div>
+<div class="cell">
+<p><u>신발</u> (아직 집계 없음)</p>
 <table><thead><tr><th>옵션</th><th>수치 범위</th><th>고지</th><th>실제</th><th>관측</th></tr></thead><tbody>
 <tr><td>이동속도</td><td>+4~10</td><td class="num">20.00%</td><td>-</td><td>-</td></tr>
 <tr><td>회피</td><td>+4~10</td><td class="num">20.00%</td><td>-</td><td>-</td></tr>
-<tr><td>방어력</td><td>+5~14</td><td class="num">10.00%</td><td>-</td><td>-</td></tr>
+<tr><td>방어력</td><td>+15~42</td><td class="num">10.00%</td><td>-</td><td>-</td></tr>
 <tr><td>체력</td><td>+20~60</td><td class="num">10.00%</td><td>-</td><td>-</td></tr>
 <tr><td>재사용 시간 감소</td><td>+1.0~5.0-%</td><td class="num">10.00%</td><td>-</td><td>-</td></tr>
 <tr><td>마나</td><td>+15~40</td><td class="num">10.00%</td><td>-</td><td>-</td></tr>
 <tr><td>스태미나 최대량</td><td class="num">+0.50회</td><td class="num">10.00%</td><td>-</td><td>-</td></tr>
 <tr><td>스태미나 회복 속도</td><td class="num">+10.0%</td><td class="num">10.00%</td><td>-</td><td>-</td></tr>
 </tbody></table>
-<h3><strong>조율 확률</strong> — 장갑 (아직 집계 없음)</h3>
+</div>
+<div class="cell">
+<p><u>장갑</u> (아직 집계 없음)</p>
 <table><thead><tr><th>옵션</th><th>수치 범위</th><th>고지</th><th>실제</th><th>관측</th></tr></thead><tbody>
 <tr><td>공격속도</td><td>+5.0~15.0%</td><td class="num">28.57%</td><td>-</td><td>-</td></tr>
-<tr><td>공격력</td><td>+6~16</td><td class="num">14.29%</td><td>-</td><td>-</td></tr>
+<tr><td>공격력 증가</td><td>+4.0~10.0%</td><td class="num">14.29%</td><td>-</td><td>-</td></tr>
 <tr><td>치명타 확률</td><td>+2.0~5.0%p</td><td class="num">14.29%</td><td>-</td><td>-</td></tr>
 <tr><td>치명타 피해</td><td>+10.0~25.0%p</td><td class="num">14.29%</td><td>-</td><td>-</td></tr>
 <tr><td>체력</td><td>+20~60</td><td class="num">14.29%</td><td>-</td><td>-</td></tr>
 <tr><td>마나</td><td>+15~40</td><td class="num">14.29%</td><td>-</td><td>-</td></tr>
 </tbody></table>
-<h3><strong>조율 확률</strong> — 목걸이 (20회 관측)</h3>
+</div>
+<div class="cell">
+<p><u>목걸이</u> (20회 관측)</p>
 <table><thead><tr><th>옵션</th><th>수치 범위</th><th>고지</th><th>실제</th><th>관측</th></tr></thead><tbody>
 <tr><td>체력</td><td>+20~60</td><td class="num">11.11%</td><td class="num">5.00%</td><td class="num">1회</td></tr>
 <tr><td>생명력 흡수</td><td>+0.5~1.5%</td><td class="num">11.11%</td><td class="num">15.00%</td><td class="num">3회</td></tr>
 <tr><td>마나 흡수</td><td>+0.5~1.5%</td><td class="num">11.11%</td><td class="num">0.00%</td><td class="num">0회</td></tr>
 <tr><td>골드 획득</td><td>+3.0~8.0%</td><td class="num">11.11%</td><td class="num">20.00%</td><td class="num">4회</td></tr>
-<tr><td>공격력</td><td>+6~16</td><td class="num">11.11%</td><td class="num">20.00%</td><td class="num">4회</td></tr>
+<tr><td>공격력 증가</td><td>+4.0~10.0%</td><td class="num">11.11%</td><td class="num">20.00%</td><td class="num">4회</td></tr>
 <tr><td>마나 재생</td><td>+2.5~7.5%</td><td class="num">11.11%</td><td class="num">10.00%</td><td class="num">2회</td></tr>
 <tr><td>공격속도</td><td>+5.0~10.0%</td><td class="num">11.11%</td><td class="num">10.00%</td><td class="num">2회</td></tr>
-<tr><td>방어력</td><td>+1~10</td><td class="num">11.11%</td><td class="num">10.00%</td><td class="num">2회</td></tr>
+<tr><td>방어력</td><td>+3~30</td><td class="num">11.11%</td><td class="num">10.00%</td><td class="num">2회</td></tr>
 <tr><td>회피</td><td>+1~10</td><td class="num">11.11%</td><td class="num">10.00%</td><td class="num">2회</td></tr>
 </tbody></table>
-<h3><strong>조율 확률</strong> — 반지 (아직 집계 없음)</h3>
+</div>
+<div class="cell">
+<p><u>반지</u> (아직 집계 없음)</p>
 <table><thead><tr><th>옵션</th><th>수치 범위</th><th>고지</th><th>실제</th><th>관측</th></tr></thead><tbody>
-<tr><td>공격력</td><td>+6~16</td><td class="num">16.67%</td><td>-</td><td>-</td></tr>
+<tr><td>공격력 증가</td><td>+4.0~10.0%</td><td class="num">16.67%</td><td>-</td><td>-</td></tr>
 <tr><td>치명타 피해</td><td>+10.0~25.0%p</td><td class="num">16.67%</td><td>-</td><td>-</td></tr>
 <tr><td>치명타 확률</td><td>+2.0~5.0%p</td><td class="num">16.67%</td><td>-</td><td>-</td></tr>
 <tr><td>공격속도</td><td>+5.0~10.0%</td><td class="num">16.67%</td><td>-</td><td>-</td></tr>
 <tr><td>최대 체력</td><td>+1.0~10.0%</td><td class="num">16.67%</td><td>-</td><td>-</td></tr>
 <tr><td>최대 마나</td><td>+1.0~10.0%</td><td class="num">16.67%</td><td>-</td><td>-</td></tr>
 </tbody></table>
-<h3><strong>조율 확률</strong> — 귀걸이 (아직 집계 없음)</h3>
+</div>
+<div class="cell">
+<p><u>귀걸이</u> (아직 집계 없음)</p>
 <table><thead><tr><th>옵션</th><th>수치 범위</th><th>고지</th><th>실제</th><th>관측</th></tr></thead><tbody>
 <tr><td>마나 재생</td><td class="num">+15.0%</td><td class="num">12.50%</td><td>-</td><td>-</td></tr>
 <tr><td>체력 재생</td><td>+5.0~15.0%</td><td class="num">12.50%</td><td>-</td><td>-</td></tr>
@@ -1056,6 +1081,8 @@ pre { background:#0e0b09; border:1px solid var(--line); border-radius:8px; paddi
 <tr><td>화염 피해 증가</td><td>+10.0~25.0%</td><td class="num">12.50%</td><td>-</td><td>-</td></tr>
 <tr><td>물리 피해 증가</td><td>+10.0~25.0%</td><td class="num">12.50%</td><td>-</td><td>-</td></tr>
 </tbody></table>
+</div>
+</div>
 </section>
 <section id="pane-rank" class="pane">
 <h2>👑 VIP 랭킹</h2>
